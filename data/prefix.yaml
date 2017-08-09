@@ -1,0 +1,121 @@
+---
+- :names: yotta
+  :symbol: Y
+  :primary_code: Y
+  :secondary_code: YA
+  :scalar: 1000000000000000000000000
+- :names: zetta
+  :symbol: Z
+  :primary_code: Z
+  :secondary_code: ZA
+  :scalar: 1000000000000000000000
+- :names: exa
+  :symbol: E
+  :primary_code: E
+  :secondary_code: EX
+  :scalar: 1000000000000000000
+- :names: peta
+  :symbol: P
+  :primary_code: P
+  :secondary_code: PT
+  :scalar: 1000000000000000
+- :names: tera
+  :symbol: T
+  :primary_code: T
+  :secondary_code: TR
+  :scalar: 1000000000000
+- :names: giga
+  :symbol: G
+  :primary_code: G
+  :secondary_code: GA
+  :scalar: 1000000000
+- :names: mega
+  :symbol: M
+  :primary_code: M
+  :secondary_code: MA
+  :scalar: 1000000
+- :names: kilo
+  :symbol: k
+  :primary_code: k
+  :secondary_code: K
+  :scalar: 1000
+- :names: hecto
+  :symbol: h
+  :primary_code: h
+  :secondary_code: H
+  :scalar: 100
+- :names: deka
+  :symbol: da
+  :primary_code: da
+  :secondary_code: DA
+  :scalar: 10
+- :names: deci
+  :symbol: d
+  :primary_code: d
+  :secondary_code: D
+  :scalar: !ruby/object:BigDecimal 18:0.1e0
+- :names: centi
+  :symbol: c
+  :primary_code: c
+  :secondary_code: C
+  :scalar: !ruby/object:BigDecimal 18:0.1e-1
+- :names: milli
+  :symbol: m
+  :primary_code: m
+  :secondary_code: M
+  :scalar: !ruby/object:BigDecimal 18:0.1e-2
+- :names: micro
+  :symbol: μ
+  :primary_code: u
+  :secondary_code: U
+  :scalar: !ruby/object:BigDecimal 18:0.1e-5
+- :names: nano
+  :symbol: n
+  :primary_code: n
+  :secondary_code: N
+  :scalar: !ruby/object:BigDecimal 18:0.1e-8
+- :names: pico
+  :symbol: p
+  :primary_code: p
+  :secondary_code: P
+  :scalar: !ruby/object:BigDecimal 18:0.1e-11
+- :names: femto
+  :symbol: f
+  :primary_code: f
+  :secondary_code: F
+  :scalar: !ruby/object:BigDecimal 18:0.1e-14
+- :names: atto
+  :symbol: a
+  :primary_code: a
+  :secondary_code: A
+  :scalar: !ruby/object:BigDecimal 18:0.1e-17
+- :names: zepto
+  :symbol: z
+  :primary_code: z
+  :secondary_code: ZO
+  :scalar: !ruby/object:BigDecimal 18:0.1e-20
+- :names: yocto
+  :symbol: y
+  :primary_code: y
+  :secondary_code: YO
+  :scalar: !ruby/object:BigDecimal 18:0.1e-23
+- :names: kibi
+  :symbol: Ki
+  :primary_code: Ki
+  :secondary_code: KIB
+  :scalar: 1024
+- :names: mebi
+  :symbol: Mi
+  :primary_code: Mi
+  :secondary_code: MIB
+  :scalar: 1048576
+- :names: gibi
+  :symbol: Gi
+  :primary_code: Gi
+  :secondary_code: GIB
+  :scalar: 1073741824
+- :names: tebi
+  :symbol: Ti
+  :primary_code: Ti
+  :secondary_code: TIB
+  :scalar: 1099511627776

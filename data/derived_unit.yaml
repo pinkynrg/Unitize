@@ -1,0 +1,3580 @@
+---
+- :names: the number ten for arbitrary powers
+  :symbol: '10'
+  :primary_code: 10*
+  :secondary_code: 10*
+  :scale:
+    :value: 10
+    :unit_code: '1'
+  :classification: dimless
+  :property: number
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: the number ten for arbitrary powers
+  :symbol: '10'
+  :primary_code: 10^
+  :secondary_code: 10^
+  :scale:
+    :value: 10
+    :unit_code: '1'
+  :classification: dimless
+  :property: number
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: the number pi
+  :symbol: π
+  :primary_code: "[pi]"
+  :secondary_code: "[PI]"
+  :scale:
+    :value: !ruby/object:BigDecimal 81:0.31415926535897932384626433832795028841971693993751058209749445923e1
+    :unit_code: '1'
+  :classification: dimless
+  :property: number
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: percent
+  :symbol: "%"
+  :primary_code: "%"
+  :secondary_code: "%"
+  :scale:
+    :value: 1
+    :unit_code: 10*-2
+  :classification: dimless
+  :property: fraction
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: parts per thousand
+  :symbol: ppth
+  :primary_code: "[ppth]"
+  :secondary_code: "[PPTH]"
+  :scale:
+    :value: 1
+    :unit_code: 10*-3
+  :classification: dimless
+  :property: fraction
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: parts per million
+  :symbol: ppm
+  :primary_code: "[ppm]"
+  :secondary_code: "[PPM]"
+  :scale:
+    :value: 1
+    :unit_code: 10*-6
+  :classification: dimless
+  :property: fraction
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: parts per billion
+  :symbol: ppb
+  :primary_code: "[ppb]"
+  :secondary_code: "[PPB]"
+  :scale:
+    :value: 1
+    :unit_code: 10*-9
+  :classification: dimless
+  :property: fraction
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: parts per trillion
+  :symbol: pptr
+  :primary_code: "[pptr]"
+  :secondary_code: "[PPTR]"
+  :scale:
+    :value: 1
+    :unit_code: 10*-12
+  :classification: dimless
+  :property: fraction
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: mole
+  :symbol: mol
+  :primary_code: mol
+  :secondary_code: MOL
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.60221367e1
+    :unit_code: 10*23
+  :classification: si
+  :property: amount of substance
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: steradian
+  :symbol: sr
+  :primary_code: sr
+  :secondary_code: SR
+  :scale:
+    :value: 1
+    :unit_code: rad2
+  :classification: si
+  :property: solid angle
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: hertz
+  :symbol: Hz
+  :primary_code: Hz
+  :secondary_code: HZ
+  :scale:
+    :value: 1
+    :unit_code: s-1
+  :classification: si
+  :property: frequency
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: newton
+  :symbol: N
+  :primary_code: N
+  :secondary_code: N
+  :scale:
+    :value: 1
+    :unit_code: kg.m/s2
+  :classification: si
+  :property: force
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: pascal
+  :symbol: Pa
+  :primary_code: Pa
+  :secondary_code: PAL
+  :scale:
+    :value: 1
+    :unit_code: N/m2
+  :classification: si
+  :property: pressure
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: joule
+  :symbol: J
+  :primary_code: J
+  :secondary_code: J
+  :scale:
+    :value: 1
+    :unit_code: N.m
+  :classification: si
+  :property: energy
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: watt
+  :symbol: W
+  :primary_code: W
+  :secondary_code: W
+  :scale:
+    :value: 1
+    :unit_code: J/s
+  :classification: si
+  :property: power
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: ampère
+  :symbol: A
+  :primary_code: A
+  :secondary_code: A
+  :scale:
+    :value: 1
+    :unit_code: C/s
+  :classification: si
+  :property: electric current
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: volt
+  :symbol: V
+  :primary_code: V
+  :secondary_code: V
+  :scale:
+    :value: 1
+    :unit_code: J/C
+  :classification: si
+  :property: electric potential
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: farad
+  :symbol: F
+  :primary_code: F
+  :secondary_code: F
+  :scale:
+    :value: 1
+    :unit_code: C/V
+  :classification: si
+  :property: electric capacitance
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: ohm
+  :symbol: Ω
+  :primary_code: Ohm
+  :secondary_code: OHM
+  :scale:
+    :value: 1
+    :unit_code: V/A
+  :classification: si
+  :property: electric resistance
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: siemens
+  :symbol: S
+  :primary_code: S
+  :secondary_code: SIE
+  :scale:
+    :value: 1
+    :unit_code: Ohm-1
+  :classification: si
+  :property: electric conductance
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: weber
+  :symbol: Wb
+  :primary_code: Wb
+  :secondary_code: WB
+  :scale:
+    :value: 1
+    :unit_code: V.s
+  :classification: si
+  :property: magentic flux
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: degree Celsius
+  :symbol: "°C"
+  :primary_code: Cel
+  :secondary_code: CEL
+  :scale:
+    :function_code: cel
+    :value: 1
+    :unit_code: K
+  :classification: si
+  :property: temperature
+  :metric: true
+  :special: true
+  :arbitrary: false
+- :names: tesla
+  :symbol: T
+  :primary_code: T
+  :secondary_code: T
+  :scale:
+    :value: 1
+    :unit_code: Wb/m2
+  :classification: si
+  :property: magnetic flux density
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: henry
+  :symbol: H
+  :primary_code: H
+  :secondary_code: H
+  :scale:
+    :value: 1
+    :unit_code: Wb/A
+  :classification: si
+  :property: inductance
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: lumen
+  :symbol: lm
+  :primary_code: lm
+  :secondary_code: LM
+  :scale:
+    :value: 1
+    :unit_code: cd.sr
+  :classification: si
+  :property: luminous flux
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: lux
+  :symbol: lx
+  :primary_code: lx
+  :secondary_code: LX
+  :scale:
+    :value: 1
+    :unit_code: lm/m2
+  :classification: si
+  :property: illuminance
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: becquerel
+  :symbol: Bq
+  :primary_code: Bq
+  :secondary_code: BQ
+  :scale:
+    :value: 1
+    :unit_code: s-1
+  :classification: si
+  :property: radioactivity
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: gray
+  :symbol: Gy
+  :primary_code: Gy
+  :secondary_code: GY
+  :scale:
+    :value: 1
+    :unit_code: J/kg
+  :classification: si
+  :property: energy dose
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: sievert
+  :symbol: Sv
+  :primary_code: Sv
+  :secondary_code: SV
+  :scale:
+    :value: 1
+    :unit_code: J/kg
+  :classification: si
+  :property: dose equivalent
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names:
+  - gon
+  - grade
+  :symbol: "□<sup>g</sup>"
+  :primary_code: gon
+  :secondary_code: GON
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.9e0
+    :unit_code: deg
+  :classification: iso1000
+  :property: plane angle
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: degree
+  :symbol: "°"
+  :primary_code: deg
+  :secondary_code: DEG
+  :scale:
+    :value: 2
+    :unit_code: "[pi].rad/360"
+  :classification: iso1000
+  :property: plane angle
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: minute
+  :symbol: "'"
+  :primary_code: "'"
+  :secondary_code: "'"
+  :scale:
+    :value: 1
+    :unit_code: deg/60
+  :classification: iso1000
+  :property: plane angle
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: second
+  :symbol: "''"
+  :primary_code: "''"
+  :secondary_code: "''"
+  :scale:
+    :value: 1
+    :unit_code: "'/60"
+  :classification: iso1000
+  :property: plane angle
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: liter
+  :symbol: l
+  :primary_code: l
+  :secondary_code: L
+  :scale:
+    :value: 1
+    :unit_code: dm3
+  :classification: iso1000
+  :property: volume
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: liter
+  :symbol: L
+  :primary_code: L
+  :scale:
+    :value: 1
+    :unit_code: l
+  :classification: iso1000
+  :property: volume
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: are
+  :symbol: a
+  :primary_code: ar
+  :secondary_code: AR
+  :scale:
+    :value: 100
+    :unit_code: m2
+  :classification: iso1000
+  :property: area
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: minute
+  :symbol: min
+  :primary_code: min
+  :secondary_code: MIN
+  :scale:
+    :value: 60
+    :unit_code: s
+  :classification: iso1000
+  :property: time
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: hour
+  :symbol: h
+  :primary_code: h
+  :secondary_code: HR
+  :scale:
+    :value: 60
+    :unit_code: min
+  :classification: iso1000
+  :property: time
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: day
+  :symbol: d
+  :primary_code: d
+  :secondary_code: D
+  :scale:
+    :value: 24
+    :unit_code: h
+  :classification: iso1000
+  :property: time
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: tropical year
+  :symbol: a<sub>t</sub>
+  :primary_code: a_t
+  :secondary_code: ANN_T
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.36524219e3
+    :unit_code: d
+  :classification: iso1000
+  :property: time
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: mean Julian year
+  :symbol: a<sub>j</sub>
+  :primary_code: a_j
+  :secondary_code: ANN_J
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.36525e3
+    :unit_code: d
+  :classification: iso1000
+  :property: time
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: mean Gregorian year
+  :symbol: a<sub>g</sub>
+  :primary_code: a_g
+  :secondary_code: ANN_G
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.3652425e3
+    :unit_code: d
+  :classification: iso1000
+  :property: time
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: year
+  :symbol: a
+  :primary_code: a
+  :secondary_code: ANN
+  :scale:
+    :value: 1
+    :unit_code: a_j
+  :classification: iso1000
+  :property: time
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: week
+  :symbol: wk
+  :primary_code: wk
+  :secondary_code: WK
+  :scale:
+    :value: 7
+    :unit_code: d
+  :classification: iso1000
+  :property: time
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: synodal month
+  :symbol: mo<sub>s</sub>
+  :primary_code: mo_s
+  :secondary_code: MO_S
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.2953059e2
+    :unit_code: d
+  :classification: iso1000
+  :property: time
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: mean Julian month
+  :symbol: mo<sub>j</sub>
+  :primary_code: mo_j
+  :secondary_code: MO_J
+  :scale:
+    :value: 1
+    :unit_code: a_j/12
+  :classification: iso1000
+  :property: time
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: mean Gregorian month
+  :symbol: mo<sub>g</sub>
+  :primary_code: mo_g
+  :secondary_code: MO_G
+  :scale:
+    :value: 1
+    :unit_code: a_g/12
+  :classification: iso1000
+  :property: time
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: month
+  :symbol: mo
+  :primary_code: mo
+  :secondary_code: MO
+  :scale:
+    :value: 1
+    :unit_code: mo_j
+  :classification: iso1000
+  :property: time
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: tonne
+  :symbol: t
+  :primary_code: t
+  :secondary_code: TNE
+  :scale:
+    :value: 1000
+    :unit_code: kg
+  :classification: iso1000
+  :property: mass
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: bar
+  :symbol: bar
+  :primary_code: bar
+  :secondary_code: BAR
+  :scale:
+    :value: 100000
+    :unit_code: Pa
+  :classification: iso1000
+  :property: pressure
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: unified atomic mass unit
+  :symbol: u
+  :primary_code: u
+  :secondary_code: AMU
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.16605402e-23
+    :unit_code: g
+  :classification: iso1000
+  :property: mass
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: electronvolt
+  :symbol: eV
+  :primary_code: eV
+  :secondary_code: EV
+  :scale:
+    :value: 1
+    :unit_code: "[e].V"
+  :classification: iso1000
+  :property: energy
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: astronomic unit
+  :symbol: AU
+  :primary_code: AU
+  :secondary_code: ASU
+  :scale:
+    :value: !ruby/object:BigDecimal 27:0.149597870691e6
+    :unit_code: Mm
+  :classification: iso1000
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: parsec
+  :symbol: pc
+  :primary_code: pc
+  :secondary_code: PRS
+  :scale:
+    :value: 30856780000000000
+    :unit_code: m
+  :classification: iso1000
+  :property: length
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: velocity of light
+  :symbol: "<i>c</i>"
+  :primary_code: "[c]"
+  :secondary_code: "[C]"
+  :scale:
+    :value: 299792458
+    :unit_code: m/s
+  :classification: const
+  :property: velocity
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: Planck constant
+  :symbol: "<i>h</i>"
+  :primary_code: "[h]"
+  :secondary_code: "[H]"
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.66260755e-33
+    :unit_code: J.s
+  :classification: const
+  :property: action
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: Boltzmann constant
+  :symbol: "<i>k</i>"
+  :primary_code: "[k]"
+  :secondary_code: "[K]"
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.1380658e-22
+    :unit_code: J/K
+  :classification: const
+  :property: "(unclassified)"
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: permittivity of vacuum
+  :symbol: "<i>ε<sub><r>0</r></sub></i>"
+  :primary_code: "[eps_0]"
+  :secondary_code: "[EPS_0]"
+  :scale:
+    :value: !ruby/object:BigDecimal 27:0.8854187817e-11
+    :unit_code: F/m
+  :classification: const
+  :property: electric permittivity
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: permeability of vacuum
+  :symbol: "<i>μ<sub><r>0</r></sub></i>"
+  :primary_code: "[mu_0]"
+  :secondary_code: "[MU_0]"
+  :scale:
+    :value: 1
+    :unit_code: 4.[pi].10*-7.N/A2
+  :classification: const
+  :property: magnetic permeability
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: elementary charge
+  :symbol: "<i>e</i>"
+  :primary_code: "[e]"
+  :secondary_code: "[E]"
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.160217733e-18
+    :unit_code: C
+  :classification: const
+  :property: electric charge
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: electron mass
+  :symbol: "<i>m<sub><r>e</r></sub></i>"
+  :primary_code: "[m_e]"
+  :secondary_code: "[M_E]"
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.91093897e-27
+    :unit_code: g
+  :classification: const
+  :property: mass
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: proton mass
+  :symbol: "<i>m<sub><r>p</r></sub></i>"
+  :primary_code: "[m_p]"
+  :secondary_code: "[M_P]"
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.16726231e-23
+    :unit_code: g
+  :classification: const
+  :property: mass
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: Newtonian constant of gravitation
+  :symbol: "<i>G</i>"
+  :primary_code: "[G]"
+  :secondary_code: "[GC]"
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.667259e-10
+    :unit_code: m3.kg-1.s-2
+  :classification: const
+  :property: "(unclassified)"
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: standard acceleration of free fall
+  :symbol: "<i>g<sub>n</sub></i>"
+  :primary_code: "[g]"
+  :secondary_code: "[G]"
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.980665e1
+    :unit_code: m/s2
+  :classification: const
+  :property: acceleration
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: standard atmosphere
+  :symbol: atm
+  :primary_code: atm
+  :secondary_code: ATM
+  :scale:
+    :value: 101325
+    :unit_code: Pa
+  :classification: const
+  :property: pressure
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: light-year
+  :symbol: l.y.
+  :primary_code: "[ly]"
+  :secondary_code: "[LY]"
+  :scale:
+    :value: 1
+    :unit_code: "[c].a_j"
+  :classification: const
+  :property: length
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: gram-force
+  :symbol: gf
+  :primary_code: gf
+  :secondary_code: GF
+  :scale:
+    :value: 1
+    :unit_code: g.[g]
+  :classification: const
+  :property: force
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: pound force
+  :symbol: lbf
+  :primary_code: "[lbf_av]"
+  :secondary_code: "[LBF_AV]"
+  :scale:
+    :value: 1
+    :unit_code: "[lb_av].[g]"
+  :classification: const
+  :property: force
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: Kayser
+  :symbol: K
+  :primary_code: Ky
+  :secondary_code: KY
+  :scale:
+    :value: 1
+    :unit_code: cm-1
+  :classification: cgs
+  :property: lineic number
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: Gal
+  :symbol: Gal
+  :primary_code: Gal
+  :secondary_code: GL
+  :scale:
+    :value: 1
+    :unit_code: cm/s2
+  :classification: cgs
+  :property: acceleration
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: dyne
+  :symbol: dyn
+  :primary_code: dyn
+  :secondary_code: DYN
+  :scale:
+    :value: 1
+    :unit_code: g.cm/s2
+  :classification: cgs
+  :property: force
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: erg
+  :symbol: erg
+  :primary_code: erg
+  :secondary_code: ERG
+  :scale:
+    :value: 1
+    :unit_code: dyn.cm
+  :classification: cgs
+  :property: energy
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: Poise
+  :symbol: P
+  :primary_code: P
+  :secondary_code: P
+  :scale:
+    :value: 1
+    :unit_code: dyn.s/cm2
+  :classification: cgs
+  :property: dynamic viscosity
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: Biot
+  :symbol: Bi
+  :primary_code: Bi
+  :secondary_code: BI
+  :scale:
+    :value: 10
+    :unit_code: A
+  :classification: cgs
+  :property: electric current
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: Stokes
+  :symbol: St
+  :primary_code: St
+  :secondary_code: ST
+  :scale:
+    :value: 1
+    :unit_code: cm2/s
+  :classification: cgs
+  :property: kinematic viscosity
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: Maxwell
+  :symbol: Mx
+  :primary_code: Mx
+  :secondary_code: MX
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.1e-7
+    :unit_code: Wb
+  :classification: cgs
+  :property: flux of magnetic induction
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: Gauss
+  :symbol: Gs
+  :primary_code: G
+  :secondary_code: GS
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.1e-3
+    :unit_code: T
+  :classification: cgs
+  :property: magnetic flux density
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: Oersted
+  :symbol: Oe
+  :primary_code: Oe
+  :secondary_code: OE
+  :scale:
+    :value: 250
+    :unit_code: "/[pi].A/m"
+  :classification: cgs
+  :property: magnetic field intensity
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: Gilbert
+  :symbol: Gb
+  :primary_code: Gb
+  :secondary_code: GB
+  :scale:
+    :value: 1
+    :unit_code: Oe.cm
+  :classification: cgs
+  :property: magnetic tension
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: stilb
+  :symbol: sb
+  :primary_code: sb
+  :secondary_code: SB
+  :scale:
+    :value: 1
+    :unit_code: cd/cm2
+  :classification: cgs
+  :property: lum. intensity density
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: Lambert
+  :symbol: L
+  :primary_code: Lmb
+  :secondary_code: LMB
+  :scale:
+    :value: 1
+    :unit_code: cd/cm2/[pi]
+  :classification: cgs
+  :property: brightness
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: phot
+  :symbol: ph
+  :primary_code: ph
+  :secondary_code: PHT
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.1e-3
+    :unit_code: lx
+  :classification: cgs
+  :property: illuminance
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: Curie
+  :symbol: Ci
+  :primary_code: Ci
+  :secondary_code: CI
+  :scale:
+    :value: 37000000000
+    :unit_code: Bq
+  :classification: cgs
+  :property: radioactivity
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: Roentgen
+  :symbol: R
+  :primary_code: R
+  :secondary_code: ROE
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.258e-3
+    :unit_code: C/kg
+  :classification: cgs
+  :property: ion dose
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: radiation absorbed dose
+  :symbol: RAD
+  :primary_code: RAD
+  :secondary_code: "[RAD]"
+  :scale:
+    :value: 100
+    :unit_code: erg/g
+  :classification: cgs
+  :property: energy dose
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: radiation equivalent man
+  :symbol: REM
+  :primary_code: REM
+  :secondary_code: "[REM]"
+  :scale:
+    :value: 1
+    :unit_code: RAD
+  :classification: cgs
+  :property: dose equivalent
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: inch
+  :symbol: in
+  :primary_code: "[in_i]"
+  :secondary_code: "[IN_I]"
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.254e1
+    :unit_code: cm
+  :classification: intcust
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: foot
+  :symbol: ft
+  :primary_code: "[ft_i]"
+  :secondary_code: "[FT_I]"
+  :scale:
+    :value: 12
+    :unit_code: "[in_i]"
+  :classification: intcust
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: yard
+  :symbol: yd
+  :primary_code: "[yd_i]"
+  :secondary_code: "[YD_I]"
+  :scale:
+    :value: 3
+    :unit_code: "[ft_i]"
+  :classification: intcust
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: mile
+  :symbol: mi
+  :primary_code: "[mi_i]"
+  :secondary_code: "[MI_I]"
+  :scale:
+    :value: 5280
+    :unit_code: "[ft_i]"
+  :classification: intcust
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: fathom
+  :symbol: fth
+  :primary_code: "[fth_i]"
+  :secondary_code: "[FTH_I]"
+  :scale:
+    :value: 6
+    :unit_code: "[ft_i]"
+  :classification: intcust
+  :property: depth of water
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: nautical mile
+  :symbol: n.mi
+  :primary_code: "[nmi_i]"
+  :secondary_code: "[NMI_I]"
+  :scale:
+    :value: 1852
+    :unit_code: m
+  :classification: intcust
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: knot
+  :symbol: knot
+  :primary_code: "[kn_i]"
+  :secondary_code: "[KN_I]"
+  :scale:
+    :value: 1
+    :unit_code: "[nmi_i]/h"
+  :classification: intcust
+  :property: velocity
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: square inch
+  :primary_code: "[sin_i]"
+  :secondary_code: "[SIN_I]"
+  :scale:
+    :value: 1
+    :unit_code: "[in_i]2"
+  :classification: intcust
+  :property: area
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: square foot
+  :primary_code: "[sft_i]"
+  :secondary_code: "[SFT_I]"
+  :scale:
+    :value: 1
+    :unit_code: "[ft_i]2"
+  :classification: intcust
+  :property: area
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: square yard
+  :primary_code: "[syd_i]"
+  :secondary_code: "[SYD_I]"
+  :scale:
+    :value: 1
+    :unit_code: "[yd_i]2"
+  :classification: intcust
+  :property: area
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: cubic inch
+  :primary_code: "[cin_i]"
+  :secondary_code: "[CIN_I]"
+  :scale:
+    :value: 1
+    :unit_code: "[in_i]3"
+  :classification: intcust
+  :property: volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: cubic foot
+  :primary_code: "[cft_i]"
+  :secondary_code: "[CFT_I]"
+  :scale:
+    :value: 1
+    :unit_code: "[ft_i]3"
+  :classification: intcust
+  :property: volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: cubic yard
+  :symbol: cu.yd
+  :primary_code: "[cyd_i]"
+  :secondary_code: "[CYD_I]"
+  :scale:
+    :value: 1
+    :unit_code: "[yd_i]3"
+  :classification: intcust
+  :property: volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: board foot
+  :primary_code: "[bf_i]"
+  :secondary_code: "[BF_I]"
+  :scale:
+    :value: 144
+    :unit_code: "[in_i]3"
+  :classification: intcust
+  :property: volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: cord
+  :primary_code: "[cr_i]"
+  :secondary_code: "[CR_I]"
+  :scale:
+    :value: 128
+    :unit_code: "[ft_i]3"
+  :classification: intcust
+  :property: volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: mil
+  :symbol: mil
+  :primary_code: "[mil_i]"
+  :secondary_code: "[MIL_I]"
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.1e-2
+    :unit_code: "[in_i]"
+  :classification: intcust
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: circular mil
+  :symbol: circ.mil
+  :primary_code: "[cml_i]"
+  :secondary_code: "[CML_I]"
+  :scale:
+    :value: 1
+    :unit_code: "[pi]/4.[mil_i]2"
+  :classification: intcust
+  :property: area
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: hand
+  :symbol: hd
+  :primary_code: "[hd_i]"
+  :secondary_code: "[HD_I]"
+  :scale:
+    :value: 4
+    :unit_code: "[in_i]"
+  :classification: intcust
+  :property: height of horses
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: foot
+  :symbol: ft<sub>us</sub>
+  :primary_code: "[ft_us]"
+  :secondary_code: "[FT_US]"
+  :scale:
+    :value: 1200
+    :unit_code: m/3937
+  :classification: us-lengths
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: yard
+  :primary_code: "[yd_us]"
+  :secondary_code: "[YD_US]"
+  :scale:
+    :value: 3
+    :unit_code: "[ft_us]"
+  :classification: us-lengths
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: inch
+  :primary_code: "[in_us]"
+  :secondary_code: "[IN_US]"
+  :scale:
+    :value: 1
+    :unit_code: "[ft_us]/12"
+  :classification: us-lengths
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: rod
+  :primary_code: "[rd_us]"
+  :secondary_code: "[RD_US]"
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.165e2
+    :unit_code: "[ft_us]"
+  :classification: us-lengths
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names:
+  - Gunter's chain
+  - Surveyor's chain
+  :primary_code: "[ch_us]"
+  :secondary_code: "[CH_US]"
+  :scale:
+    :value: 4
+    :unit_code: "[rd_us]"
+  :classification: us-lengths
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: link for Gunter's chain
+  :primary_code: "[lk_us]"
+  :secondary_code: "[LK_US]"
+  :scale:
+    :value: 1
+    :unit_code: "[ch_us]/100"
+  :classification: us-lengths
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names:
+  - Ramden's chain
+  - Engineer's chain
+  :primary_code: "[rch_us]"
+  :secondary_code: "[RCH_US]"
+  :scale:
+    :value: 100
+    :unit_code: "[ft_us]"
+  :classification: us-lengths
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: link for Ramden's chain
+  :primary_code: "[rlk_us]"
+  :secondary_code: "[RLK_US]"
+  :scale:
+    :value: 1
+    :unit_code: "[rch_us]/100"
+  :classification: us-lengths
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: fathom
+  :primary_code: "[fth_us]"
+  :secondary_code: "[FTH_US]"
+  :scale:
+    :value: 6
+    :unit_code: "[ft_us]"
+  :classification: us-lengths
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: furlong
+  :primary_code: "[fur_us]"
+  :secondary_code: "[FUR_US]"
+  :scale:
+    :value: 40
+    :unit_code: "[rd_us]"
+  :classification: us-lengths
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: mile
+  :primary_code: "[mi_us]"
+  :secondary_code: "[MI_US]"
+  :scale:
+    :value: 8
+    :unit_code: "[fur_us]"
+  :classification: us-lengths
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: acre
+  :primary_code: "[acr_us]"
+  :secondary_code: "[ACR_US]"
+  :scale:
+    :value: 160
+    :unit_code: "[rd_us]2"
+  :classification: us-lengths
+  :property: area
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: square rod
+  :primary_code: "[srd_us]"
+  :secondary_code: "[SRD_US]"
+  :scale:
+    :value: 1
+    :unit_code: "[rd_us]2"
+  :classification: us-lengths
+  :property: area
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: square mile
+  :primary_code: "[smi_us]"
+  :secondary_code: "[SMI_US]"
+  :scale:
+    :value: 1
+    :unit_code: "[mi_us]2"
+  :classification: us-lengths
+  :property: area
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: section
+  :primary_code: "[sct]"
+  :secondary_code: "[SCT]"
+  :scale:
+    :value: 1
+    :unit_code: "[mi_us]2"
+  :classification: us-lengths
+  :property: area
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: township
+  :primary_code: "[twp]"
+  :secondary_code: "[TWP]"
+  :scale:
+    :value: 36
+    :unit_code: "[sct]"
+  :classification: us-lengths
+  :property: area
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: mil
+  :primary_code: "[mil_us]"
+  :secondary_code: "[MIL_US]"
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.1e-2
+    :unit_code: "[in_us]"
+  :classification: us-lengths
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: inch
+  :primary_code: "[in_br]"
+  :secondary_code: "[IN_BR]"
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.2539998e1
+    :unit_code: cm
+  :classification: brit-length
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: foot
+  :primary_code: "[ft_br]"
+  :secondary_code: "[FT_BR]"
+  :scale:
+    :value: 12
+    :unit_code: "[in_br]"
+  :classification: brit-length
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: rod
+  :primary_code: "[rd_br]"
+  :secondary_code: "[RD_BR]"
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.165e2
+    :unit_code: "[ft_br]"
+  :classification: brit-length
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: Gunter's chain
+  :primary_code: "[ch_br]"
+  :secondary_code: "[CH_BR]"
+  :scale:
+    :value: 4
+    :unit_code: "[rd_br]"
+  :classification: brit-length
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: link for Gunter's chain
+  :primary_code: "[lk_br]"
+  :secondary_code: "[LK_BR]"
+  :scale:
+    :value: 1
+    :unit_code: "[ch_br]/100"
+  :classification: brit-length
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: fathom
+  :primary_code: "[fth_br]"
+  :secondary_code: "[FTH_BR]"
+  :scale:
+    :value: 6
+    :unit_code: "[ft_br]"
+  :classification: brit-length
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: pace
+  :primary_code: "[pc_br]"
+  :secondary_code: "[PC_BR]"
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.25e1
+    :unit_code: "[ft_br]"
+  :classification: brit-length
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: yard
+  :primary_code: "[yd_br]"
+  :secondary_code: "[YD_BR]"
+  :scale:
+    :value: 3
+    :unit_code: "[ft_br]"
+  :classification: brit-length
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: mile
+  :primary_code: "[mi_br]"
+  :secondary_code: "[MI_BR]"
+  :scale:
+    :value: 5280
+    :unit_code: "[ft_br]"
+  :classification: brit-length
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: nautical mile
+  :primary_code: "[nmi_br]"
+  :secondary_code: "[NMI_BR]"
+  :scale:
+    :value: 6080
+    :unit_code: "[ft_br]"
+  :classification: brit-length
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: knot
+  :primary_code: "[kn_br]"
+  :secondary_code: "[KN_BR]"
+  :scale:
+    :value: 1
+    :unit_code: "[nmi_br]/h"
+  :classification: brit-length
+  :property: velocity
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: acre
+  :primary_code: "[acr_br]"
+  :secondary_code: "[ACR_BR]"
+  :scale:
+    :value: 4840
+    :unit_code: "[yd_br]2"
+  :classification: brit-length
+  :property: area
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: Queen Anne's wine gallon
+  :primary_code: "[gal_us]"
+  :secondary_code: "[GAL_US]"
+  :scale:
+    :value: 231
+    :unit_code: "[in_i]3"
+  :classification: us-volumes
+  :property: fluid volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: barrel
+  :primary_code: "[bbl_us]"
+  :secondary_code: "[BBL_US]"
+  :scale:
+    :value: 42
+    :unit_code: "[gal_us]"
+  :classification: us-volumes
+  :property: fluid volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: quart
+  :primary_code: "[qt_us]"
+  :secondary_code: "[QT_US]"
+  :scale:
+    :value: 1
+    :unit_code: "[gal_us]/4"
+  :classification: us-volumes
+  :property: fluid volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: pint
+  :primary_code: "[pt_us]"
+  :secondary_code: "[PT_US]"
+  :scale:
+    :value: 1
+    :unit_code: "[qt_us]/2"
+  :classification: us-volumes
+  :property: fluid volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: gill
+  :primary_code: "[gil_us]"
+  :secondary_code: "[GIL_US]"
+  :scale:
+    :value: 1
+    :unit_code: "[pt_us]/4"
+  :classification: us-volumes
+  :property: fluid volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: fluid ounce
+  :symbol: oz fl
+  :primary_code: "[foz_us]"
+  :secondary_code: "[FOZ_US]"
+  :scale:
+    :value: 1
+    :unit_code: "[gil_us]/4"
+  :classification: us-volumes
+  :property: fluid volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: fluid dram
+  :primary_code: "[fdr_us]"
+  :secondary_code: "[FDR_US]"
+  :scale:
+    :value: 1
+    :unit_code: "[foz_us]/8"
+  :classification: us-volumes
+  :property: fluid volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: minim
+  :primary_code: "[min_us]"
+  :secondary_code: "[MIN_US]"
+  :scale:
+    :value: 1
+    :unit_code: "[fdr_us]/60"
+  :classification: us-volumes
+  :property: fluid volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: cord
+  :primary_code: "[crd_us]"
+  :secondary_code: "[CRD_US]"
+  :scale:
+    :value: 128
+    :unit_code: "[ft_i]3"
+  :classification: us-volumes
+  :property: fluid volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: bushel
+  :primary_code: "[bu_us]"
+  :secondary_code: "[BU_US]"
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.215042e4
+    :unit_code: "[in_i]3"
+  :classification: us-volumes
+  :property: dry volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: historical winchester gallon
+  :primary_code: "[gal_wi]"
+  :secondary_code: "[GAL_WI]"
+  :scale:
+    :value: 1
+    :unit_code: "[bu_us]/8"
+  :classification: us-volumes
+  :property: dry volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: peck
+  :primary_code: "[pk_us]"
+  :secondary_code: "[PK_US]"
+  :scale:
+    :value: 1
+    :unit_code: "[bu_us]/4"
+  :classification: us-volumes
+  :property: dry volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: dry quart
+  :primary_code: "[dqt_us]"
+  :secondary_code: "[DQT_US]"
+  :scale:
+    :value: 1
+    :unit_code: "[pk_us]/8"
+  :classification: us-volumes
+  :property: dry volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: dry pint
+  :primary_code: "[dpt_us]"
+  :secondary_code: "[DPT_US]"
+  :scale:
+    :value: 1
+    :unit_code: "[dqt_us]/2"
+  :classification: us-volumes
+  :property: dry volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: tablespoon
+  :primary_code: "[tbs_us]"
+  :secondary_code: "[TBS_US]"
+  :scale:
+    :value: 1
+    :unit_code: "[foz_us]/2"
+  :classification: us-volumes
+  :property: volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: teaspoon
+  :primary_code: "[tsp_us]"
+  :secondary_code: "[TSP_US]"
+  :scale:
+    :value: 1
+    :unit_code: "[tbs_us]/3"
+  :classification: us-volumes
+  :property: volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: cup
+  :primary_code: "[cup_us]"
+  :secondary_code: "[CUP_US]"
+  :scale:
+    :value: 16
+    :unit_code: "[tbs_us]"
+  :classification: us-volumes
+  :property: volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: metric fluid ounce
+  :symbol: oz fl
+  :primary_code: "[foz_m]"
+  :secondary_code: "[FOZ_M]"
+  :scale:
+    :value: 30
+    :unit_code: mL
+  :classification: us-volumes
+  :property: fluid volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: metric cup
+  :primary_code: "[cup_m]"
+  :secondary_code: "[CUP_M]"
+  :scale:
+    :value: 240
+    :unit_code: mL
+  :classification: us-volumes
+  :property: volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: metric teaspoon
+  :primary_code: "[tsp_m]"
+  :secondary_code: "[TSP_M]"
+  :scale:
+    :value: 5
+    :unit_code: mL
+  :classification: us-volumes
+  :property: volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: metric tablespoon
+  :primary_code: "[tbs_m]"
+  :secondary_code: "[TBS_M]"
+  :scale:
+    :value: 15
+    :unit_code: mL
+  :classification: us-volumes
+  :property: volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: gallon
+  :primary_code: "[gal_br]"
+  :secondary_code: "[GAL_BR]"
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.454609e1
+    :unit_code: l
+  :classification: brit-volumes
+  :property: volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: peck
+  :primary_code: "[pk_br]"
+  :secondary_code: "[PK_BR]"
+  :scale:
+    :value: 2
+    :unit_code: "[gal_br]"
+  :classification: brit-volumes
+  :property: volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: bushel
+  :primary_code: "[bu_br]"
+  :secondary_code: "[BU_BR]"
+  :scale:
+    :value: 4
+    :unit_code: "[pk_br]"
+  :classification: brit-volumes
+  :property: volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: quart
+  :primary_code: "[qt_br]"
+  :secondary_code: "[QT_BR]"
+  :scale:
+    :value: 1
+    :unit_code: "[gal_br]/4"
+  :classification: brit-volumes
+  :property: volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: pint
+  :primary_code: "[pt_br]"
+  :secondary_code: "[PT_BR]"
+  :scale:
+    :value: 1
+    :unit_code: "[qt_br]/2"
+  :classification: brit-volumes
+  :property: volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: gill
+  :primary_code: "[gil_br]"
+  :secondary_code: "[GIL_BR]"
+  :scale:
+    :value: 1
+    :unit_code: "[pt_br]/4"
+  :classification: brit-volumes
+  :property: volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: fluid ounce
+  :primary_code: "[foz_br]"
+  :secondary_code: "[FOZ_BR]"
+  :scale:
+    :value: 1
+    :unit_code: "[gil_br]/5"
+  :classification: brit-volumes
+  :property: volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: fluid dram
+  :primary_code: "[fdr_br]"
+  :secondary_code: "[FDR_BR]"
+  :scale:
+    :value: 1
+    :unit_code: "[foz_br]/8"
+  :classification: brit-volumes
+  :property: volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: minim
+  :primary_code: "[min_br]"
+  :secondary_code: "[MIN_BR]"
+  :scale:
+    :value: 1
+    :unit_code: "[fdr_br]/60"
+  :classification: brit-volumes
+  :property: volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: grain
+  :primary_code: "[gr]"
+  :secondary_code: "[GR]"
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.6479891e2
+    :unit_code: mg
+  :classification: avoirdupois
+  :property: mass
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: pound
+  :symbol: lb
+  :primary_code: "[lb_av]"
+  :secondary_code: "[LB_AV]"
+  :scale:
+    :value: 7000
+    :unit_code: "[gr]"
+  :classification: avoirdupois
+  :property: mass
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: ounce
+  :symbol: oz
+  :primary_code: "[oz_av]"
+  :secondary_code: "[OZ_AV]"
+  :scale:
+    :value: 1
+    :unit_code: "[lb_av]/16"
+  :classification: avoirdupois
+  :property: mass
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: dram
+  :primary_code: "[dr_av]"
+  :secondary_code: "[DR_AV]"
+  :scale:
+    :value: 1
+    :unit_code: "[oz_av]/16"
+  :classification: avoirdupois
+  :property: mass
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names:
+  - short hundredweight
+  - U.S. hundredweight
+  :primary_code: "[scwt_av]"
+  :secondary_code: "[SCWT_AV]"
+  :scale:
+    :value: 100
+    :unit_code: "[lb_av]"
+  :classification: avoirdupois
+  :property: mass
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names:
+  - long hunderdweight
+  - British hundredweight
+  :primary_code: "[lcwt_av]"
+  :secondary_code: "[LCWT_AV]"
+  :scale:
+    :value: 112
+    :unit_code: "[lb_av]"
+  :classification: avoirdupois
+  :property: mass
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names:
+  - short ton
+  - U.S. ton
+  :primary_code: "[ston_av]"
+  :secondary_code: "[STON_AV]"
+  :scale:
+    :value: 20
+    :unit_code: "[scwt_av]"
+  :classification: avoirdupois
+  :property: mass
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names:
+  - long ton
+  - British ton
+  :primary_code: "[lton_av]"
+  :secondary_code: "[LTON_AV]"
+  :scale:
+    :value: 20
+    :unit_code: "[lcwt_av]"
+  :classification: avoirdupois
+  :property: mass
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names:
+  - stone
+  - British stone
+  :primary_code: "[stone_av]"
+  :secondary_code: "[STONE_AV]"
+  :scale:
+    :value: 14
+    :unit_code: "[lb_av]"
+  :classification: avoirdupois
+  :property: mass
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: pennyweight
+  :primary_code: "[pwt_tr]"
+  :secondary_code: "[PWT_TR]"
+  :scale:
+    :value: 24
+    :unit_code: "[gr]"
+  :classification: troy
+  :property: mass
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: ounce
+  :primary_code: "[oz_tr]"
+  :secondary_code: "[OZ_TR]"
+  :scale:
+    :value: 20
+    :unit_code: "[pwt_tr]"
+  :classification: troy
+  :property: mass
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: pound
+  :primary_code: "[lb_tr]"
+  :secondary_code: "[LB_TR]"
+  :scale:
+    :value: 12
+    :unit_code: "[oz_tr]"
+  :classification: troy
+  :property: mass
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: scruple
+  :primary_code: "[sc_ap]"
+  :secondary_code: "[SC_AP]"
+  :scale:
+    :value: 20
+    :unit_code: "[gr]"
+  :classification: apoth
+  :property: mass
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names:
+  - dram
+  - drachm
+  :primary_code: "[dr_ap]"
+  :secondary_code: "[DR_AP]"
+  :scale:
+    :value: 3
+    :unit_code: "[sc_ap]"
+  :classification: apoth
+  :property: mass
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: ounce
+  :primary_code: "[oz_ap]"
+  :secondary_code: "[OZ_AP]"
+  :scale:
+    :value: 8
+    :unit_code: "[dr_ap]"
+  :classification: apoth
+  :property: mass
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: pound
+  :primary_code: "[lb_ap]"
+  :secondary_code: "[LB_AP]"
+  :scale:
+    :value: 12
+    :unit_code: "[oz_ap]"
+  :classification: apoth
+  :property: mass
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: metric ounce
+  :primary_code: "[oz_m]"
+  :secondary_code: "[OZ_M]"
+  :scale:
+    :value: 28
+    :unit_code: g
+  :classification: apoth
+  :property: mass
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: line
+  :primary_code: "[lne]"
+  :secondary_code: "[LNE]"
+  :scale:
+    :value: 1
+    :unit_code: "[in_i]/12"
+  :classification: typeset
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: point
+  :primary_code: "[pnt]"
+  :secondary_code: "[PNT]"
+  :scale:
+    :value: 1
+    :unit_code: "[lne]/6"
+  :classification: typeset
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: pica
+  :primary_code: "[pca]"
+  :secondary_code: "[PCA]"
+  :scale:
+    :value: 12
+    :unit_code: "[pnt]"
+  :classification: typeset
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: Printer's point
+  :primary_code: "[pnt_pr]"
+  :secondary_code: "[PNT_PR]"
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.13837e-1
+    :unit_code: "[in_i]"
+  :classification: typeset
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: Printer's pica
+  :primary_code: "[pca_pr]"
+  :secondary_code: "[PCA_PR]"
+  :scale:
+    :value: 12
+    :unit_code: "[pnt_pr]"
+  :classification: typeset
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names:
+  - pied
+  - French foot
+  :primary_code: "[pied]"
+  :secondary_code: "[PIED]"
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.3248e2
+    :unit_code: cm
+  :classification: typeset
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names:
+  - pouce
+  - French inch
+  :primary_code: "[pouce]"
+  :secondary_code: "[POUCE]"
+  :scale:
+    :value: 1
+    :unit_code: "[pied]/12"
+  :classification: typeset
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names:
+  - ligne
+  - French line
+  :primary_code: "[ligne]"
+  :secondary_code: "[LIGNE]"
+  :scale:
+    :value: 1
+    :unit_code: "[pouce]/12"
+  :classification: typeset
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names:
+  - didot
+  - Didot's point
+  :primary_code: "[didot]"
+  :secondary_code: "[DIDOT]"
+  :scale:
+    :value: 1
+    :unit_code: "[ligne]/6"
+  :classification: typeset
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names:
+  - cicero
+  - Didot's pica
+  :primary_code: "[cicero]"
+  :secondary_code: "[CICERO]"
+  :scale:
+    :value: 12
+    :unit_code: "[didot]"
+  :classification: typeset
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: degree Fahrenheit
+  :symbol: "°F"
+  :primary_code: "[degF]"
+  :secondary_code: "[DEGF]"
+  :scale:
+    :function_code: degf
+    :value: 5
+    :unit_code: K/9
+  :classification: heat
+  :property: temperature
+  :metric: false
+  :special: true
+  :arbitrary: false
+- :names: degree Rankine
+  :symbol: "°R"
+  :primary_code: "[degR]"
+  :secondary_code: "[degR]"
+  :scale:
+    :value: 5
+    :unit_code: K/9
+  :classification: heat
+  :property: temperature
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: degree Réaumur
+  :symbol: "°Ré"
+  :primary_code: "[degRe]"
+  :secondary_code: "[degRe]"
+  :scale:
+    :function_code: degre
+    :value: 5
+    :unit_code: K/4
+  :classification: heat
+  :property: temperature
+  :metric: false
+  :special: true
+  :arbitrary: false
+- :names: calorie at 15 °C
+  :symbol: cal<sub>15°C</sub>
+  :primary_code: cal_[15]
+  :secondary_code: CAL_[15]
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.41858e1
+    :unit_code: J
+  :classification: heat
+  :property: energy
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: calorie at 20 °C
+  :symbol: cal<sub>20°C</sub>
+  :primary_code: cal_[20]
+  :secondary_code: CAL_[20]
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.41819e1
+    :unit_code: J
+  :classification: heat
+  :property: energy
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: mean calorie
+  :symbol: cal<sub>m</sub>
+  :primary_code: cal_m
+  :secondary_code: CAL_M
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.419002e1
+    :unit_code: J
+  :classification: heat
+  :property: energy
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: international table calorie
+  :symbol: cal<sub>IT</sub>
+  :primary_code: cal_IT
+  :secondary_code: CAL_IT
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.41868e1
+    :unit_code: J
+  :classification: heat
+  :property: energy
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: thermochemical calorie
+  :symbol: cal<sub>th</sub>
+  :primary_code: cal_th
+  :secondary_code: CAL_TH
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.4184e1
+    :unit_code: J
+  :classification: heat
+  :property: energy
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: calorie
+  :symbol: cal
+  :primary_code: cal
+  :secondary_code: CAL
+  :scale:
+    :value: 1
+    :unit_code: cal_th
+  :classification: heat
+  :property: energy
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: nutrition label Calories
+  :symbol: Cal
+  :primary_code: "[Cal]"
+  :secondary_code: "[CAL]"
+  :scale:
+    :value: 1
+    :unit_code: kcal_th
+  :classification: heat
+  :property: energy
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: British thermal unit at 39 °F
+  :symbol: Btu<sub>39°F</sub>
+  :primary_code: "[Btu_39]"
+  :secondary_code: "[BTU_39]"
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.105967e1
+    :unit_code: kJ
+  :classification: heat
+  :property: energy
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: British thermal unit at 59 °F
+  :symbol: Btu<sub>59°F</sub>
+  :primary_code: "[Btu_59]"
+  :secondary_code: "[BTU_59]"
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.10548e1
+    :unit_code: kJ
+  :classification: heat
+  :property: energy
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: British thermal unit at 60 °F
+  :symbol: Btu<sub>60°F</sub>
+  :primary_code: "[Btu_60]"
+  :secondary_code: "[BTU_60]"
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.105468e1
+    :unit_code: kJ
+  :classification: heat
+  :property: energy
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: mean British thermal unit
+  :symbol: Btu<sub>m</sub>
+  :primary_code: "[Btu_m]"
+  :secondary_code: "[BTU_M]"
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.105587e1
+    :unit_code: kJ
+  :classification: heat
+  :property: energy
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: international table British thermal unit
+  :symbol: Btu<sub>IT</sub>
+  :primary_code: "[Btu_IT]"
+  :secondary_code: "[BTU_IT]"
+  :scale:
+    :value: !ruby/object:BigDecimal 27:0.105505585262e1
+    :unit_code: kJ
+  :classification: heat
+  :property: energy
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: thermochemical British thermal unit
+  :symbol: Btu<sub>th</sub>
+  :primary_code: "[Btu_th]"
+  :secondary_code: "[BTU_TH]"
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.105435e1
+    :unit_code: kJ
+  :classification: heat
+  :property: energy
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: British thermal unit
+  :symbol: btu
+  :primary_code: "[Btu]"
+  :secondary_code: "[BTU]"
+  :scale:
+    :value: 1
+    :unit_code: "[Btu_th]"
+  :classification: heat
+  :property: energy
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: horsepower
+  :primary_code: "[HP]"
+  :secondary_code: "[HP]"
+  :scale:
+    :value: 550
+    :unit_code: "[ft_i].[lbf_av]/s"
+  :classification: heat
+  :property: power
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: tex
+  :symbol: tex
+  :primary_code: tex
+  :secondary_code: TEX
+  :scale:
+    :value: 1
+    :unit_code: g/km
+  :classification: heat
+  :property: linear mass density (of textile thread)
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: Denier
+  :symbol: den
+  :primary_code: "[den]"
+  :secondary_code: "[DEN]"
+  :scale:
+    :value: 1
+    :unit_code: g/9/km
+  :classification: heat
+  :property: linear mass density (of textile thread)
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: meter of water column
+  :symbol: m H<sub><r>2</r></sub>O
+  :primary_code: m[H2O]
+  :secondary_code: M[H2O]
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.980665e1
+    :unit_code: kPa
+  :classification: clinical
+  :property: pressure
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: meter of mercury column
+  :symbol: m Hg
+  :primary_code: m[Hg]
+  :secondary_code: M[HG]
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.133322e3
+    :unit_code: kPa
+  :classification: clinical
+  :property: pressure
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: inch of water column
+  :symbol: in H<sub><r>2</r></sub>O
+  :primary_code: "[in_i'H2O]"
+  :secondary_code: "[IN_I'H2O]"
+  :scale:
+    :value: 1
+    :unit_code: m[H2O].[in_i]/m
+  :classification: clinical
+  :property: pressure
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: inch of mercury column
+  :symbol: in Hg
+  :primary_code: "[in_i'Hg]"
+  :secondary_code: "[IN_I'HG]"
+  :scale:
+    :value: 1
+    :unit_code: m[Hg].[in_i]/m
+  :classification: clinical
+  :property: pressure
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: peripheral vascular resistance unit
+  :symbol: P.R.U.
+  :primary_code: "[PRU]"
+  :secondary_code: "[PRU]"
+  :scale:
+    :value: 1
+    :unit_code: mm[Hg].s/ml
+  :classification: clinical
+  :property: fluid resistance
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: Wood unit
+  :symbol: Wood U.
+  :primary_code: "[wood'U]"
+  :secondary_code: "[WOOD'U]"
+  :scale:
+    :value: 1
+    :unit_code: mm[Hg].min/L
+  :classification: clinical
+  :property: fluid resistance
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: diopter
+  :symbol: dpt
+  :primary_code: "[diop]"
+  :secondary_code: "[DIOP]"
+  :scale:
+    :value: 1
+    :unit_code: "/m"
+  :classification: clinical
+  :property: refraction of a lens
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: prism diopter
+  :symbol: PD
+  :primary_code: "[p'diop]"
+  :secondary_code: "[P'DIOP]"
+  :scale:
+    :function_code: 100tan
+    :value: 1
+    :unit_code: deg
+  :classification: clinical
+  :property: refraction of a prism
+  :metric: false
+  :special: true
+  :arbitrary: false
+- :names: percent of slope
+  :symbol: "%"
+  :primary_code: "%[slope]"
+  :secondary_code: "%[SLOPE]"
+  :scale:
+    :function_code: 100tan
+    :value: 1
+    :unit_code: deg
+  :classification: clinical
+  :property: slope
+  :metric: false
+  :special: true
+  :arbitrary: false
+- :names: mesh
+  :primary_code: "[mesh_i]"
+  :secondary_code: "[MESH_I]"
+  :scale:
+    :value: 1
+    :unit_code: "/[in_i]"
+  :classification: clinical
+  :property: lineic number
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names:
+  - Charrière
+  - french
+  :symbol: Ch
+  :primary_code: "[Ch]"
+  :secondary_code: "[CH]"
+  :scale:
+    :value: 1
+    :unit_code: mm/3
+  :classification: clinical
+  :property: gauge of catheters
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: drop
+  :symbol: drp
+  :primary_code: "[drp]"
+  :secondary_code: "[DRP]"
+  :scale:
+    :value: 1
+    :unit_code: ml/20
+  :classification: clinical
+  :property: volume
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: Hounsfield unit
+  :symbol: HF
+  :primary_code: "[hnsf'U]"
+  :secondary_code: "[HNSF'U]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: clinical
+  :property: x-ray attenuation
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: metabolic equivalent
+  :symbol: MET
+  :primary_code: "[MET]"
+  :secondary_code: "[MET]"
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.35e1
+    :unit_code: mL/min/kg
+  :classification: clinical
+  :property: metabolic cost of physical activity
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: homeopathic potency of decimal series (retired)
+  :symbol: X
+  :primary_code: "[hp'_X]"
+  :secondary_code: "[HP'_X]"
+  :scale:
+    :function_code: hpX
+    :value: 1
+    :unit_code: '1'
+  :classification: clinical
+  :property: homeopathic potency (retired)
+  :metric: false
+  :special: true
+  :arbitrary: false
+- :names: homeopathic potency of centesimal series (retired)
+  :symbol: C
+  :primary_code: "[hp'_C]"
+  :secondary_code: "[HP'_C]"
+  :scale:
+    :function_code: hpC
+    :value: 1
+    :unit_code: '1'
+  :classification: clinical
+  :property: homeopathic potency (retired)
+  :metric: false
+  :special: true
+  :arbitrary: false
+- :names: homeopathic potency of millesimal series (retired)
+  :symbol: M
+  :primary_code: "[hp'_M]"
+  :secondary_code: "[HP'_M]"
+  :scale:
+    :function_code: hpM
+    :value: 1
+    :unit_code: '1'
+  :classification: clinical
+  :property: homeopathic potency (retired)
+  :metric: false
+  :special: true
+  :arbitrary: false
+- :names: homeopathic potency of quintamillesimal series (retired)
+  :symbol: Q
+  :primary_code: "[hp'_Q]"
+  :secondary_code: "[HP'_Q]"
+  :scale:
+    :function_code: hpQ
+    :value: 1
+    :unit_code: '1'
+  :classification: clinical
+  :property: homeopathic potency (retired)
+  :metric: false
+  :special: true
+  :arbitrary: false
+- :names: homeopathic potency of decimal hahnemannian series
+  :symbol: X
+  :primary_code: "[hp_X]"
+  :secondary_code: "[HP_X]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: clinical
+  :property: homeopathic potency (Hahnemann)
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: homeopathic potency of centesimal hahnemannian series
+  :symbol: C
+  :primary_code: "[hp_C]"
+  :secondary_code: "[HP_C]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: clinical
+  :property: homeopathic potency (Hahnemann)
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: homeopathic potency of millesimal hahnemannian series
+  :symbol: M
+  :primary_code: "[hp_M]"
+  :secondary_code: "[HP_M]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: clinical
+  :property: homeopathic potency (Hahnemann)
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: homeopathic potency of quintamillesimal hahnemannian series
+  :symbol: Q
+  :primary_code: "[hp_Q]"
+  :secondary_code: "[HP_Q]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: clinical
+  :property: homeopathic potency (Hahnemann)
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: homeopathic potency of decimal korsakovian series
+  :symbol: X
+  :primary_code: "[kp_X]"
+  :secondary_code: "[KP_X]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: clinical
+  :property: homeopathic potency (Korsakov)
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: homeopathic potency of centesimal korsakovian series
+  :symbol: C
+  :primary_code: "[kp_C]"
+  :secondary_code: "[KP_C]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: clinical
+  :property: homeopathic potency (Korsakov)
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: homeopathic potency of millesimal korsakovian series
+  :symbol: M
+  :primary_code: "[kp_M]"
+  :secondary_code: "[KP_M]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: clinical
+  :property: homeopathic potency (Korsakov)
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: homeopathic potency of quintamillesimal korsakovian series
+  :symbol: Q
+  :primary_code: "[kp_Q]"
+  :secondary_code: "[KP_Q]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: clinical
+  :property: homeopathic potency (Korsakov)
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: equivalents
+  :symbol: eq
+  :primary_code: eq
+  :secondary_code: EQ
+  :scale:
+    :value: 1
+    :unit_code: mol
+  :classification: chemical
+  :property: amount of substance
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: osmole
+  :symbol: osm
+  :primary_code: osm
+  :secondary_code: OSM
+  :scale:
+    :value: 1
+    :unit_code: mol
+  :classification: chemical
+  :property: amount of substance (dissolved particles)
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: pH
+  :symbol: pH
+  :primary_code: "[pH]"
+  :secondary_code: "[PH]"
+  :scale:
+    :function_code: pH
+    :value: 1
+    :unit_code: mol/l
+  :classification: chemical
+  :property: acidity
+  :metric: false
+  :special: true
+  :arbitrary: false
+- :names: gram percent
+  :symbol: g%
+  :primary_code: g%
+  :secondary_code: G%
+  :scale:
+    :value: 1
+    :unit_code: g/dl
+  :classification: chemical
+  :property: mass concentration
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: Svedberg unit
+  :symbol: S
+  :primary_code: "[S]"
+  :secondary_code: "[S]"
+  :scale:
+    :value: 1
+    :unit_code: 10*-13.s
+  :classification: chemical
+  :property: sedimentation coefficient
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: high power field
+  :symbol: HPF
+  :primary_code: "[HPF]"
+  :secondary_code: "[HPF]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: view area in microscope
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: low power field
+  :symbol: LPF
+  :primary_code: "[LPF]"
+  :secondary_code: "[LPF]"
+  :scale:
+    :value: 100
+    :unit_code: '1'
+  :classification: chemical
+  :property: view area in microscope
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: katal
+  :symbol: kat
+  :primary_code: kat
+  :secondary_code: KAT
+  :scale:
+    :value: 1
+    :unit_code: mol/s
+  :classification: chemical
+  :property: catalytic activity
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: Unit
+  :symbol: U
+  :primary_code: U
+  :secondary_code: U
+  :scale:
+    :value: 1
+    :unit_code: umol/min
+  :classification: chemical
+  :property: catalytic activity
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: international unit
+  :symbol: IU
+  :primary_code: "[iU]"
+  :secondary_code: "[IU]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: arbitrary
+  :metric: true
+  :special: false
+  :arbitrary: true
+- :names: international unit
+  :symbol: i.U.
+  :primary_code: "[IU]"
+  :secondary_code: "[IU]"
+  :scale:
+    :value: 1
+    :unit_code: "[iU]"
+  :classification: chemical
+  :property: arbitrary
+  :metric: true
+  :special: false
+  :arbitrary: true
+- :names: arbitary unit
+  :symbol: arb. U
+  :primary_code: "[arb'U]"
+  :secondary_code: "[ARB'U]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: arbitrary
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: United States Pharmacopeia unit
+  :symbol: U.S.P.
+  :primary_code: "[USP'U]"
+  :secondary_code: "[USP'U]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: arbitrary
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: GPL unit
+  :primary_code: "[GPL'U]"
+  :secondary_code: "[GPL'U]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: biologic activity of anticardiolipin IgG
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: MPL unit
+  :primary_code: "[MPL'U]"
+  :secondary_code: "[MPL'U]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: biologic activity of anticardiolipin IgM
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: APL unit
+  :primary_code: "[APL'U]"
+  :secondary_code: "[APL'U]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: biologic activity of anticardiolipin IgA
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: Bethesda unit
+  :primary_code: "[beth'U]"
+  :secondary_code: "[BETH'U]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: biologic activity of factor VIII inhibitor
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: anti factor Xa unit
+  :primary_code: "[anti'Xa'U]"
+  :secondary_code: "[ANTI'XA'U]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: biologic activity of factor Xa inhibitor (heparin)
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: Todd unit
+  :primary_code: "[todd'U]"
+  :secondary_code: "[TODD'U]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: biologic activity antistreptolysin O
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: Dye unit
+  :primary_code: "[dye'U]"
+  :secondary_code: "[DYE'U]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: biologic activity of amylase
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: Somogyi unit
+  :primary_code: "[smgy'U]"
+  :secondary_code: "[SMGY'U]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: biologic activity of amylase
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: Bodansky unit
+  :primary_code: "[bdsk'U]"
+  :secondary_code: "[BDSK'U]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: biologic activity of phosphatase
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: King-Armstrong unit
+  :primary_code: "[ka'U]"
+  :secondary_code: "[KA'U]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: biologic activity of phosphatase
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: Kunkel unit
+  :primary_code: "[knk'U]"
+  :secondary_code: "[KNK'U]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: arbitrary biologic activity
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: Mac Lagan unit
+  :primary_code: "[mclg'U]"
+  :secondary_code: "[MCLG'U]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: arbitrary biologic activity
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: tuberculin unit
+  :primary_code: "[tb'U]"
+  :secondary_code: "[TB'U]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: biologic activity of tuberculin
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: 50% cell culture infectious dose
+  :symbol: CCID<sub>50</sub>
+  :primary_code: "[CCID_50]"
+  :secondary_code: "[CCID_50]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: biologic activity (infectivity) of an infectious agent preparation
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: 50% tissue culture infectious dose
+  :symbol: TCID<sub>50</sub>
+  :primary_code: "[TCID_50]"
+  :secondary_code: "[TCID_50]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: biologic activity (infectivity) of an infectious agent preparation
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: 50% embryo infectious dose
+  :symbol: EID<sub>50</sub>
+  :primary_code: "[EID_50]"
+  :secondary_code: "[EID_50]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: biologic activity (infectivity) of an infectious agent preparation
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: plaque forming units
+  :symbol: PFU
+  :primary_code: "[PFU]"
+  :secondary_code: "[PFU]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: amount of an infectious agent
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: focus forming units
+  :symbol: FFU
+  :primary_code: "[FFU]"
+  :secondary_code: "[FFU]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: amount of an infectious agent
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: colony forming units
+  :symbol: CFU
+  :primary_code: "[CFU]"
+  :secondary_code: "[CFU]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: amount of a proliferating organism
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: index of reactivity
+  :symbol: IR
+  :primary_code: "[IR]"
+  :secondary_code: "[IR]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: amount of an allergen callibrated through in-vivo testing using the Stallergenes®
+    method.
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: bioequivalent allergen unit
+  :symbol: BAU
+  :primary_code: "[BAU]"
+  :secondary_code: "[BAU]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: amount of an allergen callibrated through in-vivo testing based on the
+    ID50EAL method of (intradermal dilution for 50mm sum of erythema diameters
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: allergen unit
+  :symbol: AU
+  :primary_code: "[AU]"
+  :secondary_code: "[AU]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: procedure defined amount of an allergen using some reference standard
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: allergen unit for Ambrosia artemisiifolia
+  :symbol: Amb a 1 U
+  :primary_code: "[Amb'a'1'U]"
+  :secondary_code: "[AMB'A'1'U]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: procedure defined amount of the major allergen of ragweed.
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: protein nitrogen unit
+  :symbol: PNU
+  :primary_code: "[PNU]"
+  :secondary_code: "[PNU]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: procedure defined amount of a protein substance
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: Limit of flocculation
+  :symbol: Lf
+  :primary_code: "[Lf]"
+  :secondary_code: "[LF]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: procedure defined amount of an antigen substance
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: D-antigen unit
+  :primary_code: "[D'ag'U]"
+  :secondary_code: "[D'AG'U]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: procedure defined amount of a poliomyelitis d-antigen substance
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: fibrinogen equivalent unit
+  :primary_code: "[FEU]"
+  :secondary_code: "[FEU]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: amount of fibrinogen broken down into the measured d-dimers
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: ELISA unit
+  :primary_code: "[ELU]"
+  :secondary_code: "[ELU]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: arbitrary ELISA unit
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: Ehrlich unit
+  :primary_code: "[EU]"
+  :secondary_code: "[EU]"
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: chemical
+  :property: Ehrlich unit
+  :metric: false
+  :special: false
+  :arbitrary: true
+- :names: neper
+  :symbol: Np
+  :primary_code: Np
+  :secondary_code: NEP
+  :scale:
+    :function_code: ln
+    :value: 1
+    :unit_code: '1'
+  :classification: levels
+  :property: level
+  :metric: true
+  :special: true
+  :arbitrary: false
+- :names: bel
+  :symbol: B
+  :primary_code: B
+  :secondary_code: B
+  :scale:
+    :function_code: lg
+    :value: 1
+    :unit_code: '1'
+  :classification: levels
+  :property: level
+  :metric: true
+  :special: true
+  :arbitrary: false
+- :names: bel sound pressure
+  :symbol: B(SPL)
+  :primary_code: B[SPL]
+  :secondary_code: B[SPL]
+  :scale:
+    :function_code: 2lg
+    :value: 2
+    :unit_code: 10*-5.Pa
+  :classification: levels
+  :property: pressure level
+  :metric: true
+  :special: true
+  :arbitrary: false
+- :names: bel volt
+  :symbol: B(V)
+  :primary_code: B[V]
+  :secondary_code: B[V]
+  :scale:
+    :function_code: 2lg
+    :value: 1
+    :unit_code: V
+  :classification: levels
+  :property: electric potential level
+  :metric: true
+  :special: true
+  :arbitrary: false
+- :names: bel millivolt
+  :symbol: B(mV)
+  :primary_code: B[mV]
+  :secondary_code: B[MV]
+  :scale:
+    :function_code: 2lg
+    :value: 1
+    :unit_code: mV
+  :classification: levels
+  :property: electric potential level
+  :metric: true
+  :special: true
+  :arbitrary: false
+- :names: bel microvolt
+  :symbol: B(μV)
+  :primary_code: B[uV]
+  :secondary_code: B[UV]
+  :scale:
+    :function_code: 2lg
+    :value: 1
+    :unit_code: uV
+  :classification: levels
+  :property: electric potential level
+  :metric: true
+  :special: true
+  :arbitrary: false
+- :names: bel 10 nanovolt
+  :symbol: B(10 nV)
+  :primary_code: B[10.nV]
+  :secondary_code: B[10.NV]
+  :scale:
+    :function_code: 2lg
+    :value: 10
+    :unit_code: nV
+  :classification: levels
+  :property: electric potential level
+  :metric: true
+  :special: true
+  :arbitrary: false
+- :names: bel watt
+  :symbol: B(W)
+  :primary_code: B[W]
+  :secondary_code: B[W]
+  :scale:
+    :function_code: lg
+    :value: 1
+    :unit_code: W
+  :classification: levels
+  :property: power level
+  :metric: true
+  :special: true
+  :arbitrary: false
+- :names: bel kilowatt
+  :symbol: B(kW)
+  :primary_code: B[kW]
+  :secondary_code: B[KW]
+  :scale:
+    :function_code: lg
+    :value: 1
+    :unit_code: kW
+  :classification: levels
+  :property: power level
+  :metric: true
+  :special: true
+  :arbitrary: false
+- :names: stere
+  :symbol: st
+  :primary_code: st
+  :secondary_code: STR
+  :scale:
+    :value: 1
+    :unit_code: m3
+  :classification: misc
+  :property: volume
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: Ångström
+  :symbol: Å
+  :primary_code: Ao
+  :secondary_code: AO
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.1e0
+    :unit_code: nm
+  :classification: misc
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: barn
+  :symbol: b
+  :primary_code: b
+  :secondary_code: BRN
+  :scale:
+    :value: 100
+    :unit_code: fm2
+  :classification: misc
+  :property: action area
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: technical atmosphere
+  :symbol: at
+  :primary_code: att
+  :secondary_code: ATT
+  :scale:
+    :value: 1
+    :unit_code: kgf/cm2
+  :classification: misc
+  :property: pressure
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: mho
+  :symbol: mho
+  :primary_code: mho
+  :secondary_code: MHO
+  :scale:
+    :value: 1
+    :unit_code: S
+  :classification: misc
+  :property: electric conductance
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: pound per sqare inch
+  :symbol: psi
+  :primary_code: "[psi]"
+  :secondary_code: "[PSI]"
+  :scale:
+    :value: 1
+    :unit_code: "[lbf_av]/[in_i]2"
+  :classification: misc
+  :property: pressure
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: circle
+  :symbol: circ
+  :primary_code: circ
+  :secondary_code: CIRC
+  :scale:
+    :value: 2
+    :unit_code: "[pi].rad"
+  :classification: misc
+  :property: plane angle
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: spere
+  :symbol: sph
+  :primary_code: sph
+  :secondary_code: SPH
+  :scale:
+    :value: 4
+    :unit_code: "[pi].sr"
+  :classification: misc
+  :property: solid angle
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: metric carat
+  :symbol: ct<sub>m</sub>
+  :primary_code: "[car_m]"
+  :secondary_code: "[CAR_M]"
+  :scale:
+    :value: !ruby/object:BigDecimal 18:0.2e0
+    :unit_code: g
+  :classification: misc
+  :property: mass
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: carat of gold alloys
+  :symbol: ct<sub><r>Au</r></sub>
+  :primary_code: "[car_Au]"
+  :secondary_code: "[CAR_AU]"
+  :scale:
+    :value: 1
+    :unit_code: "/24"
+  :classification: misc
+  :property: mass fraction
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: Smoot
+  :primary_code: "[smoot]"
+  :secondary_code: "[SMOOT]"
+  :scale:
+    :value: 67
+    :unit_code: "[in_i]"
+  :classification: misc
+  :property: length
+  :metric: false
+  :special: false
+  :arbitrary: false
+- :names: meter per square seconds per square root of hertz
+  :primary_code: "[m/s2/Hz^(1/2)]"
+  :secondary_code: "[M/S2/HZ^(1/2)]"
+  :scale:
+    :function_code: sqrt
+    :value: 1
+    :unit_code: m2/s4/Hz
+  :classification: misc
+  :property: amplitude spectral density
+  :metric: false
+  :special: true
+  :arbitrary: false
+- :names: bit
+  :symbol: bit<sub>s</sub>
+  :primary_code: bit_s
+  :secondary_code: BIT_S
+  :scale:
+    :function_code: ld
+    :value: 1
+    :unit_code: '1'
+  :classification: infotech
+  :property: amount of information
+  :metric: false
+  :special: true
+  :arbitrary: false
+- :names: bit
+  :symbol: bit
+  :primary_code: bit
+  :secondary_code: BIT
+  :scale:
+    :value: 1
+    :unit_code: '1'
+  :classification: infotech
+  :property: amount of information
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: byte
+  :symbol: B
+  :primary_code: By
+  :secondary_code: BY
+  :scale:
+    :value: 8
+    :unit_code: bit
+  :classification: infotech
+  :property: amount of information
+  :metric: true
+  :special: false
+  :arbitrary: false
+- :names: baud
+  :symbol: Bd
+  :primary_code: Bd
+  :secondary_code: BD
+  :scale:
+    :value: 1
+    :unit_code: "/s"
+  :classification: infotech
+  :property: signal transmission rate
+  :metric: true
+  :special: false
+  :arbitrary: false
