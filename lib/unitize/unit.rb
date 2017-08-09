@@ -38,7 +38,7 @@ module Unitize
 
     # Build a string representation of this unit by it's terms.
     # @param mode [Symbol] The mode to use to stringify the atoms
-    # (:primary_code, :names, :secondary_code).
+    # (:primary_code, :names).
     # @return [String]
     # @api public
     def expression(mode=nil)
@@ -136,7 +136,7 @@ module Unitize
 
     # A string representation of this unit.
     # @param mode [:symbol] The mode used to represent the unit
-    # (:primary_code, :names, :secondary_code)
+    # (:primary_code, :names)
     # @return [String]
     # @api public
     def to_s(mode = nil)
@@ -148,7 +148,7 @@ module Unitize
     # @return [Array]
     # @api public
     def aliases
-      [:names, :primary_code, :secondary_code, :symbol].map do |mode|
+      [:names, :primary_code, :symbol].map do |mode|
         to_s(mode)
       end.uniq
     end
