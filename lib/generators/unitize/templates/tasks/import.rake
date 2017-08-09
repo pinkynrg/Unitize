@@ -12,12 +12,16 @@ namespace :unitize do
 		end
 
 		final.each { |e| 
-			Unitize::MeasurementPrefix.create({
+			el = Unitize::MeasurementPrefix.create({
 				name: e['name'], 
 				symbol: e['symbol'],
 				code: e['code'],
 				scalar: e['scalar'],
 			}) 
+			
+			if (el.errors.count > 0)
+				puts "[#{e['name']}] #{el.errors.details}"
+			end
 		}
 
   	###################################################################################################
@@ -42,16 +46,18 @@ namespace :unitize do
 				scale_value: e[:'scale.value'],
 				scale_unit_code: e[:'scale.unit_code'],
 				classification: e['classification'],
-				metric: e['metric'],
-				special: e['special'],
-				arbitrary: e['arbitrary'],
+				metric: !!e['metric'],
+				special: !!e['special'],
+				arbitrary: !!e['arbitrary'],
 				symbol: e['symbol'],
 				scale_function_from: e[:'scale.function_from'],
 				scale_function_to: e[:'scale.function_to'],
 				dim: e['dim'],
 			}) 
-
-			puts el.errors.details
+			
+			if (el.errors.count > 0)
+				puts "[#{e['name']}] #{el.errors.details}"
+			end
 		}
 
 		###################################################################################################
