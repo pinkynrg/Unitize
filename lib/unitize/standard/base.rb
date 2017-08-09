@@ -52,12 +52,12 @@ module Unitize::Standard
       end
     end
 
-    def primary_code
+    def code
       attributes["@Code"]
     end
 
     def to_hash
-      [:names, :symbol, :primary_code].inject({}) do |h,a|
+      [:names, :symbol, :code].inject({}) do |h,a|
         if v = self.send(a)
           h[a] = v
         end

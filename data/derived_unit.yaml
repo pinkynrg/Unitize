@@ -1,7 +1,7 @@
 ---
 - :names: the number ten for arbitrary powers
   :symbol: '10'
-  :primary_code: 10*
+  :code: 10*
   :scale:
     :value: 10
     :unit_code: '1'
@@ -12,7 +12,7 @@
   :arbitrary: false
 - :names: the number ten for arbitrary powers
   :symbol: '10'
-  :primary_code: 10^
+  :code: 10^
   :scale:
     :value: 10
     :unit_code: '1'
@@ -23,7 +23,7 @@
   :arbitrary: false
 - :names: the number pi
   :symbol: π
-  :primary_code: "[pi]"
+  :code: "[pi]"
   :scale:
     :value: !ruby/object:BigDecimal 81:0.31415926535897932384626433832795028841971693993751058209749445923e1
     :unit_code: '1'
@@ -34,7 +34,7 @@
   :arbitrary: false
 - :names: percent
   :symbol: "%"
-  :primary_code: "%"
+  :code: "%"
   :scale:
     :value: 1
     :unit_code: 10*-2
@@ -45,7 +45,7 @@
   :arbitrary: false
 - :names: parts per thousand
   :symbol: ppth
-  :primary_code: "[ppth]"
+  :code: "[ppth]"
   :scale:
     :value: 1
     :unit_code: 10*-3
@@ -56,7 +56,7 @@
   :arbitrary: false
 - :names: parts per million
   :symbol: ppm
-  :primary_code: "[ppm]"
+  :code: "[ppm]"
   :scale:
     :value: 1
     :unit_code: 10*-6
@@ -67,7 +67,7 @@
   :arbitrary: false
 - :names: parts per billion
   :symbol: ppb
-  :primary_code: "[ppb]"
+  :code: "[ppb]"
   :scale:
     :value: 1
     :unit_code: 10*-9
@@ -78,7 +78,7 @@
   :arbitrary: false
 - :names: parts per trillion
   :symbol: pptr
-  :primary_code: "[pptr]"
+  :code: "[pptr]"
   :scale:
     :value: 1
     :unit_code: 10*-12
@@ -89,7 +89,7 @@
   :arbitrary: false
 - :names: mole
   :symbol: mol
-  :primary_code: mol
+  :code: mol
   :scale:
     :value: !ruby/object:BigDecimal 18:0.60221367e1
     :unit_code: 10*23
@@ -100,7 +100,7 @@
   :arbitrary: false
 - :names: steradian
   :symbol: sr
-  :primary_code: sr
+  :code: sr
   :scale:
     :value: 1
     :unit_code: rad2
@@ -111,7 +111,7 @@
   :arbitrary: false
 - :names: hertz
   :symbol: Hz
-  :primary_code: Hz
+  :code: Hz
   :scale:
     :value: 1
     :unit_code: s-1
@@ -122,7 +122,7 @@
   :arbitrary: false
 - :names: newton
   :symbol: N
-  :primary_code: N
+  :code: N
   :scale:
     :value: 1
     :unit_code: kg.m/s2
@@ -133,7 +133,7 @@
   :arbitrary: false
 - :names: pascal
   :symbol: Pa
-  :primary_code: Pa
+  :code: Pa
   :scale:
     :value: 1
     :unit_code: N/m2
@@ -144,7 +144,7 @@
   :arbitrary: false
 - :names: joule
   :symbol: J
-  :primary_code: J
+  :code: J
   :scale:
     :value: 1
     :unit_code: N.m
@@ -155,7 +155,7 @@
   :arbitrary: false
 - :names: watt
   :symbol: W
-  :primary_code: W
+  :code: W
   :scale:
     :value: 1
     :unit_code: J/s
@@ -166,7 +166,7 @@
   :arbitrary: false
 - :names: ampère
   :symbol: A
-  :primary_code: A
+  :code: A
   :scale:
     :value: 1
     :unit_code: C/s
@@ -177,7 +177,7 @@
   :arbitrary: false
 - :names: volt
   :symbol: V
-  :primary_code: V
+  :code: V
   :scale:
     :value: 1
     :unit_code: J/C
@@ -188,7 +188,7 @@
   :arbitrary: false
 - :names: farad
   :symbol: F
-  :primary_code: F
+  :code: F
   :scale:
     :value: 1
     :unit_code: C/V
@@ -199,7 +199,7 @@
   :arbitrary: false
 - :names: ohm
   :symbol: Ω
-  :primary_code: Ohm
+  :code: Ohm
   :scale:
     :value: 1
     :unit_code: V/A
@@ -210,7 +210,7 @@
   :arbitrary: false
 - :names: siemens
   :symbol: S
-  :primary_code: S
+  :code: S
   :scale:
     :value: 1
     :unit_code: Ohm-1
@@ -221,7 +221,7 @@
   :arbitrary: false
 - :names: weber
   :symbol: Wb
-  :primary_code: Wb
+  :code: Wb
   :scale:
     :value: 1
     :unit_code: V.s
@@ -232,7 +232,7 @@
   :arbitrary: false
 - :names: degree Celsius
   :symbol: "°C"
-  :primary_code: Cel
+  :code: Cel
   :scale:
     :function_code: cel
     :value: 1
@@ -244,7 +244,7 @@
   :arbitrary: false
 - :names: tesla
   :symbol: T
-  :primary_code: T
+  :code: T
   :scale:
     :value: 1
     :unit_code: Wb/m2
@@ -255,7 +255,7 @@
   :arbitrary: false
 - :names: henry
   :symbol: H
-  :primary_code: H
+  :code: H
   :scale:
     :value: 1
     :unit_code: Wb/A
@@ -266,7 +266,7 @@
   :arbitrary: false
 - :names: lumen
   :symbol: lm
-  :primary_code: lm
+  :code: lm
   :scale:
     :value: 1
     :unit_code: cd.sr
@@ -277,7 +277,7 @@
   :arbitrary: false
 - :names: lux
   :symbol: lx
-  :primary_code: lx
+  :code: lx
   :scale:
     :value: 1
     :unit_code: lm/m2
@@ -288,7 +288,7 @@
   :arbitrary: false
 - :names: becquerel
   :symbol: Bq
-  :primary_code: Bq
+  :code: Bq
   :scale:
     :value: 1
     :unit_code: s-1
@@ -299,7 +299,7 @@
   :arbitrary: false
 - :names: gray
   :symbol: Gy
-  :primary_code: Gy
+  :code: Gy
   :scale:
     :value: 1
     :unit_code: J/kg
@@ -310,7 +310,7 @@
   :arbitrary: false
 - :names: sievert
   :symbol: Sv
-  :primary_code: Sv
+  :code: Sv
   :scale:
     :value: 1
     :unit_code: J/kg
@@ -323,7 +323,7 @@
   - gon
   - grade
   :symbol: "□<sup>g</sup>"
-  :primary_code: gon
+  :code: gon
   :scale:
     :value: !ruby/object:BigDecimal 18:0.9e0
     :unit_code: deg
@@ -334,7 +334,7 @@
   :arbitrary: false
 - :names: degree
   :symbol: "°"
-  :primary_code: deg
+  :code: deg
   :scale:
     :value: 2
     :unit_code: "[pi].rad/360"
@@ -345,7 +345,7 @@
   :arbitrary: false
 - :names: minute
   :symbol: "'"
-  :primary_code: "'"
+  :code: "'"
   :scale:
     :value: 1
     :unit_code: deg/60
@@ -356,7 +356,7 @@
   :arbitrary: false
 - :names: second
   :symbol: "''"
-  :primary_code: "''"
+  :code: "''"
   :scale:
     :value: 1
     :unit_code: "'/60"
@@ -367,7 +367,7 @@
   :arbitrary: false
 - :names: liter
   :symbol: l
-  :primary_code: l
+  :code: l
   :scale:
     :value: 1
     :unit_code: dm3
@@ -378,7 +378,7 @@
   :arbitrary: false
 - :names: liter
   :symbol: L
-  :primary_code: L
+  :code: L
   :scale:
     :value: 1
     :unit_code: l
@@ -389,7 +389,7 @@
   :arbitrary: false
 - :names: are
   :symbol: a
-  :primary_code: ar
+  :code: ar
   :scale:
     :value: 100
     :unit_code: m2
@@ -400,7 +400,7 @@
   :arbitrary: false
 - :names: minute
   :symbol: min
-  :primary_code: min
+  :code: min
   :scale:
     :value: 60
     :unit_code: s
@@ -411,7 +411,7 @@
   :arbitrary: false
 - :names: hour
   :symbol: h
-  :primary_code: h
+  :code: h
   :scale:
     :value: 60
     :unit_code: min
@@ -422,7 +422,7 @@
   :arbitrary: false
 - :names: day
   :symbol: d
-  :primary_code: d
+  :code: d
   :scale:
     :value: 24
     :unit_code: h
@@ -433,7 +433,7 @@
   :arbitrary: false
 - :names: tropical year
   :symbol: a<sub>t</sub>
-  :primary_code: a_t
+  :code: a_t
   :scale:
     :value: !ruby/object:BigDecimal 18:0.36524219e3
     :unit_code: d
@@ -444,7 +444,7 @@
   :arbitrary: false
 - :names: mean Julian year
   :symbol: a<sub>j</sub>
-  :primary_code: a_j
+  :code: a_j
   :scale:
     :value: !ruby/object:BigDecimal 18:0.36525e3
     :unit_code: d
@@ -455,7 +455,7 @@
   :arbitrary: false
 - :names: mean Gregorian year
   :symbol: a<sub>g</sub>
-  :primary_code: a_g
+  :code: a_g
   :scale:
     :value: !ruby/object:BigDecimal 18:0.3652425e3
     :unit_code: d
@@ -466,7 +466,7 @@
   :arbitrary: false
 - :names: year
   :symbol: a
-  :primary_code: a
+  :code: a
   :scale:
     :value: 1
     :unit_code: a_j
@@ -477,7 +477,7 @@
   :arbitrary: false
 - :names: week
   :symbol: wk
-  :primary_code: wk
+  :code: wk
   :scale:
     :value: 7
     :unit_code: d
@@ -488,7 +488,7 @@
   :arbitrary: false
 - :names: synodal month
   :symbol: mo<sub>s</sub>
-  :primary_code: mo_s
+  :code: mo_s
   :scale:
     :value: !ruby/object:BigDecimal 18:0.2953059e2
     :unit_code: d
@@ -499,7 +499,7 @@
   :arbitrary: false
 - :names: mean Julian month
   :symbol: mo<sub>j</sub>
-  :primary_code: mo_j
+  :code: mo_j
   :scale:
     :value: 1
     :unit_code: a_j/12
@@ -510,7 +510,7 @@
   :arbitrary: false
 - :names: mean Gregorian month
   :symbol: mo<sub>g</sub>
-  :primary_code: mo_g
+  :code: mo_g
   :scale:
     :value: 1
     :unit_code: a_g/12
@@ -521,7 +521,7 @@
   :arbitrary: false
 - :names: month
   :symbol: mo
-  :primary_code: mo
+  :code: mo
   :scale:
     :value: 1
     :unit_code: mo_j
@@ -532,7 +532,7 @@
   :arbitrary: false
 - :names: tonne
   :symbol: t
-  :primary_code: t
+  :code: t
   :scale:
     :value: 1000
     :unit_code: kg
@@ -543,7 +543,7 @@
   :arbitrary: false
 - :names: bar
   :symbol: bar
-  :primary_code: bar
+  :code: bar
   :scale:
     :value: 100000
     :unit_code: Pa
@@ -554,7 +554,7 @@
   :arbitrary: false
 - :names: unified atomic mass unit
   :symbol: u
-  :primary_code: u
+  :code: u
   :scale:
     :value: !ruby/object:BigDecimal 18:0.16605402e-23
     :unit_code: g
@@ -565,7 +565,7 @@
   :arbitrary: false
 - :names: electronvolt
   :symbol: eV
-  :primary_code: eV
+  :code: eV
   :scale:
     :value: 1
     :unit_code: "[e].V"
@@ -576,7 +576,7 @@
   :arbitrary: false
 - :names: astronomic unit
   :symbol: AU
-  :primary_code: AU
+  :code: AU
   :scale:
     :value: !ruby/object:BigDecimal 27:0.149597870691e6
     :unit_code: Mm
@@ -587,7 +587,7 @@
   :arbitrary: false
 - :names: parsec
   :symbol: pc
-  :primary_code: pc
+  :code: pc
   :scale:
     :value: 30856780000000000
     :unit_code: m
@@ -598,7 +598,7 @@
   :arbitrary: false
 - :names: velocity of light
   :symbol: "<i>c</i>"
-  :primary_code: "[c]"
+  :code: "[c]"
   :scale:
     :value: 299792458
     :unit_code: m/s
@@ -609,7 +609,7 @@
   :arbitrary: false
 - :names: Planck constant
   :symbol: "<i>h</i>"
-  :primary_code: "[h]"
+  :code: "[h]"
   :scale:
     :value: !ruby/object:BigDecimal 18:0.66260755e-33
     :unit_code: J.s
@@ -620,7 +620,7 @@
   :arbitrary: false
 - :names: Boltzmann constant
   :symbol: "<i>k</i>"
-  :primary_code: "[k]"
+  :code: "[k]"
   :scale:
     :value: !ruby/object:BigDecimal 18:0.1380658e-22
     :unit_code: J/K
@@ -631,7 +631,7 @@
   :arbitrary: false
 - :names: permittivity of vacuum
   :symbol: "<i>ε<sub><r>0</r></sub></i>"
-  :primary_code: "[eps_0]"
+  :code: "[eps_0]"
   :scale:
     :value: !ruby/object:BigDecimal 27:0.8854187817e-11
     :unit_code: F/m
@@ -642,7 +642,7 @@
   :arbitrary: false
 - :names: permeability of vacuum
   :symbol: "<i>μ<sub><r>0</r></sub></i>"
-  :primary_code: "[mu_0]"
+  :code: "[mu_0]"
   :scale:
     :value: 1
     :unit_code: 4.[pi].10*-7.N/A2
@@ -653,7 +653,7 @@
   :arbitrary: false
 - :names: elementary charge
   :symbol: "<i>e</i>"
-  :primary_code: "[e]"
+  :code: "[e]"
   :scale:
     :value: !ruby/object:BigDecimal 18:0.160217733e-18
     :unit_code: C
@@ -664,7 +664,7 @@
   :arbitrary: false
 - :names: electron mass
   :symbol: "<i>m<sub><r>e</r></sub></i>"
-  :primary_code: "[m_e]"
+  :code: "[m_e]"
   :scale:
     :value: !ruby/object:BigDecimal 18:0.91093897e-27
     :unit_code: g
@@ -675,7 +675,7 @@
   :arbitrary: false
 - :names: proton mass
   :symbol: "<i>m<sub><r>p</r></sub></i>"
-  :primary_code: "[m_p]"
+  :code: "[m_p]"
   :scale:
     :value: !ruby/object:BigDecimal 18:0.16726231e-23
     :unit_code: g
@@ -686,7 +686,7 @@
   :arbitrary: false
 - :names: Newtonian constant of gravitation
   :symbol: "<i>G</i>"
-  :primary_code: "[G]"
+  :code: "[G]"
   :scale:
     :value: !ruby/object:BigDecimal 18:0.667259e-10
     :unit_code: m3.kg-1.s-2
@@ -697,7 +697,7 @@
   :arbitrary: false
 - :names: standard acceleration of free fall
   :symbol: "<i>g<sub>n</sub></i>"
-  :primary_code: "[g]"
+  :code: "[g]"
   :scale:
     :value: !ruby/object:BigDecimal 18:0.980665e1
     :unit_code: m/s2
@@ -708,7 +708,7 @@
   :arbitrary: false
 - :names: standard atmosphere
   :symbol: atm
-  :primary_code: atm
+  :code: atm
   :scale:
     :value: 101325
     :unit_code: Pa
@@ -719,7 +719,7 @@
   :arbitrary: false
 - :names: light-year
   :symbol: l.y.
-  :primary_code: "[ly]"
+  :code: "[ly]"
   :scale:
     :value: 1
     :unit_code: "[c].a_j"
@@ -730,7 +730,7 @@
   :arbitrary: false
 - :names: gram-force
   :symbol: gf
-  :primary_code: gf
+  :code: gf
   :scale:
     :value: 1
     :unit_code: g.[g]
@@ -741,7 +741,7 @@
   :arbitrary: false
 - :names: pound force
   :symbol: lbf
-  :primary_code: "[lbf_av]"
+  :code: "[lbf_av]"
   :scale:
     :value: 1
     :unit_code: "[lb_av].[g]"
@@ -752,7 +752,7 @@
   :arbitrary: false
 - :names: Kayser
   :symbol: K
-  :primary_code: Ky
+  :code: Ky
   :scale:
     :value: 1
     :unit_code: cm-1
@@ -763,7 +763,7 @@
   :arbitrary: false
 - :names: Gal
   :symbol: Gal
-  :primary_code: Gal
+  :code: Gal
   :scale:
     :value: 1
     :unit_code: cm/s2
@@ -774,7 +774,7 @@
   :arbitrary: false
 - :names: dyne
   :symbol: dyn
-  :primary_code: dyn
+  :code: dyn
   :scale:
     :value: 1
     :unit_code: g.cm/s2
@@ -785,7 +785,7 @@
   :arbitrary: false
 - :names: erg
   :symbol: erg
-  :primary_code: erg
+  :code: erg
   :scale:
     :value: 1
     :unit_code: dyn.cm
@@ -796,7 +796,7 @@
   :arbitrary: false
 - :names: Poise
   :symbol: P
-  :primary_code: P
+  :code: P
   :scale:
     :value: 1
     :unit_code: dyn.s/cm2
@@ -807,7 +807,7 @@
   :arbitrary: false
 - :names: Biot
   :symbol: Bi
-  :primary_code: Bi
+  :code: Bi
   :scale:
     :value: 10
     :unit_code: A
@@ -818,7 +818,7 @@
   :arbitrary: false
 - :names: Stokes
   :symbol: St
-  :primary_code: St
+  :code: St
   :scale:
     :value: 1
     :unit_code: cm2/s
@@ -829,7 +829,7 @@
   :arbitrary: false
 - :names: Maxwell
   :symbol: Mx
-  :primary_code: Mx
+  :code: Mx
   :scale:
     :value: !ruby/object:BigDecimal 18:0.1e-7
     :unit_code: Wb
@@ -840,7 +840,7 @@
   :arbitrary: false
 - :names: Gauss
   :symbol: Gs
-  :primary_code: G
+  :code: G
   :scale:
     :value: !ruby/object:BigDecimal 18:0.1e-3
     :unit_code: T
@@ -851,7 +851,7 @@
   :arbitrary: false
 - :names: Oersted
   :symbol: Oe
-  :primary_code: Oe
+  :code: Oe
   :scale:
     :value: 250
     :unit_code: "/[pi].A/m"
@@ -862,7 +862,7 @@
   :arbitrary: false
 - :names: Gilbert
   :symbol: Gb
-  :primary_code: Gb
+  :code: Gb
   :scale:
     :value: 1
     :unit_code: Oe.cm
@@ -873,7 +873,7 @@
   :arbitrary: false
 - :names: stilb
   :symbol: sb
-  :primary_code: sb
+  :code: sb
   :scale:
     :value: 1
     :unit_code: cd/cm2
@@ -884,7 +884,7 @@
   :arbitrary: false
 - :names: Lambert
   :symbol: L
-  :primary_code: Lmb
+  :code: Lmb
   :scale:
     :value: 1
     :unit_code: cd/cm2/[pi]
@@ -895,7 +895,7 @@
   :arbitrary: false
 - :names: phot
   :symbol: ph
-  :primary_code: ph
+  :code: ph
   :scale:
     :value: !ruby/object:BigDecimal 18:0.1e-3
     :unit_code: lx
@@ -906,7 +906,7 @@
   :arbitrary: false
 - :names: Curie
   :symbol: Ci
-  :primary_code: Ci
+  :code: Ci
   :scale:
     :value: 37000000000
     :unit_code: Bq
@@ -917,7 +917,7 @@
   :arbitrary: false
 - :names: Roentgen
   :symbol: R
-  :primary_code: R
+  :code: R
   :scale:
     :value: !ruby/object:BigDecimal 18:0.258e-3
     :unit_code: C/kg
@@ -928,7 +928,7 @@
   :arbitrary: false
 - :names: radiation absorbed dose
   :symbol: RAD
-  :primary_code: RAD
+  :code: RAD
   :scale:
     :value: 100
     :unit_code: erg/g
@@ -939,7 +939,7 @@
   :arbitrary: false
 - :names: radiation equivalent man
   :symbol: REM
-  :primary_code: REM
+  :code: REM
   :scale:
     :value: 1
     :unit_code: RAD
@@ -950,7 +950,7 @@
   :arbitrary: false
 - :names: inch
   :symbol: in
-  :primary_code: "[in_i]"
+  :code: "[in_i]"
   :scale:
     :value: !ruby/object:BigDecimal 18:0.254e1
     :unit_code: cm
@@ -961,7 +961,7 @@
   :arbitrary: false
 - :names: foot
   :symbol: ft
-  :primary_code: "[ft_i]"
+  :code: "[ft_i]"
   :scale:
     :value: 12
     :unit_code: "[in_i]"
@@ -972,7 +972,7 @@
   :arbitrary: false
 - :names: yard
   :symbol: yd
-  :primary_code: "[yd_i]"
+  :code: "[yd_i]"
   :scale:
     :value: 3
     :unit_code: "[ft_i]"
@@ -983,7 +983,7 @@
   :arbitrary: false
 - :names: mile
   :symbol: mi
-  :primary_code: "[mi_i]"
+  :code: "[mi_i]"
   :scale:
     :value: 5280
     :unit_code: "[ft_i]"
@@ -994,7 +994,7 @@
   :arbitrary: false
 - :names: fathom
   :symbol: fth
-  :primary_code: "[fth_i]"
+  :code: "[fth_i]"
   :scale:
     :value: 6
     :unit_code: "[ft_i]"
@@ -1005,7 +1005,7 @@
   :arbitrary: false
 - :names: nautical mile
   :symbol: n.mi
-  :primary_code: "[nmi_i]"
+  :code: "[nmi_i]"
   :scale:
     :value: 1852
     :unit_code: m
@@ -1016,7 +1016,7 @@
   :arbitrary: false
 - :names: knot
   :symbol: knot
-  :primary_code: "[kn_i]"
+  :code: "[kn_i]"
   :scale:
     :value: 1
     :unit_code: "[nmi_i]/h"
@@ -1026,7 +1026,7 @@
   :special: false
   :arbitrary: false
 - :names: square inch
-  :primary_code: "[sin_i]"
+  :code: "[sin_i]"
   :scale:
     :value: 1
     :unit_code: "[in_i]2"
@@ -1036,7 +1036,7 @@
   :special: false
   :arbitrary: false
 - :names: square foot
-  :primary_code: "[sft_i]"
+  :code: "[sft_i]"
   :scale:
     :value: 1
     :unit_code: "[ft_i]2"
@@ -1046,7 +1046,7 @@
   :special: false
   :arbitrary: false
 - :names: square yard
-  :primary_code: "[syd_i]"
+  :code: "[syd_i]"
   :scale:
     :value: 1
     :unit_code: "[yd_i]2"
@@ -1056,7 +1056,7 @@
   :special: false
   :arbitrary: false
 - :names: cubic inch
-  :primary_code: "[cin_i]"
+  :code: "[cin_i]"
   :scale:
     :value: 1
     :unit_code: "[in_i]3"
@@ -1066,7 +1066,7 @@
   :special: false
   :arbitrary: false
 - :names: cubic foot
-  :primary_code: "[cft_i]"
+  :code: "[cft_i]"
   :scale:
     :value: 1
     :unit_code: "[ft_i]3"
@@ -1077,7 +1077,7 @@
   :arbitrary: false
 - :names: cubic yard
   :symbol: cu.yd
-  :primary_code: "[cyd_i]"
+  :code: "[cyd_i]"
   :scale:
     :value: 1
     :unit_code: "[yd_i]3"
@@ -1087,7 +1087,7 @@
   :special: false
   :arbitrary: false
 - :names: board foot
-  :primary_code: "[bf_i]"
+  :code: "[bf_i]"
   :scale:
     :value: 144
     :unit_code: "[in_i]3"
@@ -1097,7 +1097,7 @@
   :special: false
   :arbitrary: false
 - :names: cord
-  :primary_code: "[cr_i]"
+  :code: "[cr_i]"
   :scale:
     :value: 128
     :unit_code: "[ft_i]3"
@@ -1108,7 +1108,7 @@
   :arbitrary: false
 - :names: mil
   :symbol: mil
-  :primary_code: "[mil_i]"
+  :code: "[mil_i]"
   :scale:
     :value: !ruby/object:BigDecimal 18:0.1e-2
     :unit_code: "[in_i]"
@@ -1119,7 +1119,7 @@
   :arbitrary: false
 - :names: circular mil
   :symbol: circ.mil
-  :primary_code: "[cml_i]"
+  :code: "[cml_i]"
   :scale:
     :value: 1
     :unit_code: "[pi]/4.[mil_i]2"
@@ -1130,7 +1130,7 @@
   :arbitrary: false
 - :names: hand
   :symbol: hd
-  :primary_code: "[hd_i]"
+  :code: "[hd_i]"
   :scale:
     :value: 4
     :unit_code: "[in_i]"
@@ -1141,7 +1141,7 @@
   :arbitrary: false
 - :names: foot
   :symbol: ft<sub>us</sub>
-  :primary_code: "[ft_us]"
+  :code: "[ft_us]"
   :scale:
     :value: 1200
     :unit_code: m/3937
@@ -1151,7 +1151,7 @@
   :special: false
   :arbitrary: false
 - :names: yard
-  :primary_code: "[yd_us]"
+  :code: "[yd_us]"
   :scale:
     :value: 3
     :unit_code: "[ft_us]"
@@ -1161,7 +1161,7 @@
   :special: false
   :arbitrary: false
 - :names: inch
-  :primary_code: "[in_us]"
+  :code: "[in_us]"
   :scale:
     :value: 1
     :unit_code: "[ft_us]/12"
@@ -1171,7 +1171,7 @@
   :special: false
   :arbitrary: false
 - :names: rod
-  :primary_code: "[rd_us]"
+  :code: "[rd_us]"
   :scale:
     :value: !ruby/object:BigDecimal 18:0.165e2
     :unit_code: "[ft_us]"
@@ -1183,7 +1183,7 @@
 - :names:
   - Gunter's chain
   - Surveyor's chain
-  :primary_code: "[ch_us]"
+  :code: "[ch_us]"
   :scale:
     :value: 4
     :unit_code: "[rd_us]"
@@ -1193,7 +1193,7 @@
   :special: false
   :arbitrary: false
 - :names: link for Gunter's chain
-  :primary_code: "[lk_us]"
+  :code: "[lk_us]"
   :scale:
     :value: 1
     :unit_code: "[ch_us]/100"
@@ -1205,7 +1205,7 @@
 - :names:
   - Ramden's chain
   - Engineer's chain
-  :primary_code: "[rch_us]"
+  :code: "[rch_us]"
   :scale:
     :value: 100
     :unit_code: "[ft_us]"
@@ -1215,7 +1215,7 @@
   :special: false
   :arbitrary: false
 - :names: link for Ramden's chain
-  :primary_code: "[rlk_us]"
+  :code: "[rlk_us]"
   :scale:
     :value: 1
     :unit_code: "[rch_us]/100"
@@ -1225,7 +1225,7 @@
   :special: false
   :arbitrary: false
 - :names: fathom
-  :primary_code: "[fth_us]"
+  :code: "[fth_us]"
   :scale:
     :value: 6
     :unit_code: "[ft_us]"
@@ -1235,7 +1235,7 @@
   :special: false
   :arbitrary: false
 - :names: furlong
-  :primary_code: "[fur_us]"
+  :code: "[fur_us]"
   :scale:
     :value: 40
     :unit_code: "[rd_us]"
@@ -1245,7 +1245,7 @@
   :special: false
   :arbitrary: false
 - :names: mile
-  :primary_code: "[mi_us]"
+  :code: "[mi_us]"
   :scale:
     :value: 8
     :unit_code: "[fur_us]"
@@ -1255,7 +1255,7 @@
   :special: false
   :arbitrary: false
 - :names: acre
-  :primary_code: "[acr_us]"
+  :code: "[acr_us]"
   :scale:
     :value: 160
     :unit_code: "[rd_us]2"
@@ -1265,7 +1265,7 @@
   :special: false
   :arbitrary: false
 - :names: square rod
-  :primary_code: "[srd_us]"
+  :code: "[srd_us]"
   :scale:
     :value: 1
     :unit_code: "[rd_us]2"
@@ -1275,7 +1275,7 @@
   :special: false
   :arbitrary: false
 - :names: square mile
-  :primary_code: "[smi_us]"
+  :code: "[smi_us]"
   :scale:
     :value: 1
     :unit_code: "[mi_us]2"
@@ -1285,7 +1285,7 @@
   :special: false
   :arbitrary: false
 - :names: section
-  :primary_code: "[sct]"
+  :code: "[sct]"
   :scale:
     :value: 1
     :unit_code: "[mi_us]2"
@@ -1295,7 +1295,7 @@
   :special: false
   :arbitrary: false
 - :names: township
-  :primary_code: "[twp]"
+  :code: "[twp]"
   :scale:
     :value: 36
     :unit_code: "[sct]"
@@ -1305,7 +1305,7 @@
   :special: false
   :arbitrary: false
 - :names: mil
-  :primary_code: "[mil_us]"
+  :code: "[mil_us]"
   :scale:
     :value: !ruby/object:BigDecimal 18:0.1e-2
     :unit_code: "[in_us]"
@@ -1315,7 +1315,7 @@
   :special: false
   :arbitrary: false
 - :names: inch
-  :primary_code: "[in_br]"
+  :code: "[in_br]"
   :scale:
     :value: !ruby/object:BigDecimal 18:0.2539998e1
     :unit_code: cm
@@ -1325,7 +1325,7 @@
   :special: false
   :arbitrary: false
 - :names: foot
-  :primary_code: "[ft_br]"
+  :code: "[ft_br]"
   :scale:
     :value: 12
     :unit_code: "[in_br]"
@@ -1335,7 +1335,7 @@
   :special: false
   :arbitrary: false
 - :names: rod
-  :primary_code: "[rd_br]"
+  :code: "[rd_br]"
   :scale:
     :value: !ruby/object:BigDecimal 18:0.165e2
     :unit_code: "[ft_br]"
@@ -1345,7 +1345,7 @@
   :special: false
   :arbitrary: false
 - :names: Gunter's chain
-  :primary_code: "[ch_br]"
+  :code: "[ch_br]"
   :scale:
     :value: 4
     :unit_code: "[rd_br]"
@@ -1355,7 +1355,7 @@
   :special: false
   :arbitrary: false
 - :names: link for Gunter's chain
-  :primary_code: "[lk_br]"
+  :code: "[lk_br]"
   :scale:
     :value: 1
     :unit_code: "[ch_br]/100"
@@ -1365,7 +1365,7 @@
   :special: false
   :arbitrary: false
 - :names: fathom
-  :primary_code: "[fth_br]"
+  :code: "[fth_br]"
   :scale:
     :value: 6
     :unit_code: "[ft_br]"
@@ -1375,7 +1375,7 @@
   :special: false
   :arbitrary: false
 - :names: pace
-  :primary_code: "[pc_br]"
+  :code: "[pc_br]"
   :scale:
     :value: !ruby/object:BigDecimal 18:0.25e1
     :unit_code: "[ft_br]"
@@ -1385,7 +1385,7 @@
   :special: false
   :arbitrary: false
 - :names: yard
-  :primary_code: "[yd_br]"
+  :code: "[yd_br]"
   :scale:
     :value: 3
     :unit_code: "[ft_br]"
@@ -1395,7 +1395,7 @@
   :special: false
   :arbitrary: false
 - :names: mile
-  :primary_code: "[mi_br]"
+  :code: "[mi_br]"
   :scale:
     :value: 5280
     :unit_code: "[ft_br]"
@@ -1405,7 +1405,7 @@
   :special: false
   :arbitrary: false
 - :names: nautical mile
-  :primary_code: "[nmi_br]"
+  :code: "[nmi_br]"
   :scale:
     :value: 6080
     :unit_code: "[ft_br]"
@@ -1415,7 +1415,7 @@
   :special: false
   :arbitrary: false
 - :names: knot
-  :primary_code: "[kn_br]"
+  :code: "[kn_br]"
   :scale:
     :value: 1
     :unit_code: "[nmi_br]/h"
@@ -1425,7 +1425,7 @@
   :special: false
   :arbitrary: false
 - :names: acre
-  :primary_code: "[acr_br]"
+  :code: "[acr_br]"
   :scale:
     :value: 4840
     :unit_code: "[yd_br]2"
@@ -1435,7 +1435,7 @@
   :special: false
   :arbitrary: false
 - :names: Queen Anne's wine gallon
-  :primary_code: "[gal_us]"
+  :code: "[gal_us]"
   :scale:
     :value: 231
     :unit_code: "[in_i]3"
@@ -1445,7 +1445,7 @@
   :special: false
   :arbitrary: false
 - :names: barrel
-  :primary_code: "[bbl_us]"
+  :code: "[bbl_us]"
   :scale:
     :value: 42
     :unit_code: "[gal_us]"
@@ -1455,7 +1455,7 @@
   :special: false
   :arbitrary: false
 - :names: quart
-  :primary_code: "[qt_us]"
+  :code: "[qt_us]"
   :scale:
     :value: 1
     :unit_code: "[gal_us]/4"
@@ -1465,7 +1465,7 @@
   :special: false
   :arbitrary: false
 - :names: pint
-  :primary_code: "[pt_us]"
+  :code: "[pt_us]"
   :scale:
     :value: 1
     :unit_code: "[qt_us]/2"
@@ -1475,7 +1475,7 @@
   :special: false
   :arbitrary: false
 - :names: gill
-  :primary_code: "[gil_us]"
+  :code: "[gil_us]"
   :scale:
     :value: 1
     :unit_code: "[pt_us]/4"
@@ -1486,7 +1486,7 @@
   :arbitrary: false
 - :names: fluid ounce
   :symbol: oz fl
-  :primary_code: "[foz_us]"
+  :code: "[foz_us]"
   :scale:
     :value: 1
     :unit_code: "[gil_us]/4"
@@ -1496,7 +1496,7 @@
   :special: false
   :arbitrary: false
 - :names: fluid dram
-  :primary_code: "[fdr_us]"
+  :code: "[fdr_us]"
   :scale:
     :value: 1
     :unit_code: "[foz_us]/8"
@@ -1506,7 +1506,7 @@
   :special: false
   :arbitrary: false
 - :names: minim
-  :primary_code: "[min_us]"
+  :code: "[min_us]"
   :scale:
     :value: 1
     :unit_code: "[fdr_us]/60"
@@ -1516,7 +1516,7 @@
   :special: false
   :arbitrary: false
 - :names: cord
-  :primary_code: "[crd_us]"
+  :code: "[crd_us]"
   :scale:
     :value: 128
     :unit_code: "[ft_i]3"
@@ -1526,7 +1526,7 @@
   :special: false
   :arbitrary: false
 - :names: bushel
-  :primary_code: "[bu_us]"
+  :code: "[bu_us]"
   :scale:
     :value: !ruby/object:BigDecimal 18:0.215042e4
     :unit_code: "[in_i]3"
@@ -1536,7 +1536,7 @@
   :special: false
   :arbitrary: false
 - :names: historical winchester gallon
-  :primary_code: "[gal_wi]"
+  :code: "[gal_wi]"
   :scale:
     :value: 1
     :unit_code: "[bu_us]/8"
@@ -1546,7 +1546,7 @@
   :special: false
   :arbitrary: false
 - :names: peck
-  :primary_code: "[pk_us]"
+  :code: "[pk_us]"
   :scale:
     :value: 1
     :unit_code: "[bu_us]/4"
@@ -1556,7 +1556,7 @@
   :special: false
   :arbitrary: false
 - :names: dry quart
-  :primary_code: "[dqt_us]"
+  :code: "[dqt_us]"
   :scale:
     :value: 1
     :unit_code: "[pk_us]/8"
@@ -1566,7 +1566,7 @@
   :special: false
   :arbitrary: false
 - :names: dry pint
-  :primary_code: "[dpt_us]"
+  :code: "[dpt_us]"
   :scale:
     :value: 1
     :unit_code: "[dqt_us]/2"
@@ -1576,7 +1576,7 @@
   :special: false
   :arbitrary: false
 - :names: tablespoon
-  :primary_code: "[tbs_us]"
+  :code: "[tbs_us]"
   :scale:
     :value: 1
     :unit_code: "[foz_us]/2"
@@ -1586,7 +1586,7 @@
   :special: false
   :arbitrary: false
 - :names: teaspoon
-  :primary_code: "[tsp_us]"
+  :code: "[tsp_us]"
   :scale:
     :value: 1
     :unit_code: "[tbs_us]/3"
@@ -1596,7 +1596,7 @@
   :special: false
   :arbitrary: false
 - :names: cup
-  :primary_code: "[cup_us]"
+  :code: "[cup_us]"
   :scale:
     :value: 16
     :unit_code: "[tbs_us]"
@@ -1607,7 +1607,7 @@
   :arbitrary: false
 - :names: metric fluid ounce
   :symbol: oz fl
-  :primary_code: "[foz_m]"
+  :code: "[foz_m]"
   :scale:
     :value: 30
     :unit_code: mL
@@ -1617,7 +1617,7 @@
   :special: false
   :arbitrary: false
 - :names: metric cup
-  :primary_code: "[cup_m]"
+  :code: "[cup_m]"
   :scale:
     :value: 240
     :unit_code: mL
@@ -1627,7 +1627,7 @@
   :special: false
   :arbitrary: false
 - :names: metric teaspoon
-  :primary_code: "[tsp_m]"
+  :code: "[tsp_m]"
   :scale:
     :value: 5
     :unit_code: mL
@@ -1637,7 +1637,7 @@
   :special: false
   :arbitrary: false
 - :names: metric tablespoon
-  :primary_code: "[tbs_m]"
+  :code: "[tbs_m]"
   :scale:
     :value: 15
     :unit_code: mL
@@ -1647,7 +1647,7 @@
   :special: false
   :arbitrary: false
 - :names: gallon
-  :primary_code: "[gal_br]"
+  :code: "[gal_br]"
   :scale:
     :value: !ruby/object:BigDecimal 18:0.454609e1
     :unit_code: l
@@ -1657,7 +1657,7 @@
   :special: false
   :arbitrary: false
 - :names: peck
-  :primary_code: "[pk_br]"
+  :code: "[pk_br]"
   :scale:
     :value: 2
     :unit_code: "[gal_br]"
@@ -1667,7 +1667,7 @@
   :special: false
   :arbitrary: false
 - :names: bushel
-  :primary_code: "[bu_br]"
+  :code: "[bu_br]"
   :scale:
     :value: 4
     :unit_code: "[pk_br]"
@@ -1677,7 +1677,7 @@
   :special: false
   :arbitrary: false
 - :names: quart
-  :primary_code: "[qt_br]"
+  :code: "[qt_br]"
   :scale:
     :value: 1
     :unit_code: "[gal_br]/4"
@@ -1687,7 +1687,7 @@
   :special: false
   :arbitrary: false
 - :names: pint
-  :primary_code: "[pt_br]"
+  :code: "[pt_br]"
   :scale:
     :value: 1
     :unit_code: "[qt_br]/2"
@@ -1697,7 +1697,7 @@
   :special: false
   :arbitrary: false
 - :names: gill
-  :primary_code: "[gil_br]"
+  :code: "[gil_br]"
   :scale:
     :value: 1
     :unit_code: "[pt_br]/4"
@@ -1707,7 +1707,7 @@
   :special: false
   :arbitrary: false
 - :names: fluid ounce
-  :primary_code: "[foz_br]"
+  :code: "[foz_br]"
   :scale:
     :value: 1
     :unit_code: "[gil_br]/5"
@@ -1717,7 +1717,7 @@
   :special: false
   :arbitrary: false
 - :names: fluid dram
-  :primary_code: "[fdr_br]"
+  :code: "[fdr_br]"
   :scale:
     :value: 1
     :unit_code: "[foz_br]/8"
@@ -1727,7 +1727,7 @@
   :special: false
   :arbitrary: false
 - :names: minim
-  :primary_code: "[min_br]"
+  :code: "[min_br]"
   :scale:
     :value: 1
     :unit_code: "[fdr_br]/60"
@@ -1737,7 +1737,7 @@
   :special: false
   :arbitrary: false
 - :names: grain
-  :primary_code: "[gr]"
+  :code: "[gr]"
   :scale:
     :value: !ruby/object:BigDecimal 18:0.6479891e2
     :unit_code: mg
@@ -1748,7 +1748,7 @@
   :arbitrary: false
 - :names: pound
   :symbol: lb
-  :primary_code: "[lb_av]"
+  :code: "[lb_av]"
   :scale:
     :value: 7000
     :unit_code: "[gr]"
@@ -1759,7 +1759,7 @@
   :arbitrary: false
 - :names: ounce
   :symbol: oz
-  :primary_code: "[oz_av]"
+  :code: "[oz_av]"
   :scale:
     :value: 1
     :unit_code: "[lb_av]/16"
@@ -1769,7 +1769,7 @@
   :special: false
   :arbitrary: false
 - :names: dram
-  :primary_code: "[dr_av]"
+  :code: "[dr_av]"
   :scale:
     :value: 1
     :unit_code: "[oz_av]/16"
@@ -1781,7 +1781,7 @@
 - :names:
   - short hundredweight
   - U.S. hundredweight
-  :primary_code: "[scwt_av]"
+  :code: "[scwt_av]"
   :scale:
     :value: 100
     :unit_code: "[lb_av]"
@@ -1793,7 +1793,7 @@
 - :names:
   - long hunderdweight
   - British hundredweight
-  :primary_code: "[lcwt_av]"
+  :code: "[lcwt_av]"
   :scale:
     :value: 112
     :unit_code: "[lb_av]"
@@ -1805,7 +1805,7 @@
 - :names:
   - short ton
   - U.S. ton
-  :primary_code: "[ston_av]"
+  :code: "[ston_av]"
   :scale:
     :value: 20
     :unit_code: "[scwt_av]"
@@ -1817,7 +1817,7 @@
 - :names:
   - long ton
   - British ton
-  :primary_code: "[lton_av]"
+  :code: "[lton_av]"
   :scale:
     :value: 20
     :unit_code: "[lcwt_av]"
@@ -1829,7 +1829,7 @@
 - :names:
   - stone
   - British stone
-  :primary_code: "[stone_av]"
+  :code: "[stone_av]"
   :scale:
     :value: 14
     :unit_code: "[lb_av]"
@@ -1839,7 +1839,7 @@
   :special: false
   :arbitrary: false
 - :names: pennyweight
-  :primary_code: "[pwt_tr]"
+  :code: "[pwt_tr]"
   :scale:
     :value: 24
     :unit_code: "[gr]"
@@ -1849,7 +1849,7 @@
   :special: false
   :arbitrary: false
 - :names: ounce
-  :primary_code: "[oz_tr]"
+  :code: "[oz_tr]"
   :scale:
     :value: 20
     :unit_code: "[pwt_tr]"
@@ -1859,7 +1859,7 @@
   :special: false
   :arbitrary: false
 - :names: pound
-  :primary_code: "[lb_tr]"
+  :code: "[lb_tr]"
   :scale:
     :value: 12
     :unit_code: "[oz_tr]"
@@ -1869,7 +1869,7 @@
   :special: false
   :arbitrary: false
 - :names: scruple
-  :primary_code: "[sc_ap]"
+  :code: "[sc_ap]"
   :scale:
     :value: 20
     :unit_code: "[gr]"
@@ -1881,7 +1881,7 @@
 - :names:
   - dram
   - drachm
-  :primary_code: "[dr_ap]"
+  :code: "[dr_ap]"
   :scale:
     :value: 3
     :unit_code: "[sc_ap]"
@@ -1891,7 +1891,7 @@
   :special: false
   :arbitrary: false
 - :names: ounce
-  :primary_code: "[oz_ap]"
+  :code: "[oz_ap]"
   :scale:
     :value: 8
     :unit_code: "[dr_ap]"
@@ -1901,7 +1901,7 @@
   :special: false
   :arbitrary: false
 - :names: pound
-  :primary_code: "[lb_ap]"
+  :code: "[lb_ap]"
   :scale:
     :value: 12
     :unit_code: "[oz_ap]"
@@ -1911,7 +1911,7 @@
   :special: false
   :arbitrary: false
 - :names: metric ounce
-  :primary_code: "[oz_m]"
+  :code: "[oz_m]"
   :scale:
     :value: 28
     :unit_code: g
@@ -1921,7 +1921,7 @@
   :special: false
   :arbitrary: false
 - :names: line
-  :primary_code: "[lne]"
+  :code: "[lne]"
   :scale:
     :value: 1
     :unit_code: "[in_i]/12"
@@ -1931,7 +1931,7 @@
   :special: false
   :arbitrary: false
 - :names: point
-  :primary_code: "[pnt]"
+  :code: "[pnt]"
   :scale:
     :value: 1
     :unit_code: "[lne]/6"
@@ -1941,7 +1941,7 @@
   :special: false
   :arbitrary: false
 - :names: pica
-  :primary_code: "[pca]"
+  :code: "[pca]"
   :scale:
     :value: 12
     :unit_code: "[pnt]"
@@ -1951,7 +1951,7 @@
   :special: false
   :arbitrary: false
 - :names: Printer's point
-  :primary_code: "[pnt_pr]"
+  :code: "[pnt_pr]"
   :scale:
     :value: !ruby/object:BigDecimal 18:0.13837e-1
     :unit_code: "[in_i]"
@@ -1961,7 +1961,7 @@
   :special: false
   :arbitrary: false
 - :names: Printer's pica
-  :primary_code: "[pca_pr]"
+  :code: "[pca_pr]"
   :scale:
     :value: 12
     :unit_code: "[pnt_pr]"
@@ -1973,7 +1973,7 @@
 - :names:
   - pied
   - French foot
-  :primary_code: "[pied]"
+  :code: "[pied]"
   :scale:
     :value: !ruby/object:BigDecimal 18:0.3248e2
     :unit_code: cm
@@ -1985,7 +1985,7 @@
 - :names:
   - pouce
   - French inch
-  :primary_code: "[pouce]"
+  :code: "[pouce]"
   :scale:
     :value: 1
     :unit_code: "[pied]/12"
@@ -1997,7 +1997,7 @@
 - :names:
   - ligne
   - French line
-  :primary_code: "[ligne]"
+  :code: "[ligne]"
   :scale:
     :value: 1
     :unit_code: "[pouce]/12"
@@ -2009,7 +2009,7 @@
 - :names:
   - didot
   - Didot's point
-  :primary_code: "[didot]"
+  :code: "[didot]"
   :scale:
     :value: 1
     :unit_code: "[ligne]/6"
@@ -2021,7 +2021,7 @@
 - :names:
   - cicero
   - Didot's pica
-  :primary_code: "[cicero]"
+  :code: "[cicero]"
   :scale:
     :value: 12
     :unit_code: "[didot]"
@@ -2032,7 +2032,7 @@
   :arbitrary: false
 - :names: degree Fahrenheit
   :symbol: "°F"
-  :primary_code: "[degF]"
+  :code: "[degF]"
   :scale:
     :function_code: degf
     :value: 5
@@ -2044,7 +2044,7 @@
   :arbitrary: false
 - :names: degree Rankine
   :symbol: "°R"
-  :primary_code: "[degR]"
+  :code: "[degR]"
   :scale:
     :value: 5
     :unit_code: K/9
@@ -2055,7 +2055,7 @@
   :arbitrary: false
 - :names: degree Réaumur
   :symbol: "°Ré"
-  :primary_code: "[degRe]"
+  :code: "[degRe]"
   :scale:
     :function_code: degre
     :value: 5
@@ -2067,7 +2067,7 @@
   :arbitrary: false
 - :names: calorie at 15 °C
   :symbol: cal<sub>15°C</sub>
-  :primary_code: cal_[15]
+  :code: cal_[15]
   :scale:
     :value: !ruby/object:BigDecimal 18:0.41858e1
     :unit_code: J
@@ -2078,7 +2078,7 @@
   :arbitrary: false
 - :names: calorie at 20 °C
   :symbol: cal<sub>20°C</sub>
-  :primary_code: cal_[20]
+  :code: cal_[20]
   :scale:
     :value: !ruby/object:BigDecimal 18:0.41819e1
     :unit_code: J
@@ -2089,7 +2089,7 @@
   :arbitrary: false
 - :names: mean calorie
   :symbol: cal<sub>m</sub>
-  :primary_code: cal_m
+  :code: cal_m
   :scale:
     :value: !ruby/object:BigDecimal 18:0.419002e1
     :unit_code: J
@@ -2100,7 +2100,7 @@
   :arbitrary: false
 - :names: international table calorie
   :symbol: cal<sub>IT</sub>
-  :primary_code: cal_IT
+  :code: cal_IT
   :scale:
     :value: !ruby/object:BigDecimal 18:0.41868e1
     :unit_code: J
@@ -2111,7 +2111,7 @@
   :arbitrary: false
 - :names: thermochemical calorie
   :symbol: cal<sub>th</sub>
-  :primary_code: cal_th
+  :code: cal_th
   :scale:
     :value: !ruby/object:BigDecimal 18:0.4184e1
     :unit_code: J
@@ -2122,7 +2122,7 @@
   :arbitrary: false
 - :names: calorie
   :symbol: cal
-  :primary_code: cal
+  :code: cal
   :scale:
     :value: 1
     :unit_code: cal_th
@@ -2133,7 +2133,7 @@
   :arbitrary: false
 - :names: nutrition label Calories
   :symbol: Cal
-  :primary_code: "[Cal]"
+  :code: "[Cal]"
   :scale:
     :value: 1
     :unit_code: kcal_th
@@ -2144,7 +2144,7 @@
   :arbitrary: false
 - :names: British thermal unit at 39 °F
   :symbol: Btu<sub>39°F</sub>
-  :primary_code: "[Btu_39]"
+  :code: "[Btu_39]"
   :scale:
     :value: !ruby/object:BigDecimal 18:0.105967e1
     :unit_code: kJ
@@ -2155,7 +2155,7 @@
   :arbitrary: false
 - :names: British thermal unit at 59 °F
   :symbol: Btu<sub>59°F</sub>
-  :primary_code: "[Btu_59]"
+  :code: "[Btu_59]"
   :scale:
     :value: !ruby/object:BigDecimal 18:0.10548e1
     :unit_code: kJ
@@ -2166,7 +2166,7 @@
   :arbitrary: false
 - :names: British thermal unit at 60 °F
   :symbol: Btu<sub>60°F</sub>
-  :primary_code: "[Btu_60]"
+  :code: "[Btu_60]"
   :scale:
     :value: !ruby/object:BigDecimal 18:0.105468e1
     :unit_code: kJ
@@ -2177,7 +2177,7 @@
   :arbitrary: false
 - :names: mean British thermal unit
   :symbol: Btu<sub>m</sub>
-  :primary_code: "[Btu_m]"
+  :code: "[Btu_m]"
   :scale:
     :value: !ruby/object:BigDecimal 18:0.105587e1
     :unit_code: kJ
@@ -2188,7 +2188,7 @@
   :arbitrary: false
 - :names: international table British thermal unit
   :symbol: Btu<sub>IT</sub>
-  :primary_code: "[Btu_IT]"
+  :code: "[Btu_IT]"
   :scale:
     :value: !ruby/object:BigDecimal 27:0.105505585262e1
     :unit_code: kJ
@@ -2199,7 +2199,7 @@
   :arbitrary: false
 - :names: thermochemical British thermal unit
   :symbol: Btu<sub>th</sub>
-  :primary_code: "[Btu_th]"
+  :code: "[Btu_th]"
   :scale:
     :value: !ruby/object:BigDecimal 18:0.105435e1
     :unit_code: kJ
@@ -2210,7 +2210,7 @@
   :arbitrary: false
 - :names: British thermal unit
   :symbol: btu
-  :primary_code: "[Btu]"
+  :code: "[Btu]"
   :scale:
     :value: 1
     :unit_code: "[Btu_th]"
@@ -2220,7 +2220,7 @@
   :special: false
   :arbitrary: false
 - :names: horsepower
-  :primary_code: "[HP]"
+  :code: "[HP]"
   :scale:
     :value: 550
     :unit_code: "[ft_i].[lbf_av]/s"
@@ -2231,7 +2231,7 @@
   :arbitrary: false
 - :names: tex
   :symbol: tex
-  :primary_code: tex
+  :code: tex
   :scale:
     :value: 1
     :unit_code: g/km
@@ -2242,7 +2242,7 @@
   :arbitrary: false
 - :names: Denier
   :symbol: den
-  :primary_code: "[den]"
+  :code: "[den]"
   :scale:
     :value: 1
     :unit_code: g/9/km
@@ -2253,7 +2253,7 @@
   :arbitrary: false
 - :names: meter of water column
   :symbol: m H<sub><r>2</r></sub>O
-  :primary_code: m[H2O]
+  :code: m[H2O]
   :scale:
     :value: !ruby/object:BigDecimal 18:0.980665e1
     :unit_code: kPa
@@ -2264,7 +2264,7 @@
   :arbitrary: false
 - :names: meter of mercury column
   :symbol: m Hg
-  :primary_code: m[Hg]
+  :code: m[Hg]
   :scale:
     :value: !ruby/object:BigDecimal 18:0.133322e3
     :unit_code: kPa
@@ -2275,7 +2275,7 @@
   :arbitrary: false
 - :names: inch of water column
   :symbol: in H<sub><r>2</r></sub>O
-  :primary_code: "[in_i'H2O]"
+  :code: "[in_i'H2O]"
   :scale:
     :value: 1
     :unit_code: m[H2O].[in_i]/m
@@ -2286,7 +2286,7 @@
   :arbitrary: false
 - :names: inch of mercury column
   :symbol: in Hg
-  :primary_code: "[in_i'Hg]"
+  :code: "[in_i'Hg]"
   :scale:
     :value: 1
     :unit_code: m[Hg].[in_i]/m
@@ -2297,7 +2297,7 @@
   :arbitrary: false
 - :names: peripheral vascular resistance unit
   :symbol: P.R.U.
-  :primary_code: "[PRU]"
+  :code: "[PRU]"
   :scale:
     :value: 1
     :unit_code: mm[Hg].s/ml
@@ -2308,7 +2308,7 @@
   :arbitrary: false
 - :names: Wood unit
   :symbol: Wood U.
-  :primary_code: "[wood'U]"
+  :code: "[wood'U]"
   :scale:
     :value: 1
     :unit_code: mm[Hg].min/L
@@ -2319,7 +2319,7 @@
   :arbitrary: false
 - :names: diopter
   :symbol: dpt
-  :primary_code: "[diop]"
+  :code: "[diop]"
   :scale:
     :value: 1
     :unit_code: "/m"
@@ -2330,7 +2330,7 @@
   :arbitrary: false
 - :names: prism diopter
   :symbol: PD
-  :primary_code: "[p'diop]"
+  :code: "[p'diop]"
   :scale:
     :function_code: 100tan
     :value: 1
@@ -2342,7 +2342,7 @@
   :arbitrary: false
 - :names: percent of slope
   :symbol: "%"
-  :primary_code: "%[slope]"
+  :code: "%[slope]"
   :scale:
     :function_code: 100tan
     :value: 1
@@ -2353,7 +2353,7 @@
   :special: true
   :arbitrary: false
 - :names: mesh
-  :primary_code: "[mesh_i]"
+  :code: "[mesh_i]"
   :scale:
     :value: 1
     :unit_code: "/[in_i]"
@@ -2366,7 +2366,7 @@
   - Charrière
   - french
   :symbol: Ch
-  :primary_code: "[Ch]"
+  :code: "[Ch]"
   :scale:
     :value: 1
     :unit_code: mm/3
@@ -2377,7 +2377,7 @@
   :arbitrary: false
 - :names: drop
   :symbol: drp
-  :primary_code: "[drp]"
+  :code: "[drp]"
   :scale:
     :value: 1
     :unit_code: ml/20
@@ -2388,7 +2388,7 @@
   :arbitrary: false
 - :names: Hounsfield unit
   :symbol: HF
-  :primary_code: "[hnsf'U]"
+  :code: "[hnsf'U]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2399,7 +2399,7 @@
   :arbitrary: false
 - :names: metabolic equivalent
   :symbol: MET
-  :primary_code: "[MET]"
+  :code: "[MET]"
   :scale:
     :value: !ruby/object:BigDecimal 18:0.35e1
     :unit_code: mL/min/kg
@@ -2410,7 +2410,7 @@
   :arbitrary: false
 - :names: homeopathic potency of decimal series (retired)
   :symbol: X
-  :primary_code: "[hp'_X]"
+  :code: "[hp'_X]"
   :scale:
     :function_code: hpX
     :value: 1
@@ -2422,7 +2422,7 @@
   :arbitrary: false
 - :names: homeopathic potency of centesimal series (retired)
   :symbol: C
-  :primary_code: "[hp'_C]"
+  :code: "[hp'_C]"
   :scale:
     :function_code: hpC
     :value: 1
@@ -2434,7 +2434,7 @@
   :arbitrary: false
 - :names: homeopathic potency of millesimal series (retired)
   :symbol: M
-  :primary_code: "[hp'_M]"
+  :code: "[hp'_M]"
   :scale:
     :function_code: hpM
     :value: 1
@@ -2446,7 +2446,7 @@
   :arbitrary: false
 - :names: homeopathic potency of quintamillesimal series (retired)
   :symbol: Q
-  :primary_code: "[hp'_Q]"
+  :code: "[hp'_Q]"
   :scale:
     :function_code: hpQ
     :value: 1
@@ -2458,7 +2458,7 @@
   :arbitrary: false
 - :names: homeopathic potency of decimal hahnemannian series
   :symbol: X
-  :primary_code: "[hp_X]"
+  :code: "[hp_X]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2469,7 +2469,7 @@
   :arbitrary: true
 - :names: homeopathic potency of centesimal hahnemannian series
   :symbol: C
-  :primary_code: "[hp_C]"
+  :code: "[hp_C]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2480,7 +2480,7 @@
   :arbitrary: true
 - :names: homeopathic potency of millesimal hahnemannian series
   :symbol: M
-  :primary_code: "[hp_M]"
+  :code: "[hp_M]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2491,7 +2491,7 @@
   :arbitrary: true
 - :names: homeopathic potency of quintamillesimal hahnemannian series
   :symbol: Q
-  :primary_code: "[hp_Q]"
+  :code: "[hp_Q]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2502,7 +2502,7 @@
   :arbitrary: true
 - :names: homeopathic potency of decimal korsakovian series
   :symbol: X
-  :primary_code: "[kp_X]"
+  :code: "[kp_X]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2513,7 +2513,7 @@
   :arbitrary: true
 - :names: homeopathic potency of centesimal korsakovian series
   :symbol: C
-  :primary_code: "[kp_C]"
+  :code: "[kp_C]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2524,7 +2524,7 @@
   :arbitrary: true
 - :names: homeopathic potency of millesimal korsakovian series
   :symbol: M
-  :primary_code: "[kp_M]"
+  :code: "[kp_M]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2535,7 +2535,7 @@
   :arbitrary: true
 - :names: homeopathic potency of quintamillesimal korsakovian series
   :symbol: Q
-  :primary_code: "[kp_Q]"
+  :code: "[kp_Q]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2546,7 +2546,7 @@
   :arbitrary: true
 - :names: equivalents
   :symbol: eq
-  :primary_code: eq
+  :code: eq
   :scale:
     :value: 1
     :unit_code: mol
@@ -2557,7 +2557,7 @@
   :arbitrary: false
 - :names: osmole
   :symbol: osm
-  :primary_code: osm
+  :code: osm
   :scale:
     :value: 1
     :unit_code: mol
@@ -2568,7 +2568,7 @@
   :arbitrary: false
 - :names: pH
   :symbol: pH
-  :primary_code: "[pH]"
+  :code: "[pH]"
   :scale:
     :function_code: pH
     :value: 1
@@ -2580,7 +2580,7 @@
   :arbitrary: false
 - :names: gram percent
   :symbol: g%
-  :primary_code: g%
+  :code: g%
   :scale:
     :value: 1
     :unit_code: g/dl
@@ -2591,7 +2591,7 @@
   :arbitrary: false
 - :names: Svedberg unit
   :symbol: S
-  :primary_code: "[S]"
+  :code: "[S]"
   :scale:
     :value: 1
     :unit_code: 10*-13.s
@@ -2602,7 +2602,7 @@
   :arbitrary: false
 - :names: high power field
   :symbol: HPF
-  :primary_code: "[HPF]"
+  :code: "[HPF]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2613,7 +2613,7 @@
   :arbitrary: false
 - :names: low power field
   :symbol: LPF
-  :primary_code: "[LPF]"
+  :code: "[LPF]"
   :scale:
     :value: 100
     :unit_code: '1'
@@ -2624,7 +2624,7 @@
   :arbitrary: false
 - :names: katal
   :symbol: kat
-  :primary_code: kat
+  :code: kat
   :scale:
     :value: 1
     :unit_code: mol/s
@@ -2635,7 +2635,7 @@
   :arbitrary: false
 - :names: Unit
   :symbol: U
-  :primary_code: U
+  :code: U
   :scale:
     :value: 1
     :unit_code: umol/min
@@ -2646,7 +2646,7 @@
   :arbitrary: false
 - :names: international unit
   :symbol: IU
-  :primary_code: "[iU]"
+  :code: "[iU]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2657,7 +2657,7 @@
   :arbitrary: true
 - :names: international unit
   :symbol: i.U.
-  :primary_code: "[IU]"
+  :code: "[IU]"
   :scale:
     :value: 1
     :unit_code: "[iU]"
@@ -2668,7 +2668,7 @@
   :arbitrary: true
 - :names: arbitary unit
   :symbol: arb. U
-  :primary_code: "[arb'U]"
+  :code: "[arb'U]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2679,7 +2679,7 @@
   :arbitrary: true
 - :names: United States Pharmacopeia unit
   :symbol: U.S.P.
-  :primary_code: "[USP'U]"
+  :code: "[USP'U]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2689,7 +2689,7 @@
   :special: false
   :arbitrary: true
 - :names: GPL unit
-  :primary_code: "[GPL'U]"
+  :code: "[GPL'U]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2699,7 +2699,7 @@
   :special: false
   :arbitrary: true
 - :names: MPL unit
-  :primary_code: "[MPL'U]"
+  :code: "[MPL'U]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2709,7 +2709,7 @@
   :special: false
   :arbitrary: true
 - :names: APL unit
-  :primary_code: "[APL'U]"
+  :code: "[APL'U]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2719,7 +2719,7 @@
   :special: false
   :arbitrary: true
 - :names: Bethesda unit
-  :primary_code: "[beth'U]"
+  :code: "[beth'U]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2729,7 +2729,7 @@
   :special: false
   :arbitrary: true
 - :names: anti factor Xa unit
-  :primary_code: "[anti'Xa'U]"
+  :code: "[anti'Xa'U]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2739,7 +2739,7 @@
   :special: false
   :arbitrary: true
 - :names: Todd unit
-  :primary_code: "[todd'U]"
+  :code: "[todd'U]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2749,7 +2749,7 @@
   :special: false
   :arbitrary: true
 - :names: Dye unit
-  :primary_code: "[dye'U]"
+  :code: "[dye'U]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2759,7 +2759,7 @@
   :special: false
   :arbitrary: true
 - :names: Somogyi unit
-  :primary_code: "[smgy'U]"
+  :code: "[smgy'U]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2769,7 +2769,7 @@
   :special: false
   :arbitrary: true
 - :names: Bodansky unit
-  :primary_code: "[bdsk'U]"
+  :code: "[bdsk'U]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2779,7 +2779,7 @@
   :special: false
   :arbitrary: true
 - :names: King-Armstrong unit
-  :primary_code: "[ka'U]"
+  :code: "[ka'U]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2789,7 +2789,7 @@
   :special: false
   :arbitrary: true
 - :names: Kunkel unit
-  :primary_code: "[knk'U]"
+  :code: "[knk'U]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2799,7 +2799,7 @@
   :special: false
   :arbitrary: true
 - :names: Mac Lagan unit
-  :primary_code: "[mclg'U]"
+  :code: "[mclg'U]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2809,7 +2809,7 @@
   :special: false
   :arbitrary: true
 - :names: tuberculin unit
-  :primary_code: "[tb'U]"
+  :code: "[tb'U]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2820,7 +2820,7 @@
   :arbitrary: true
 - :names: 50% cell culture infectious dose
   :symbol: CCID<sub>50</sub>
-  :primary_code: "[CCID_50]"
+  :code: "[CCID_50]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2831,7 +2831,7 @@
   :arbitrary: true
 - :names: 50% tissue culture infectious dose
   :symbol: TCID<sub>50</sub>
-  :primary_code: "[TCID_50]"
+  :code: "[TCID_50]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2842,7 +2842,7 @@
   :arbitrary: true
 - :names: 50% embryo infectious dose
   :symbol: EID<sub>50</sub>
-  :primary_code: "[EID_50]"
+  :code: "[EID_50]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2853,7 +2853,7 @@
   :arbitrary: true
 - :names: plaque forming units
   :symbol: PFU
-  :primary_code: "[PFU]"
+  :code: "[PFU]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2864,7 +2864,7 @@
   :arbitrary: true
 - :names: focus forming units
   :symbol: FFU
-  :primary_code: "[FFU]"
+  :code: "[FFU]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2875,7 +2875,7 @@
   :arbitrary: true
 - :names: colony forming units
   :symbol: CFU
-  :primary_code: "[CFU]"
+  :code: "[CFU]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2886,7 +2886,7 @@
   :arbitrary: true
 - :names: index of reactivity
   :symbol: IR
-  :primary_code: "[IR]"
+  :code: "[IR]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2898,7 +2898,7 @@
   :arbitrary: true
 - :names: bioequivalent allergen unit
   :symbol: BAU
-  :primary_code: "[BAU]"
+  :code: "[BAU]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2910,7 +2910,7 @@
   :arbitrary: true
 - :names: allergen unit
   :symbol: AU
-  :primary_code: "[AU]"
+  :code: "[AU]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2921,7 +2921,7 @@
   :arbitrary: true
 - :names: allergen unit for Ambrosia artemisiifolia
   :symbol: Amb a 1 U
-  :primary_code: "[Amb'a'1'U]"
+  :code: "[Amb'a'1'U]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2932,7 +2932,7 @@
   :arbitrary: true
 - :names: protein nitrogen unit
   :symbol: PNU
-  :primary_code: "[PNU]"
+  :code: "[PNU]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2943,7 +2943,7 @@
   :arbitrary: true
 - :names: Limit of flocculation
   :symbol: Lf
-  :primary_code: "[Lf]"
+  :code: "[Lf]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2953,7 +2953,7 @@
   :special: false
   :arbitrary: true
 - :names: D-antigen unit
-  :primary_code: "[D'ag'U]"
+  :code: "[D'ag'U]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2963,7 +2963,7 @@
   :special: false
   :arbitrary: true
 - :names: fibrinogen equivalent unit
-  :primary_code: "[FEU]"
+  :code: "[FEU]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2973,7 +2973,7 @@
   :special: false
   :arbitrary: true
 - :names: ELISA unit
-  :primary_code: "[ELU]"
+  :code: "[ELU]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2983,7 +2983,7 @@
   :special: false
   :arbitrary: true
 - :names: Ehrlich unit
-  :primary_code: "[EU]"
+  :code: "[EU]"
   :scale:
     :value: 1
     :unit_code: '1'
@@ -2994,7 +2994,7 @@
   :arbitrary: true
 - :names: neper
   :symbol: Np
-  :primary_code: Np
+  :code: Np
   :scale:
     :function_code: ln
     :value: 1
@@ -3006,7 +3006,7 @@
   :arbitrary: false
 - :names: bel
   :symbol: B
-  :primary_code: B
+  :code: B
   :scale:
     :function_code: lg
     :value: 1
@@ -3018,7 +3018,7 @@
   :arbitrary: false
 - :names: bel sound pressure
   :symbol: B(SPL)
-  :primary_code: B[SPL]
+  :code: B[SPL]
   :scale:
     :function_code: 2lg
     :value: 2
@@ -3030,7 +3030,7 @@
   :arbitrary: false
 - :names: bel volt
   :symbol: B(V)
-  :primary_code: B[V]
+  :code: B[V]
   :scale:
     :function_code: 2lg
     :value: 1
@@ -3042,7 +3042,7 @@
   :arbitrary: false
 - :names: bel millivolt
   :symbol: B(mV)
-  :primary_code: B[mV]
+  :code: B[mV]
   :scale:
     :function_code: 2lg
     :value: 1
@@ -3054,7 +3054,7 @@
   :arbitrary: false
 - :names: bel microvolt
   :symbol: B(μV)
-  :primary_code: B[uV]
+  :code: B[uV]
   :scale:
     :function_code: 2lg
     :value: 1
@@ -3066,7 +3066,7 @@
   :arbitrary: false
 - :names: bel 10 nanovolt
   :symbol: B(10 nV)
-  :primary_code: B[10.nV]
+  :code: B[10.nV]
   :scale:
     :function_code: 2lg
     :value: 10
@@ -3078,7 +3078,7 @@
   :arbitrary: false
 - :names: bel watt
   :symbol: B(W)
-  :primary_code: B[W]
+  :code: B[W]
   :scale:
     :function_code: lg
     :value: 1
@@ -3090,7 +3090,7 @@
   :arbitrary: false
 - :names: bel kilowatt
   :symbol: B(kW)
-  :primary_code: B[kW]
+  :code: B[kW]
   :scale:
     :function_code: lg
     :value: 1
@@ -3102,7 +3102,7 @@
   :arbitrary: false
 - :names: stere
   :symbol: st
-  :primary_code: st
+  :code: st
   :scale:
     :value: 1
     :unit_code: m3
@@ -3113,7 +3113,7 @@
   :arbitrary: false
 - :names: Ångström
   :symbol: Å
-  :primary_code: Ao
+  :code: Ao
   :scale:
     :value: !ruby/object:BigDecimal 18:0.1e0
     :unit_code: nm
@@ -3124,7 +3124,7 @@
   :arbitrary: false
 - :names: barn
   :symbol: b
-  :primary_code: b
+  :code: b
   :scale:
     :value: 100
     :unit_code: fm2
@@ -3135,7 +3135,7 @@
   :arbitrary: false
 - :names: technical atmosphere
   :symbol: at
-  :primary_code: att
+  :code: att
   :scale:
     :value: 1
     :unit_code: kgf/cm2
@@ -3146,7 +3146,7 @@
   :arbitrary: false
 - :names: mho
   :symbol: mho
-  :primary_code: mho
+  :code: mho
   :scale:
     :value: 1
     :unit_code: S
@@ -3157,7 +3157,7 @@
   :arbitrary: false
 - :names: pound per sqare inch
   :symbol: psi
-  :primary_code: "[psi]"
+  :code: "[psi]"
   :scale:
     :value: 1
     :unit_code: "[lbf_av]/[in_i]2"
@@ -3168,7 +3168,7 @@
   :arbitrary: false
 - :names: circle
   :symbol: circ
-  :primary_code: circ
+  :code: circ
   :scale:
     :value: 2
     :unit_code: "[pi].rad"
@@ -3179,7 +3179,7 @@
   :arbitrary: false
 - :names: spere
   :symbol: sph
-  :primary_code: sph
+  :code: sph
   :scale:
     :value: 4
     :unit_code: "[pi].sr"
@@ -3190,7 +3190,7 @@
   :arbitrary: false
 - :names: metric carat
   :symbol: ct<sub>m</sub>
-  :primary_code: "[car_m]"
+  :code: "[car_m]"
   :scale:
     :value: !ruby/object:BigDecimal 18:0.2e0
     :unit_code: g
@@ -3201,7 +3201,7 @@
   :arbitrary: false
 - :names: carat of gold alloys
   :symbol: ct<sub><r>Au</r></sub>
-  :primary_code: "[car_Au]"
+  :code: "[car_Au]"
   :scale:
     :value: 1
     :unit_code: "/24"
@@ -3211,7 +3211,7 @@
   :special: false
   :arbitrary: false
 - :names: Smoot
-  :primary_code: "[smoot]"
+  :code: "[smoot]"
   :scale:
     :value: 67
     :unit_code: "[in_i]"
@@ -3221,7 +3221,7 @@
   :special: false
   :arbitrary: false
 - :names: meter per square seconds per square root of hertz
-  :primary_code: "[m/s2/Hz^(1/2)]"
+  :code: "[m/s2/Hz^(1/2)]"
   :scale:
     :function_code: sqrt
     :value: 1
@@ -3233,7 +3233,7 @@
   :arbitrary: false
 - :names: bit
   :symbol: bit<sub>s</sub>
-  :primary_code: bit_s
+  :code: bit_s
   :scale:
     :function_code: ld
     :value: 1
@@ -3245,7 +3245,7 @@
   :arbitrary: false
 - :names: bit
   :symbol: bit
-  :primary_code: bit
+  :code: bit
   :scale:
     :value: 1
     :unit_code: '1'
@@ -3256,7 +3256,7 @@
   :arbitrary: false
 - :names: byte
   :symbol: B
-  :primary_code: By
+  :code: By
   :scale:
     :value: 8
     :unit_code: bit
@@ -3267,7 +3267,7 @@
   :arbitrary: false
 - :names: baud
   :symbol: Bd
-  :primary_code: Bd
+  :code: Bd
   :scale:
     :value: 1
     :unit_code: "/s"

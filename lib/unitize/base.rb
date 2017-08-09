@@ -2,7 +2,7 @@ module Unitize
   # The base class that Atom and Prefix are extended from. This class provides
   # shared functionality for said classes.
   class Base
-    liner :names, :primary_code, :symbol, :scale
+    liner :names, :code, :symbol, :scale
     include Memoizable
 
     # The list of tracked items.
@@ -19,7 +19,7 @@ module Unitize
     # @example
     #   Unitize::Atom.find('m')
     # @api public
-    def self.find(string, method = :primary_code)
+    def self.find(string, method = :code)
       all.find do |i|
         key = i.send(method)
         if key.is_a? Array
@@ -50,8 +50,8 @@ module Unitize
     # @param mode [symbol] The attribute to for stringification
     # @return [String]
     # @api public
-    def to_s(mode = :primary_code)
-      res = send(mode) || primary_code
+    def to_s(mode = :code)
+      res = send(mode) || code
       res.respond_to?(:each) ? res.first.to_s : res.to_s
     end
   end

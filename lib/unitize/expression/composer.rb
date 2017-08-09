@@ -6,7 +6,7 @@ module Unitize
       attr_reader :terms, :mode
       def initialize(terms, mode)
         @terms  = terms
-        @mode = mode || :primary_code
+        @mode = mode || :code
       end
 
       def set

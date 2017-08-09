@@ -1,97 +1,97 @@
 ---
 - :names: yotta
   :symbol: Y
-  :primary_code: Y
+  :code: Y
   :scalar: 1000000000000000000000000
 - :names: zetta
   :symbol: Z
-  :primary_code: Z
+  :code: Z
   :scalar: 1000000000000000000000
 - :names: exa
   :symbol: E
-  :primary_code: E
+  :code: E
   :scalar: 1000000000000000000
 - :names: peta
   :symbol: P
-  :primary_code: P
+  :code: P
   :scalar: 1000000000000000
 - :names: tera
   :symbol: T
-  :primary_code: T
+  :code: T
   :scalar: 1000000000000
 - :names: giga
   :symbol: G
-  :primary_code: G
+  :code: G
   :scalar: 1000000000
 - :names: mega
   :symbol: M
-  :primary_code: M
+  :code: M
   :scalar: 1000000
 - :names: kilo
   :symbol: k
-  :primary_code: k
+  :code: k
   :scalar: 1000
 - :names: hecto
   :symbol: h
-  :primary_code: h
+  :code: h
   :scalar: 100
 - :names: deka
   :symbol: da
-  :primary_code: da
+  :code: da
   :scalar: 10
 - :names: deci
   :symbol: d
-  :primary_code: d
+  :code: d
   :scalar: !ruby/object:BigDecimal 18:0.1e0
 - :names: centi
   :symbol: c
-  :primary_code: c
+  :code: c
   :scalar: !ruby/object:BigDecimal 18:0.1e-1
 - :names: milli
   :symbol: m
-  :primary_code: m
+  :code: m
   :scalar: !ruby/object:BigDecimal 18:0.1e-2
 - :names: micro
   :symbol: μ
-  :primary_code: u
+  :code: u
   :scalar: !ruby/object:BigDecimal 18:0.1e-5
 - :names: nano
   :symbol: n
-  :primary_code: n
+  :code: n
   :scalar: !ruby/object:BigDecimal 18:0.1e-8
 - :names: pico
   :symbol: p
-  :primary_code: p
+  :code: p
   :scalar: !ruby/object:BigDecimal 18:0.1e-11
 - :names: femto
   :symbol: f
-  :primary_code: f
+  :code: f
   :scalar: !ruby/object:BigDecimal 18:0.1e-14
 - :names: atto
   :symbol: a
-  :primary_code: a
+  :code: a
   :scalar: !ruby/object:BigDecimal 18:0.1e-17
 - :names: zepto
   :symbol: z
-  :primary_code: z
+  :code: z
   :scalar: !ruby/object:BigDecimal 18:0.1e-20
 - :names: yocto
   :symbol: y
-  :primary_code: y
+  :code: y
   :scalar: !ruby/object:BigDecimal 18:0.1e-23
 - :names: kibi
   :symbol: Ki
-  :primary_code: Ki
+  :code: Ki
   :scalar: 1024
 - :names: mebi
   :symbol: Mi
-  :primary_code: Mi
+  :code: Mi
   :scalar: 1048576
 - :names: gibi
   :symbol: Gi
-  :primary_code: Gi
+  :code: Gi
   :scalar: 1073741824
 - :names: tebi
   :symbol: Ti
-  :primary_code: Ti
+  :code: Ti
   :scalar: 1099511627776

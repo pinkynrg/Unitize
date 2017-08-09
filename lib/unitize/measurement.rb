@@ -31,6 +31,8 @@ module Unitize
         fail ConversionError, "Can't convert #{self} to #{other_unit}."
       end
     end
+    alias_method :to, :convert_to
+
 
     # Multiply this measurement by a number or another measurement
     # @param other [Numeric, Unitize::Measurement]

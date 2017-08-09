@@ -19,7 +19,7 @@ module Unitize
 
       attr_reader :collection, :mode
 
-      def initialize(collection, mode = :primary_code)
+      def initialize(collection, mode = :code)
         @collection = collection
         @mode = mode
       end

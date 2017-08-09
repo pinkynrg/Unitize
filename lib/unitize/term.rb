@@ -113,7 +113,7 @@ module Unitize
       end
     end
 
-    def to_s(mode = :primary_code)
+    def to_s(mode = :code)
       [
         (factor if factor != 1),
         (prefix.send(mode) if prefix),

@@ -4,7 +4,7 @@ module Unitize
     # expression's terms, prefixes, and atoms.
     class Parser < Parslet::Parser
       attr_reader :key
-      def initialize(key = :primary_code)
+      def initialize(key = :code)
         @key                 = key
         @atom_matcher        = Matcher.atom(key)
         @metric_atom_matcher = Matcher.metric_atom(key)

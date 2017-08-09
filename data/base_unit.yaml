@@ -1,36 +1,36 @@
 ---
 - :names: meter
   :symbol: m
-  :primary_code: m
+  :code: m
   :property: length
   :dim: L
 - :names: second
   :symbol: s
-  :primary_code: s
+  :code: s
   :property: time
   :dim: T
 - :names: gram
   :symbol: g
-  :primary_code: g
+  :code: g
   :property: mass
   :dim: M
 - :names: radian
   :symbol: rad
-  :primary_code: rad
+  :code: rad
   :property: plane angle
   :dim: A
 - :names: kelvin
   :symbol: K
-  :primary_code: K
+  :code: K
   :property: temperature
   :dim: C
 - :names: coulomb
   :symbol: C
-  :primary_code: C
+  :code: C
   :property: electric charge
   :dim: Q
 - :names: candela
   :symbol: cd
-  :primary_code: cd
+  :code: cd
   :property: luminous intensity
   :dim: F

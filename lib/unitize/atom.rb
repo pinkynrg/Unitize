@@ -114,7 +114,7 @@ module Unitize
     # depths. This method returns all of this atoms base level terms.
     # @return [Array] An array containing base Unitize::Term
     def root_terms
-      base? ? [Term.new(:atom_code => primary_code)] : scale.root_terms
+      base? ? [Term.new(:atom_code => code)] : scale.root_terms
     end
     memoize :root_terms
 
@@ -126,7 +126,7 @@ module Unitize
     # @return [true] returns true if the atom is valid
     # @raise [Unitize::DefinitionError]
     def validate!
-      missing_properties = %i{primary_code names scale}.select do |prop|
+      missing_properties = %i{code names scale}.select do |prop|
         val = liner_get(prop)
         val.nil? || (val.respond_to?(:empty) && val.empty?)
       end
