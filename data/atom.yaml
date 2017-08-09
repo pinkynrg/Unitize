@@ -355,17 +355,6 @@
   scale:
     value: 1
     unit_code: J/kg
-- name: gon
-  property: plane angle
-  code: gon
-  classification: iso1000
-  metric: false
-  special: false
-  arbitrary: false
-  symbol: "□<sup>g</sup>"
-  scale:
-    value: 0.9
-    unit_code: deg
 - name: degree
   property: plane angle
   code: deg
@@ -377,6 +366,18 @@
   scale:
     value: 2
     unit_code: "[pi].rad/360"
+- name: gon
+  property: plane angle
+  code: gon
+  classification: iso1000
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: "□<sup>g</sup>"
+  scale:
+    value: 0.9
+    unit_code: deg
+
 - name: minute
   property: plane angle
   code: "'"
@@ -575,17 +576,6 @@
   scale:
     value: 1.6605402e-24
     unit_code: g
-- name: electronvolt
-  property: energy
-  code: eV
-  classification: iso1000
-  metric: true
-  special: false
-  arbitrary: false
-  symbol: eV
-  scale:
-    value: 1
-    unit_code: "[e].V"
 - name: astronomic unit
   property: length
   code: AU
@@ -674,6 +664,17 @@
   scale:
     value: 1.60217733e-19
     unit_code: C
+- name: electronvolt
+  property: energy
+  code: eV
+  classification: iso1000
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: eV
+  scale:
+    value: 1
+    unit_code: "[e].V"
 - name: electron mass
   property: mass
   code: "[m_e]"
@@ -751,17 +752,6 @@
   scale:
     value: 1
     unit_code: g.[g]
-- name: pound force
-  property: force
-  code: "[lbf_av]"
-  classification: const
-  metric: false
-  special: false
-  arbitrary: false
-  symbol: lbf
-  scale:
-    value: 1
-    unit_code: "[lb_av].[g]"
 - name: Kayser
   property: lineic number
   code: Ky
@@ -1765,6 +1755,17 @@
   scale:
     value: 7000
     unit_code: "[gr]"
+- name: pound force
+  property: force
+  code: "[lbf_av]"
+  classification: const
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: lbf
+  scale:
+    value: 1
+    unit_code: "[lb_av].[g]"
 - name: ounce
   property: mass
   code: "[oz_av]"
@@ -2409,32 +2410,6 @@
   scale:
     function_from: pow(100.0,-x)
     function_to: "-log(x)/log(100.0)"
-    value: 1
-    unit_code: '1'
-- name: homeopathic potency of millesimal series (retired)
-  property: homeopathic potency (retired)
-  code: "[hp'_M]"
-  classification: clinical
-  metric: false
-  special: true
-  arbitrary: false
-  symbol: M
-  scale:
-    function_from: '1'
-    function_to: '1'
-    value: 1
-    unit_code: '1'
-- name: homeopathic potency of quintamillesimal series (retired)
-  property: homeopathic potency (retired)
-  code: "[hp'_Q]"
-  classification: clinical
-  metric: false
-  special: true
-  arbitrary: false
-  symbol: Q
-  scale:
-    function_from: '1'
-    function_to: '1'
     value: 1
     unit_code: '1'
 - name: homeopathic potency of decimal hahnemannian series
@@ -3146,17 +3121,6 @@
   scale:
     value: 1
     unit_code: S
-- name: pound per sqare inch
-  property: pressure
-  code: "[psi]"
-  classification: misc
-  metric: false
-  special: false
-  arbitrary: false
-  symbol: psi
-  scale:
-    value: 1
-    unit_code: "[lbf_av]/[in_i]2"
 - name: circle
   property: plane angle
   code: circ
@@ -3223,7 +3187,7 @@
     function_to: sqrt(x)
     value: 1
     unit_code: m2/s4/Hz
-- name: bit
+- name: bit_s
   property: amount of information
   code: bit_s
   classification: infotech
@@ -3269,3 +3233,14 @@
   scale:
     value: 1
     unit_code: "/s"
+- name: pound per square inch
+  property: pressure
+  code: "[psi]"
+  classification: misc
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: psi
+  scale:
+    value: 1
+    unit_code: "[lbf_av]/[in_i]2"
