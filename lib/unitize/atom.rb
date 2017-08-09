@@ -10,13 +10,15 @@ module Unitize
       # Array of hashes representing default atom properties.
       # @api private
       def data
-        @data ||= data_files.map { |file| YAML.load(File.open file) }.flatten
+        @data ||= MeasurementUnit.table_exists? && MeasurementUnit.includes(:measurement_type).order(:id).all.map do |e|
+          e.to_unitize
+        end
       end
 
-      # Data files containing default atom data
+      # Data file containing default atom data
       # @api private
-      def data_files
-        %w(base_unit derived_unit).map { |type| Unitize.data_file type }
+      def data_file
+        Unitize.data_file 'atom'
       end
     end
 
@@ -91,8 +93,8 @@ module Unitize
     # @return [Unitize::Functional, Unitize::Scale]
     # @api public
     def scale=(attrs)
-      @scale = if attrs[:function_code]
-        Functional.new(attrs[:value], attrs[:unit_code], attrs[:function_code])
+      @scale = if attrs[:function_from] && attrs[:function_to]
+        Functional.new(attrs[:value], attrs[:unit_code], attrs[:function_from], attrs[:function_to])
       else
         Scale.new(attrs[:value], attrs[:unit_code])
       end
@@ -126,7 +128,7 @@ module Unitize
     # @return [true] returns true if the atom is valid
     # @raise [Unitize::DefinitionError]
     def validate!
-      missing_properties = %i{code names scale}.select do |prop|
+      missing_properties = %i{code name scale}.select do |prop|
         val = liner_get(prop)
         val.nil? || (val.respond_to?(:empty) && val.empty?)
       end

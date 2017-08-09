@@ -6,7 +6,9 @@ module Unitize
     # The data loaded from the UCUM spec files
     # @api semipublic
     def self.data
-      @data ||= YAML.load File.open(data_file)
+      @data ||= MeasurementPrefix.table_exists? && MeasurementPrefix.order(:id).all.map do |e|
+        e.to_unitize
+      end
     end
 
     # The location of the UCUM spec prefix data file

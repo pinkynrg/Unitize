@@ -1,0 +1,3271 @@
+---
+- name: meter
+  property: length
+  code: m
+  symbol: m
+  dim: L
+- name: second
+  property: time
+  code: s
+  symbol: s
+  dim: T
+- name: gram
+  property: mass
+  code: g
+  symbol: g
+  dim: M
+- name: radian
+  property: plane angle
+  code: rad
+  symbol: rad
+  dim: A
+- name: kelvin
+  property: temperature
+  code: K
+  symbol: K
+  dim: C
+- name: coulomb
+  property: electric charge
+  code: C
+  symbol: C
+  dim: Q
+- name: candela
+  property: luminous intensity
+  code: cd
+  symbol: cd
+  dim: F
+- name: the number ten for arbitrary powers
+  property: number
+  code: 10*
+  classification: dimless
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: '10'
+  scale:
+    value: 10
+    unit_code: '1'
+- name: the number ten for arbitrary powers
+  property: number
+  code: 10^
+  classification: dimless
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: '10'
+  scale:
+    value: 10
+    unit_code: '1'
+- name: the number pi
+  property: number
+  code: "[pi]"
+  classification: dimless
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: π
+  scale:
+    value: 3.14159265358979
+    unit_code: '1'
+- name: percent
+  property: fraction
+  code: "%"
+  classification: dimless
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: "%"
+  scale:
+    value: 1
+    unit_code: 10*-2
+- name: parts per thousand
+  property: fraction
+  code: "[ppth]"
+  classification: dimless
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: ppth
+  scale:
+    value: 1
+    unit_code: 10*-3
+- name: parts per million
+  property: fraction
+  code: "[ppm]"
+  classification: dimless
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: ppm
+  scale:
+    value: 1
+    unit_code: 10*-6
+- name: parts per billion
+  property: fraction
+  code: "[ppb]"
+  classification: dimless
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: ppb
+  scale:
+    value: 1
+    unit_code: 10*-9
+- name: parts per trillion
+  property: fraction
+  code: "[pptr]"
+  classification: dimless
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: pptr
+  scale:
+    value: 1
+    unit_code: 10*-12
+- name: mole
+  property: amount of substance
+  code: mol
+  classification: si
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: mol
+  scale:
+    value: 6.0221367
+    unit_code: 10*23
+- name: steradian
+  property: solid angle
+  code: sr
+  classification: si
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: sr
+  scale:
+    value: 1
+    unit_code: rad2
+- name: hertz
+  property: frequency
+  code: Hz
+  classification: si
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: Hz
+  scale:
+    value: 1
+    unit_code: s-1
+- name: newton
+  property: force
+  code: N
+  classification: si
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: N
+  scale:
+    value: 1
+    unit_code: kg.m/s2
+- name: pascal
+  property: pressure
+  code: Pa
+  classification: si
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: Pa
+  scale:
+    value: 1
+    unit_code: N/m2
+- name: joule
+  property: energy
+  code: J
+  classification: si
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: J
+  scale:
+    value: 1
+    unit_code: N.m
+- name: watt
+  property: power
+  code: W
+  classification: si
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: W
+  scale:
+    value: 1
+    unit_code: J/s
+- name: ampère
+  property: electric current
+  code: A
+  classification: si
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: A
+  scale:
+    value: 1
+    unit_code: C/s
+- name: volt
+  property: electric potential
+  code: V
+  classification: si
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: V
+  scale:
+    value: 1
+    unit_code: J/C
+- name: farad
+  property: electric capacitance
+  code: F
+  classification: si
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: F
+  scale:
+    value: 1
+    unit_code: C/V
+- name: ohm
+  property: electric resistance
+  code: Ohm
+  classification: si
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: Ω
+  scale:
+    value: 1
+    unit_code: V/A
+- name: siemens
+  property: electric conductance
+  code: S
+  classification: si
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: S
+  scale:
+    value: 1
+    unit_code: Ohm-1
+- name: weber
+  property: magentic flux
+  code: Wb
+  classification: si
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: Wb
+  scale:
+    value: 1
+    unit_code: V.s
+- name: degree Celsius
+  property: temperature
+  code: Cel
+  classification: si
+  metric: true
+  special: true
+  arbitrary: false
+  symbol: "°C"
+  scale:
+    function_from: x+273.15
+    function_to: x-273.15
+    value: 1
+    unit_code: K
+- name: tesla
+  property: magnetic flux density
+  code: T
+  classification: si
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: T
+  scale:
+    value: 1
+    unit_code: Wb/m2
+- name: henry
+  property: inductance
+  code: H
+  classification: si
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: H
+  scale:
+    value: 1
+    unit_code: Wb/A
+- name: lumen
+  property: luminous flux
+  code: lm
+  classification: si
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: lm
+  scale:
+    value: 1
+    unit_code: cd.sr
+- name: lux
+  property: illuminance
+  code: lx
+  classification: si
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: lx
+  scale:
+    value: 1
+    unit_code: lm/m2
+- name: becquerel
+  property: radioactivity
+  code: Bq
+  classification: si
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: Bq
+  scale:
+    value: 1
+    unit_code: s-1
+- name: gray
+  property: energy dose
+  code: Gy
+  classification: si
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: Gy
+  scale:
+    value: 1
+    unit_code: J/kg
+- name: sievert
+  property: dose equivalent
+  code: Sv
+  classification: si
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: Sv
+  scale:
+    value: 1
+    unit_code: J/kg
+- name: gon
+  property: plane angle
+  code: gon
+  classification: iso1000
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: "□<sup>g</sup>"
+  scale:
+    value: 0.9
+    unit_code: deg
+- name: degree
+  property: plane angle
+  code: deg
+  classification: iso1000
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: "°"
+  scale:
+    value: 2
+    unit_code: "[pi].rad/360"
+- name: minute
+  property: plane angle
+  code: "'"
+  classification: iso1000
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: "'"
+  scale:
+    value: 1
+    unit_code: deg/60
+- name: second
+  property: plane angle
+  code: "''"
+  classification: iso1000
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: "''"
+  scale:
+    value: 1
+    unit_code: "'/60"
+- name: liter
+  property: volume
+  code: l
+  classification: iso1000
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: l
+  scale:
+    value: 1
+    unit_code: dm3
+- name: liter
+  property: volume
+  code: L
+  classification: iso1000
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: L
+  scale:
+    value: 1
+    unit_code: l
+- name: are
+  property: area
+  code: ar
+  classification: iso1000
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: a
+  scale:
+    value: 100
+    unit_code: m2
+- name: minute
+  property: time
+  code: min
+  classification: iso1000
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: min
+  scale:
+    value: 60
+    unit_code: s
+- name: hour
+  property: time
+  code: h
+  classification: iso1000
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: h
+  scale:
+    value: 60
+    unit_code: min
+- name: day
+  property: time
+  code: d
+  classification: iso1000
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: d
+  scale:
+    value: 24
+    unit_code: h
+- name: tropical year
+  property: time
+  code: a_t
+  classification: iso1000
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: a<sub>t</sub>
+  scale:
+    value: 365.24219
+    unit_code: d
+- name: mean Julian year
+  property: time
+  code: a_j
+  classification: iso1000
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: a<sub>j</sub>
+  scale:
+    value: 365.25
+    unit_code: d
+- name: mean Gregorian year
+  property: time
+  code: a_g
+  classification: iso1000
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: a<sub>g</sub>
+  scale:
+    value: 365.2425
+    unit_code: d
+- name: week
+  property: time
+  code: wk
+  classification: iso1000
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: wk
+  scale:
+    value: 7
+    unit_code: d
+- name: synodal month
+  property: time
+  code: mo_s
+  classification: iso1000
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: mo<sub>s</sub>
+  scale:
+    value: 29.53059
+    unit_code: d
+- name: mean Julian month
+  property: time
+  code: mo_j
+  classification: iso1000
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: mo<sub>j</sub>
+  scale:
+    value: 1
+    unit_code: a_j/12
+- name: mean Gregorian month
+  property: time
+  code: mo_g
+  classification: iso1000
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: mo<sub>g</sub>
+  scale:
+    value: 1
+    unit_code: a_g/12
+- name: tonne
+  property: mass
+  code: t
+  classification: iso1000
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: t
+  scale:
+    value: 1000
+    unit_code: kg
+- name: bar
+  property: pressure
+  code: bar
+  classification: iso1000
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: bar
+  scale:
+    value: 100000
+    unit_code: Pa
+- name: unified atomic mass unit
+  property: mass
+  code: u
+  classification: iso1000
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: u
+  scale:
+    value: 1.6605402e-24
+    unit_code: g
+- name: electronvolt
+  property: energy
+  code: eV
+  classification: iso1000
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: eV
+  scale:
+    value: 1
+    unit_code: "[e].V"
+- name: astronomic unit
+  property: length
+  code: AU
+  classification: iso1000
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: AU
+  scale:
+    value: 149597.870691
+    unit_code: Mm
+- name: parsec
+  property: length
+  code: pc
+  classification: iso1000
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: pc
+  scale:
+    value: 30856780000000000
+    unit_code: m
+- name: velocity of light
+  property: velocity
+  code: "[c]"
+  classification: const
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: "<i>c</i>"
+  scale:
+    value: 299792458
+    unit_code: m/s
+- name: Planck constant
+  property: action
+  code: "[h]"
+  classification: const
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: "<i>h</i>"
+  scale:
+    value: 6.6260755e-34
+    unit_code: J.s
+- name: Boltzmann constant
+  property: "(unclassified)"
+  code: "[k]"
+  classification: const
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: "<i>k</i>"
+  scale:
+    value: 1.380658e-23
+    unit_code: J/K
+- name: permittivity of vacuum
+  property: electric permittivity
+  code: "[eps_0]"
+  classification: const
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: "<i>ε<sub><r>0</r></sub></i>"
+  scale:
+    value: 8.854187817e-12
+    unit_code: F/m
+- name: permeability of vacuum
+  property: magnetic permeability
+  code: "[mu_0]"
+  classification: const
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: "<i>μ<sub><r>0</r></sub></i>"
+  scale:
+    value: 1
+    unit_code: 4.[pi].10*-7.N/A2
+- name: elementary charge
+  property: electric charge
+  code: "[e]"
+  classification: const
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: "<i>e</i>"
+  scale:
+    value: 1.60217733e-19
+    unit_code: C
+- name: electron mass
+  property: mass
+  code: "[m_e]"
+  classification: const
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: "<i>m<sub><r>e</r></sub></i>"
+  scale:
+    value: 9.1093897e-28
+    unit_code: g
+- name: proton mass
+  property: mass
+  code: "[m_p]"
+  classification: const
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: "<i>m<sub><r>p</r></sub></i>"
+  scale:
+    value: 1.6726231e-24
+    unit_code: g
+- name: Newtonian constant of gravitation
+  property: "(unclassified)"
+  code: "[G]"
+  classification: const
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: "<i>G</i>"
+  scale:
+    value: 6.67259e-11
+    unit_code: m3.kg-1.s-2
+- name: standard acceleration of free fall
+  property: acceleration
+  code: "[g]"
+  classification: const
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: "<i>g<sub>n</sub></i>"
+  scale:
+    value: 9.80665
+    unit_code: m/s2
+- name: standard atmosphere
+  property: pressure
+  code: atm
+  classification: const
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: atm
+  scale:
+    value: 101325
+    unit_code: Pa
+- name: light-year
+  property: length
+  code: "[ly]"
+  classification: const
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: l.y.
+  scale:
+    value: 1
+    unit_code: "[c].a_j"
+- name: gram-force
+  property: force
+  code: gf
+  classification: const
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: gf
+  scale:
+    value: 1
+    unit_code: g.[g]
+- name: pound force
+  property: force
+  code: "[lbf_av]"
+  classification: const
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: lbf
+  scale:
+    value: 1
+    unit_code: "[lb_av].[g]"
+- name: Kayser
+  property: lineic number
+  code: Ky
+  classification: cgs
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: K
+  scale:
+    value: 1
+    unit_code: cm-1
+- name: Gal
+  property: acceleration
+  code: Gal
+  classification: cgs
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: Gal
+  scale:
+    value: 1
+    unit_code: cm/s2
+- name: dyne
+  property: force
+  code: dyn
+  classification: cgs
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: dyn
+  scale:
+    value: 1
+    unit_code: g.cm/s2
+- name: erg
+  property: energy
+  code: erg
+  classification: cgs
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: erg
+  scale:
+    value: 1
+    unit_code: dyn.cm
+- name: Poise
+  property: dynamic viscosity
+  code: P
+  classification: cgs
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: P
+  scale:
+    value: 1
+    unit_code: dyn.s/cm2
+- name: Biot
+  property: electric current
+  code: Bi
+  classification: cgs
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: Bi
+  scale:
+    value: 10
+    unit_code: A
+- name: Stokes
+  property: kinematic viscosity
+  code: St
+  classification: cgs
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: St
+  scale:
+    value: 1
+    unit_code: cm2/s
+- name: Maxwell
+  property: flux of magnetic induction
+  code: Mx
+  classification: cgs
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: Mx
+  scale:
+    value: 1.0e-08
+    unit_code: Wb
+- name: Gauss
+  property: magnetic flux density
+  code: G
+  classification: cgs
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: Gs
+  scale:
+    value: 0.0001
+    unit_code: T
+- name: Oersted
+  property: magnetic field intensity
+  code: Oe
+  classification: cgs
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: Oe
+  scale:
+    value: 250
+    unit_code: "/[pi].A/m"
+- name: Gilbert
+  property: magnetic tension
+  code: Gb
+  classification: cgs
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: Gb
+  scale:
+    value: 1
+    unit_code: Oe.cm
+- name: stilb
+  property: lum. intensity density
+  code: sb
+  classification: cgs
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: sb
+  scale:
+    value: 1
+    unit_code: cd/cm2
+- name: Lambert
+  property: brightness
+  code: Lmb
+  classification: cgs
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: L
+  scale:
+    value: 1
+    unit_code: cd/cm2/[pi]
+- name: phot
+  property: illuminance
+  code: ph
+  classification: cgs
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: ph
+  scale:
+    value: 0.0001
+    unit_code: lx
+- name: Curie
+  property: radioactivity
+  code: Ci
+  classification: cgs
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: Ci
+  scale:
+    value: 37000000000
+    unit_code: Bq
+- name: Roentgen
+  property: ion dose
+  code: R
+  classification: cgs
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: R
+  scale:
+    value: 0.000258
+    unit_code: C/kg
+- name: radiation absorbed dose
+  property: energy dose
+  code: RAD
+  classification: cgs
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: RAD
+  scale:
+    value: 100
+    unit_code: erg/g
+- name: radiation equivalent man
+  property: dose equivalent
+  code: REM
+  classification: cgs
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: REM
+  scale:
+    value: 1
+    unit_code: RAD
+- name: inch
+  property: length
+  code: "[in_i]"
+  classification: intcust
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: in
+  scale:
+    value: 2.54
+    unit_code: cm
+- name: foot
+  property: length
+  code: "[ft_i]"
+  classification: intcust
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: ft
+  scale:
+    value: 12
+    unit_code: "[in_i]"
+- name: yard
+  property: length
+  code: "[yd_i]"
+  classification: intcust
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: yd
+  scale:
+    value: 3
+    unit_code: "[ft_i]"
+- name: mile
+  property: length
+  code: "[mi_i]"
+  classification: intcust
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: mi
+  scale:
+    value: 5280
+    unit_code: "[ft_i]"
+- name: fathom
+  property: depth of water
+  code: "[fth_i]"
+  classification: intcust
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: fth
+  scale:
+    value: 6
+    unit_code: "[ft_i]"
+- name: nautical mile
+  property: length
+  code: "[nmi_i]"
+  classification: intcust
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: n.mi
+  scale:
+    value: 1852
+    unit_code: m
+- name: knot
+  property: velocity
+  code: "[kn_i]"
+  classification: intcust
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: knot
+  scale:
+    value: 1
+    unit_code: "[nmi_i]/h"
+- name: square inch
+  property: area
+  code: "[sin_i]"
+  classification: intcust
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[in_i]2"
+- name: square foot
+  property: area
+  code: "[sft_i]"
+  classification: intcust
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[ft_i]2"
+- name: square yard
+  property: area
+  code: "[syd_i]"
+  classification: intcust
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[yd_i]2"
+- name: cubic inch
+  property: volume
+  code: "[cin_i]"
+  classification: intcust
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[in_i]3"
+- name: cubic foot
+  property: volume
+  code: "[cft_i]"
+  classification: intcust
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[ft_i]3"
+- name: cubic yard
+  property: volume
+  code: "[cyd_i]"
+  classification: intcust
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: cu.yd
+  scale:
+    value: 1
+    unit_code: "[yd_i]3"
+- name: board foot
+  property: volume
+  code: "[bf_i]"
+  classification: intcust
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 144
+    unit_code: "[in_i]3"
+- name: cord
+  property: volume
+  code: "[cr_i]"
+  classification: intcust
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 128
+    unit_code: "[ft_i]3"
+- name: mil
+  property: length
+  code: "[mil_i]"
+  classification: intcust
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: mil
+  scale:
+    value: 0.001
+    unit_code: "[in_i]"
+- name: circular mil
+  property: area
+  code: "[cml_i]"
+  classification: intcust
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: circ.mil
+  scale:
+    value: 1
+    unit_code: "[pi]/4.[mil_i]2"
+- name: hand
+  property: height of horses
+  code: "[hd_i]"
+  classification: intcust
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: hd
+  scale:
+    value: 4
+    unit_code: "[in_i]"
+- name: foot
+  property: length
+  code: "[ft_us]"
+  classification: us-lengths
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: ft<sub>us</sub>
+  scale:
+    value: 1200
+    unit_code: m/3937
+- name: yard
+  property: length
+  code: "[yd_us]"
+  classification: us-lengths
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 3
+    unit_code: "[ft_us]"
+- name: inch
+  property: length
+  code: "[in_us]"
+  classification: us-lengths
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[ft_us]/12"
+- name: rod
+  property: length
+  code: "[rd_us]"
+  classification: us-lengths
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 16.5
+    unit_code: "[ft_us]"
+- name: Gunter's chain
+  property: length
+  code: "[ch_us]"
+  classification: us-lengths
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 4
+    unit_code: "[rd_us]"
+- name: link for Gunter's chain
+  property: length
+  code: "[lk_us]"
+  classification: us-lengths
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[ch_us]/100"
+- name: Ramden's chain
+  property: length
+  code: "[rch_us]"
+  classification: us-lengths
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 100
+    unit_code: "[ft_us]"
+- name: link for Ramden's chain
+  property: length
+  code: "[rlk_us]"
+  classification: us-lengths
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[rch_us]/100"
+- name: fathom
+  property: length
+  code: "[fth_us]"
+  classification: us-lengths
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 6
+    unit_code: "[ft_us]"
+- name: furlong
+  property: length
+  code: "[fur_us]"
+  classification: us-lengths
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 40
+    unit_code: "[rd_us]"
+- name: mile
+  property: length
+  code: "[mi_us]"
+  classification: us-lengths
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 8
+    unit_code: "[fur_us]"
+- name: acre
+  property: area
+  code: "[acr_us]"
+  classification: us-lengths
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 160
+    unit_code: "[rd_us]2"
+- name: square rod
+  property: area
+  code: "[srd_us]"
+  classification: us-lengths
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[rd_us]2"
+- name: square mile
+  property: area
+  code: "[smi_us]"
+  classification: us-lengths
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[mi_us]2"
+- name: section
+  property: area
+  code: "[sct]"
+  classification: us-lengths
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[mi_us]2"
+- name: township
+  property: area
+  code: "[twp]"
+  classification: us-lengths
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 36
+    unit_code: "[sct]"
+- name: mil
+  property: length
+  code: "[mil_us]"
+  classification: us-lengths
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 0.001
+    unit_code: "[in_us]"
+- name: inch
+  property: length
+  code: "[in_br]"
+  classification: brit-length
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 2.539998
+    unit_code: cm
+- name: foot
+  property: length
+  code: "[ft_br]"
+  classification: brit-length
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 12
+    unit_code: "[in_br]"
+- name: rod
+  property: length
+  code: "[rd_br]"
+  classification: brit-length
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 16.5
+    unit_code: "[ft_br]"
+- name: Gunter's chain
+  property: length
+  code: "[ch_br]"
+  classification: brit-length
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 4
+    unit_code: "[rd_br]"
+- name: link for Gunter's chain
+  property: length
+  code: "[lk_br]"
+  classification: brit-length
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[ch_br]/100"
+- name: fathom
+  property: length
+  code: "[fth_br]"
+  classification: brit-length
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 6
+    unit_code: "[ft_br]"
+- name: pace
+  property: length
+  code: "[pc_br]"
+  classification: brit-length
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 2.5
+    unit_code: "[ft_br]"
+- name: yard
+  property: length
+  code: "[yd_br]"
+  classification: brit-length
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 3
+    unit_code: "[ft_br]"
+- name: mile
+  property: length
+  code: "[mi_br]"
+  classification: brit-length
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 5280
+    unit_code: "[ft_br]"
+- name: nautical mile
+  property: length
+  code: "[nmi_br]"
+  classification: brit-length
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 6080
+    unit_code: "[ft_br]"
+- name: knot
+  property: velocity
+  code: "[kn_br]"
+  classification: brit-length
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[nmi_br]/h"
+- name: acre
+  property: area
+  code: "[acr_br]"
+  classification: brit-length
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 4840
+    unit_code: "[yd_br]2"
+- name: Queen Anne's wine gallon
+  property: fluid volume
+  code: "[gal_us]"
+  classification: us-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 231
+    unit_code: "[in_i]3"
+- name: barrel
+  property: fluid volume
+  code: "[bbl_us]"
+  classification: us-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 42
+    unit_code: "[gal_us]"
+- name: quart
+  property: fluid volume
+  code: "[qt_us]"
+  classification: us-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[gal_us]/4"
+- name: pint
+  property: fluid volume
+  code: "[pt_us]"
+  classification: us-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[qt_us]/2"
+- name: gill
+  property: fluid volume
+  code: "[gil_us]"
+  classification: us-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[pt_us]/4"
+- name: fluid ounce
+  property: fluid volume
+  code: "[foz_us]"
+  classification: us-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: oz fl
+  scale:
+    value: 1
+    unit_code: "[gil_us]/4"
+- name: fluid dram
+  property: fluid volume
+  code: "[fdr_us]"
+  classification: us-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[foz_us]/8"
+- name: minim
+  property: fluid volume
+  code: "[min_us]"
+  classification: us-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[fdr_us]/60"
+- name: cord
+  property: fluid volume
+  code: "[crd_us]"
+  classification: us-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 128
+    unit_code: "[ft_i]3"
+- name: bushel
+  property: dry volume
+  code: "[bu_us]"
+  classification: us-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 2150.42
+    unit_code: "[in_i]3"
+- name: historical winchester gallon
+  property: dry volume
+  code: "[gal_wi]"
+  classification: us-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[bu_us]/8"
+- name: peck
+  property: dry volume
+  code: "[pk_us]"
+  classification: us-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[bu_us]/4"
+- name: dry quart
+  property: dry volume
+  code: "[dqt_us]"
+  classification: us-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[pk_us]/8"
+- name: dry pint
+  property: dry volume
+  code: "[dpt_us]"
+  classification: us-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[dqt_us]/2"
+- name: tablespoon
+  property: volume
+  code: "[tbs_us]"
+  classification: us-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[foz_us]/2"
+- name: teaspoon
+  property: volume
+  code: "[tsp_us]"
+  classification: us-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[tbs_us]/3"
+- name: cup
+  property: volume
+  code: "[cup_us]"
+  classification: us-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 16
+    unit_code: "[tbs_us]"
+- name: metric fluid ounce
+  property: fluid volume
+  code: "[foz_m]"
+  classification: us-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: oz fl
+  scale:
+    value: 30
+    unit_code: mL
+- name: metric cup
+  property: volume
+  code: "[cup_m]"
+  classification: us-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 240
+    unit_code: mL
+- name: metric teaspoon
+  property: volume
+  code: "[tsp_m]"
+  classification: us-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 5
+    unit_code: mL
+- name: metric tablespoon
+  property: volume
+  code: "[tbs_m]"
+  classification: us-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 15
+    unit_code: mL
+- name: gallon
+  property: volume
+  code: "[gal_br]"
+  classification: brit-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 4.54609
+    unit_code: l
+- name: peck
+  property: volume
+  code: "[pk_br]"
+  classification: brit-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 2
+    unit_code: "[gal_br]"
+- name: bushel
+  property: volume
+  code: "[bu_br]"
+  classification: brit-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 4
+    unit_code: "[pk_br]"
+- name: quart
+  property: volume
+  code: "[qt_br]"
+  classification: brit-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[gal_br]/4"
+- name: pint
+  property: volume
+  code: "[pt_br]"
+  classification: brit-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[qt_br]/2"
+- name: gill
+  property: volume
+  code: "[gil_br]"
+  classification: brit-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[pt_br]/4"
+- name: fluid ounce
+  property: volume
+  code: "[foz_br]"
+  classification: brit-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[gil_br]/5"
+- name: fluid dram
+  property: volume
+  code: "[fdr_br]"
+  classification: brit-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[foz_br]/8"
+- name: minim
+  property: volume
+  code: "[min_br]"
+  classification: brit-volumes
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[fdr_br]/60"
+- name: grain
+  property: mass
+  code: "[gr]"
+  classification: avoirdupois
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 64.79891
+    unit_code: mg
+- name: pound
+  property: mass
+  code: "[lb_av]"
+  classification: avoirdupois
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: lb
+  scale:
+    value: 7000
+    unit_code: "[gr]"
+- name: ounce
+  property: mass
+  code: "[oz_av]"
+  classification: avoirdupois
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: oz
+  scale:
+    value: 1
+    unit_code: "[lb_av]/16"
+- name: dram
+  property: mass
+  code: "[dr_av]"
+  classification: avoirdupois
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[oz_av]/16"
+- name: short hundredweight
+  property: mass
+  code: "[scwt_av]"
+  classification: avoirdupois
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 100
+    unit_code: "[lb_av]"
+- name: long hunderdweight
+  property: mass
+  code: "[lcwt_av]"
+  classification: avoirdupois
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 112
+    unit_code: "[lb_av]"
+- name: short ton
+  property: mass
+  code: "[ston_av]"
+  classification: avoirdupois
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 20
+    unit_code: "[scwt_av]"
+- name: long ton
+  property: mass
+  code: "[lton_av]"
+  classification: avoirdupois
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 20
+    unit_code: "[lcwt_av]"
+- name: stone
+  property: mass
+  code: "[stone_av]"
+  classification: avoirdupois
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 14
+    unit_code: "[lb_av]"
+- name: pennyweight
+  property: mass
+  code: "[pwt_tr]"
+  classification: troy
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 24
+    unit_code: "[gr]"
+- name: ounce
+  property: mass
+  code: "[oz_tr]"
+  classification: troy
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 20
+    unit_code: "[pwt_tr]"
+- name: pound
+  property: mass
+  code: "[lb_tr]"
+  classification: troy
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 12
+    unit_code: "[oz_tr]"
+- name: scruple
+  property: mass
+  code: "[sc_ap]"
+  classification: apoth
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 20
+    unit_code: "[gr]"
+- name: dram
+  property: mass
+  code: "[dr_ap]"
+  classification: apoth
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 3
+    unit_code: "[sc_ap]"
+- name: ounce
+  property: mass
+  code: "[oz_ap]"
+  classification: apoth
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 8
+    unit_code: "[dr_ap]"
+- name: pound
+  property: mass
+  code: "[lb_ap]"
+  classification: apoth
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 12
+    unit_code: "[oz_ap]"
+- name: metric ounce
+  property: mass
+  code: "[oz_m]"
+  classification: apoth
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 28
+    unit_code: g
+- name: line
+  property: length
+  code: "[lne]"
+  classification: typeset
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[in_i]/12"
+- name: point
+  property: length
+  code: "[pnt]"
+  classification: typeset
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[lne]/6"
+- name: pica
+  property: length
+  code: "[pca]"
+  classification: typeset
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 12
+    unit_code: "[pnt]"
+- name: Printer's point
+  property: length
+  code: "[pnt_pr]"
+  classification: typeset
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 0.013837
+    unit_code: "[in_i]"
+- name: Printer's pica
+  property: length
+  code: "[pca_pr]"
+  classification: typeset
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 12
+    unit_code: "[pnt_pr]"
+- name: pied
+  property: length
+  code: "[pied]"
+  classification: typeset
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 32.48
+    unit_code: cm
+- name: pouce
+  property: length
+  code: "[pouce]"
+  classification: typeset
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[pied]/12"
+- name: ligne
+  property: length
+  code: "[ligne]"
+  classification: typeset
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[pouce]/12"
+- name: didot
+  property: length
+  code: "[didot]"
+  classification: typeset
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "[ligne]/6"
+- name: cicero
+  property: length
+  code: "[cicero]"
+  classification: typeset
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 12
+    unit_code: "[didot]"
+- name: degree Fahrenheit
+  property: temperature
+  code: "[degF]"
+  classification: heat
+  metric: false
+  special: true
+  arbitrary: false
+  symbol: "°F"
+  scale:
+    function_from: 5.0/9.0*(x+459.67)
+    function_to: 9.0*x/5.0-459.67
+    value: 5
+    unit_code: K/9
+- name: degree Rankine
+  property: temperature
+  code: "[degR]"
+  classification: heat
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: "°R"
+  scale:
+    value: 5
+    unit_code: K/9
+- name: degree Réaumur
+  property: temperature
+  code: "[degRe]"
+  classification: heat
+  metric: false
+  special: true
+  arbitrary: false
+  symbol: "°Ré"
+  scale:
+    function_from: 5.0/4.0*(x+218.52)
+    function_to: 4.0*x/5.0-218.52
+    value: 5
+    unit_code: K/4
+- name: calorie at 15 °C
+  property: energy
+  code: cal_[15]
+  classification: heat
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: cal<sub>15°C</sub>
+  scale:
+    value: 4.1858
+    unit_code: J
+- name: calorie at 20 °C
+  property: energy
+  code: cal_[20]
+  classification: heat
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: cal<sub>20°C</sub>
+  scale:
+    value: 4.1819
+    unit_code: J
+- name: mean calorie
+  property: energy
+  code: cal_m
+  classification: heat
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: cal<sub>m</sub>
+  scale:
+    value: 4.19002
+    unit_code: J
+- name: international table calorie
+  property: energy
+  code: cal_IT
+  classification: heat
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: cal<sub>IT</sub>
+  scale:
+    value: 4.1868
+    unit_code: J
+- name: thermochemical calorie
+  property: energy
+  code: cal_th
+  classification: heat
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: cal<sub>th</sub>
+  scale:
+    value: 4.184
+    unit_code: J
+- name: nutrition label Calories
+  property: energy
+  code: "[Cal]"
+  classification: heat
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: Cal
+  scale:
+    value: 1
+    unit_code: kcal_th
+- name: British thermal unit at 39 °F
+  property: energy
+  code: "[Btu_39]"
+  classification: heat
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: Btu<sub>39°F</sub>
+  scale:
+    value: 1.05967
+    unit_code: kJ
+- name: British thermal unit at 59 °F
+  property: energy
+  code: "[Btu_59]"
+  classification: heat
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: Btu<sub>59°F</sub>
+  scale:
+    value: 1.0548
+    unit_code: kJ
+- name: British thermal unit at 60 °F
+  property: energy
+  code: "[Btu_60]"
+  classification: heat
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: Btu<sub>60°F</sub>
+  scale:
+    value: 1.05468
+    unit_code: kJ
+- name: mean British thermal unit
+  property: energy
+  code: "[Btu_m]"
+  classification: heat
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: Btu<sub>m</sub>
+  scale:
+    value: 1.05587
+    unit_code: kJ
+- name: international table British thermal unit
+  property: energy
+  code: "[Btu_IT]"
+  classification: heat
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: Btu<sub>IT</sub>
+  scale:
+    value: 1.05505585262
+    unit_code: kJ
+- name: thermochemical British thermal unit
+  property: energy
+  code: "[Btu_th]"
+  classification: heat
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: Btu<sub>th</sub>
+  scale:
+    value: 1.05435
+    unit_code: kJ
+- name: British thermal unit
+  property: energy
+  code: "[Btu]"
+  classification: heat
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: btu
+  scale:
+    value: 1
+    unit_code: "[Btu_th]"
+- name: horsepower
+  property: power
+  code: "[HP]"
+  classification: heat
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 550
+    unit_code: "[ft_i].[lbf_av]/s"
+- name: tex
+  property: linear mass density (of textile thread)
+  code: tex
+  classification: heat
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: tex
+  scale:
+    value: 1
+    unit_code: g/km
+- name: Denier
+  property: linear mass density (of textile thread)
+  code: "[den]"
+  classification: heat
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: den
+  scale:
+    value: 1
+    unit_code: g/9/km
+- name: meter of water column
+  property: pressure
+  code: m[H2O]
+  classification: clinical
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: m H<sub><r>2</r></sub>O
+  scale:
+    value: 9.80665
+    unit_code: kPa
+- name: meter of mercury column
+  property: pressure
+  code: m[Hg]
+  classification: clinical
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: m Hg
+  scale:
+    value: 133.322
+    unit_code: kPa
+- name: inch of water column
+  property: pressure
+  code: "[in_i'H2O]"
+  classification: clinical
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: in H<sub><r>2</r></sub>O
+  scale:
+    value: 1
+    unit_code: m[H2O].[in_i]/m
+- name: inch of mercury column
+  property: pressure
+  code: "[in_i'Hg]"
+  classification: clinical
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: in Hg
+  scale:
+    value: 1
+    unit_code: m[Hg].[in_i]/m
+- name: peripheral vascular resistance unit
+  property: fluid resistance
+  code: "[PRU]"
+  classification: clinical
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: P.R.U.
+  scale:
+    value: 1
+    unit_code: mm[Hg].s/ml
+- name: Wood unit
+  property: fluid resistance
+  code: "[wood'U]"
+  classification: clinical
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: Wood U.
+  scale:
+    value: 1
+    unit_code: mm[Hg].min/L
+- name: diopter
+  property: refraction of a lens
+  code: "[diop]"
+  classification: clinical
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: dpt
+  scale:
+    value: 1
+    unit_code: "/m"
+- name: prism diopter
+  property: refraction of a prism
+  code: "[p'diop]"
+  classification: clinical
+  metric: false
+  special: true
+  arbitrary: false
+  symbol: PD
+  scale:
+    function_from: atan(x/100.0)
+    function_to: 100.0*tan(x)
+    value: 1
+    unit_code: deg
+- name: percent of slope
+  property: slope
+  code: "%[slope]"
+  classification: clinical
+  metric: false
+  special: true
+  arbitrary: false
+  symbol: "%"
+  scale:
+    function_from: atan(x/100.0)
+    function_to: 100.0*tan(x)
+    value: 1
+    unit_code: deg
+- name: mesh
+  property: lineic number
+  code: "[mesh_i]"
+  classification: clinical
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 1
+    unit_code: "/[in_i]"
+- name: Charrière
+  property: gauge of catheters
+  code: "[Ch]"
+  classification: clinical
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: Ch
+  scale:
+    value: 1
+    unit_code: mm/3
+- name: drop
+  property: volume
+  code: "[drp]"
+  classification: clinical
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: drp
+  scale:
+    value: 1
+    unit_code: ml/20
+- name: Hounsfield unit
+  property: x-ray attenuation
+  code: "[hnsf'U]"
+  classification: clinical
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: HF
+  scale:
+    value: 1
+    unit_code: '1'
+- name: metabolic equivalent
+  property: metabolic cost of physical activity
+  code: "[MET]"
+  classification: clinical
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: MET
+  scale:
+    value: 3.5
+    unit_code: mL/min/kg
+- name: homeopathic potency of decimal series (retired)
+  property: homeopathic potency (retired)
+  code: "[hp'_X]"
+  classification: clinical
+  metric: false
+  special: true
+  arbitrary: false
+  symbol: X
+  scale:
+    function_from: pow(10.0,-x)
+    function_to: "-log10(x)"
+    value: 1
+    unit_code: '1'
+- name: homeopathic potency of centesimal series (retired)
+  property: homeopathic potency (retired)
+  code: "[hp'_C]"
+  classification: clinical
+  metric: false
+  special: true
+  arbitrary: false
+  symbol: C
+  scale:
+    function_from: pow(100.0,-x)
+    function_to: "-log(x)/log(100.0)"
+    value: 1
+    unit_code: '1'
+- name: homeopathic potency of millesimal series (retired)
+  property: homeopathic potency (retired)
+  code: "[hp'_M]"
+  classification: clinical
+  metric: false
+  special: true
+  arbitrary: false
+  symbol: M
+  scale:
+    function_from: '1'
+    function_to: '1'
+    value: 1
+    unit_code: '1'
+- name: homeopathic potency of quintamillesimal series (retired)
+  property: homeopathic potency (retired)
+  code: "[hp'_Q]"
+  classification: clinical
+  metric: false
+  special: true
+  arbitrary: false
+  symbol: Q
+  scale:
+    function_from: '1'
+    function_to: '1'
+    value: 1
+    unit_code: '1'
+- name: homeopathic potency of decimal hahnemannian series
+  property: homeopathic potency (Hahnemann)
+  code: "[hp_X]"
+  classification: clinical
+  metric: false
+  special: false
+  arbitrary: true
+  symbol: X
+  scale:
+    value: 1
+    unit_code: '1'
+- name: homeopathic potency of centesimal hahnemannian series
+  property: homeopathic potency (Hahnemann)
+  code: "[hp_C]"
+  classification: clinical
+  metric: false
+  special: false
+  arbitrary: true
+  symbol: C
+  scale:
+    value: 1
+    unit_code: '1'
+- name: homeopathic potency of millesimal hahnemannian series
+  property: homeopathic potency (Hahnemann)
+  code: "[hp_M]"
+  classification: clinical
+  metric: false
+  special: false
+  arbitrary: true
+  symbol: M
+  scale:
+    value: 1
+    unit_code: '1'
+- name: homeopathic potency of quintamillesimal hahnemannian series
+  property: homeopathic potency (Hahnemann)
+  code: "[hp_Q]"
+  classification: clinical
+  metric: false
+  special: false
+  arbitrary: true
+  symbol: Q
+  scale:
+    value: 1
+    unit_code: '1'
+- name: homeopathic potency of decimal korsakovian series
+  property: homeopathic potency (Korsakov)
+  code: "[kp_X]"
+  classification: clinical
+  metric: false
+  special: false
+  arbitrary: true
+  symbol: X
+  scale:
+    value: 1
+    unit_code: '1'
+- name: homeopathic potency of centesimal korsakovian series
+  property: homeopathic potency (Korsakov)
+  code: "[kp_C]"
+  classification: clinical
+  metric: false
+  special: false
+  arbitrary: true
+  symbol: C
+  scale:
+    value: 1
+    unit_code: '1'
+- name: homeopathic potency of millesimal korsakovian series
+  property: homeopathic potency (Korsakov)
+  code: "[kp_M]"
+  classification: clinical
+  metric: false
+  special: false
+  arbitrary: true
+  symbol: M
+  scale:
+    value: 1
+    unit_code: '1'
+- name: homeopathic potency of quintamillesimal korsakovian series
+  property: homeopathic potency (Korsakov)
+  code: "[kp_Q]"
+  classification: clinical
+  metric: false
+  special: false
+  arbitrary: true
+  symbol: Q
+  scale:
+    value: 1
+    unit_code: '1'
+- name: equivalents
+  property: amount of substance
+  code: eq
+  classification: chemical
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: eq
+  scale:
+    value: 1
+    unit_code: mol
+- name: osmole
+  property: amount of substance (dissolved particles)
+  code: osm
+  classification: chemical
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: osm
+  scale:
+    value: 1
+    unit_code: mol
+- name: pH
+  property: acidity
+  code: "[pH]"
+  classification: chemical
+  metric: false
+  special: true
+  arbitrary: false
+  symbol: pH
+  scale:
+    function_from: pow(10.0,-x)
+    function_to: "-log10(x)"
+    value: 1
+    unit_code: mol/l
+- name: gram percent
+  property: mass concentration
+  code: g%
+  classification: chemical
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: g%
+  scale:
+    value: 1
+    unit_code: g/dl
+- name: Svedberg unit
+  property: sedimentation coefficient
+  code: "[S]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: S
+  scale:
+    value: 1
+    unit_code: 10*-13.s
+- name: high power field
+  property: view area in microscope
+  code: "[HPF]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: HPF
+  scale:
+    value: 1
+    unit_code: '1'
+- name: low power field
+  property: view area in microscope
+  code: "[LPF]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: LPF
+  scale:
+    value: 100
+    unit_code: '1'
+- name: katal
+  property: catalytic activity
+  code: kat
+  classification: chemical
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: kat
+  scale:
+    value: 1
+    unit_code: mol/s
+- name: Unit
+  property: catalytic activity
+  code: U
+  classification: chemical
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: U
+  scale:
+    value: 1
+    unit_code: umol/min
+- name: international unit
+  property: arbitrary
+  code: "[iU]"
+  classification: chemical
+  metric: true
+  special: false
+  arbitrary: true
+  symbol: IU
+  scale:
+    value: 1
+    unit_code: '1'
+- name: international unit
+  property: arbitrary
+  code: "[IU]"
+  classification: chemical
+  metric: true
+  special: false
+  arbitrary: true
+  symbol: i.U.
+  scale:
+    value: 1
+    unit_code: "[iU]"
+- name: arbitary unit
+  property: arbitrary
+  code: "[arb'U]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  symbol: arb. U
+  scale:
+    value: 1
+    unit_code: '1'
+- name: United States Pharmacopeia unit
+  property: arbitrary
+  code: "[USP'U]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  symbol: U.S.P.
+  scale:
+    value: 1
+    unit_code: '1'
+- name: GPL unit
+  property: biologic activity of anticardiolipin IgG
+  code: "[GPL'U]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  scale:
+    value: 1
+    unit_code: '1'
+- name: MPL unit
+  property: biologic activity of anticardiolipin IgM
+  code: "[MPL'U]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  scale:
+    value: 1
+    unit_code: '1'
+- name: APL unit
+  property: biologic activity of anticardiolipin IgA
+  code: "[APL'U]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  scale:
+    value: 1
+    unit_code: '1'
+- name: Bethesda unit
+  property: biologic activity of factor VIII inhibitor
+  code: "[beth'U]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  scale:
+    value: 1
+    unit_code: '1'
+- name: anti factor Xa unit
+  property: biologic activity of factor Xa inhibitor (heparin)
+  code: "[anti'Xa'U]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  scale:
+    value: 1
+    unit_code: '1'
+- name: Todd unit
+  property: biologic activity antistreptolysin O
+  code: "[todd'U]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  scale:
+    value: 1
+    unit_code: '1'
+- name: Dye unit
+  property: biologic activity of amylase
+  code: "[dye'U]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  scale:
+    value: 1
+    unit_code: '1'
+- name: Somogyi unit
+  property: biologic activity of amylase
+  code: "[smgy'U]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  scale:
+    value: 1
+    unit_code: '1'
+- name: Bodansky unit
+  property: biologic activity of phosphatase
+  code: "[bdsk'U]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  scale:
+    value: 1
+    unit_code: '1'
+- name: King-Armstrong unit
+  property: biologic activity of phosphatase
+  code: "[ka'U]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  scale:
+    value: 1
+    unit_code: '1'
+- name: Kunkel unit
+  property: arbitrary biologic activity
+  code: "[knk'U]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  scale:
+    value: 1
+    unit_code: '1'
+- name: Mac Lagan unit
+  property: arbitrary biologic activity
+  code: "[mclg'U]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  scale:
+    value: 1
+    unit_code: '1'
+- name: tuberculin unit
+  property: biologic activity of tuberculin
+  code: "[tb'U]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  scale:
+    value: 1
+    unit_code: '1'
+- name: 50% cell culture infectious dose
+  property: biologic activity (infectivity) of an infectious agent preparation
+  code: "[CCID_50]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  symbol: CCID<sub>50</sub>
+  scale:
+    value: 1
+    unit_code: '1'
+- name: 50% tissue culture infectious dose
+  property: biologic activity (infectivity) of an infectious agent preparation
+  code: "[TCID_50]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  symbol: TCID<sub>50</sub>
+  scale:
+    value: 1
+    unit_code: '1'
+- name: 50% embryo infectious dose
+  property: biologic activity (infectivity) of an infectious agent preparation
+  code: "[EID_50]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  symbol: EID<sub>50</sub>
+  scale:
+    value: 1
+    unit_code: '1'
+- name: plaque forming units
+  property: amount of an infectious agent
+  code: "[PFU]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  symbol: PFU
+  scale:
+    value: 1
+    unit_code: '1'
+- name: focus forming units
+  property: amount of an infectious agent
+  code: "[FFU]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  symbol: FFU
+  scale:
+    value: 1
+    unit_code: '1'
+- name: colony forming units
+  property: amount of a proliferating organism
+  code: "[CFU]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  symbol: CFU
+  scale:
+    value: 1
+    unit_code: '1'
+- name: index of reactivity
+  property: amount of an allergen callibrated through in-vivo testing using the Stallergenes®
+    method.
+  code: "[IR]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  symbol: IR
+  scale:
+    value: 1
+    unit_code: '1'
+- name: bioequivalent allergen unit
+  property: amount of an allergen callibrated through in-vivo testing based on the
+    ID50EAL method of (intradermal dilution for 50mm sum of erythema diameters
+  code: "[BAU]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  symbol: BAU
+  scale:
+    value: 1
+    unit_code: '1'
+- name: allergen unit
+  property: procedure defined amount of an allergen using some reference standard
+  code: "[AU]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  symbol: AU
+  scale:
+    value: 1
+    unit_code: '1'
+- name: allergen unit for Ambrosia artemisiifolia
+  property: procedure defined amount of the major allergen of ragweed.
+  code: "[Amb'a'1'U]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  symbol: Amb a 1 U
+  scale:
+    value: 1
+    unit_code: '1'
+- name: protein nitrogen unit
+  property: procedure defined amount of a protein substance
+  code: "[PNU]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  symbol: PNU
+  scale:
+    value: 1
+    unit_code: '1'
+- name: Limit of flocculation
+  property: procedure defined amount of an antigen substance
+  code: "[Lf]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  symbol: Lf
+  scale:
+    value: 1
+    unit_code: '1'
+- name: D-antigen unit
+  property: procedure defined amount of a poliomyelitis d-antigen substance
+  code: "[D'ag'U]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  scale:
+    value: 1
+    unit_code: '1'
+- name: fibrinogen equivalent unit
+  property: amount of fibrinogen broken down into the measured d-dimers
+  code: "[FEU]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  scale:
+    value: 1
+    unit_code: '1'
+- name: ELISA unit
+  property: arbitrary ELISA unit
+  code: "[ELU]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  scale:
+    value: 1
+    unit_code: '1'
+- name: Ehrlich unit
+  property: Ehrlich unit
+  code: "[EU]"
+  classification: chemical
+  metric: false
+  special: false
+  arbitrary: true
+  scale:
+    value: 1
+    unit_code: '1'
+- name: neper
+  property: level
+  code: Np
+  classification: levels
+  metric: true
+  special: true
+  arbitrary: false
+  symbol: Np
+  scale:
+    function_from: pow(2.718281828459045,x)
+    function_to: log(x)
+    value: 1
+    unit_code: '1'
+- name: bel
+  property: level
+  code: B
+  classification: levels
+  metric: true
+  special: true
+  arbitrary: false
+  symbol: B
+  scale:
+    function_from: pow(10.0,x)
+    function_to: log10(x)
+    value: 1
+    unit_code: '1'
+- name: bel sound pressure
+  property: pressure level
+  code: B[SPL]
+  classification: levels
+  metric: true
+  special: true
+  arbitrary: false
+  symbol: B(SPL)
+  scale:
+    function_from: pow(10.0,x/2.0)
+    function_to: pow(2.0,log10(x))
+    value: 2
+    unit_code: 10*-5.Pa
+- name: bel volt
+  property: electric potential level
+  code: B[V]
+  classification: levels
+  metric: true
+  special: true
+  arbitrary: false
+  symbol: B(V)
+  scale:
+    function_from: pow(10.0,x/2.0)
+    function_to: pow(2.0,log10(x))
+    value: 1
+    unit_code: V
+- name: bel millivolt
+  property: electric potential level
+  code: B[mV]
+  classification: levels
+  metric: true
+  special: true
+  arbitrary: false
+  symbol: B(mV)
+  scale:
+    function_from: pow(10.0,x/2.0)
+    function_to: pow(2.0,log10(x))
+    value: 1
+    unit_code: mV
+- name: bel microvolt
+  property: electric potential level
+  code: B[uV]
+  classification: levels
+  metric: true
+  special: true
+  arbitrary: false
+  symbol: B(μV)
+  scale:
+    function_from: pow(10.0,x/2.0)
+    function_to: pow(2.0,log10(x))
+    value: 1
+    unit_code: uV
+- name: bel 10 nanovolt
+  property: electric potential level
+  code: B[10.nV]
+  classification: levels
+  metric: true
+  special: true
+  arbitrary: false
+  symbol: B(10 nV)
+  scale:
+    function_from: pow(10.0,x/2.0)
+    function_to: pow(2.0,log10(x))
+    value: 10
+    unit_code: nV
+- name: bel watt
+  property: power level
+  code: B[W]
+  classification: levels
+  metric: true
+  special: true
+  arbitrary: false
+  symbol: B(W)
+  scale:
+    function_from: pow(10.0,x)
+    function_to: log10(x)
+    value: 1
+    unit_code: W
+- name: bel kilowatt
+  property: power level
+  code: B[kW]
+  classification: levels
+  metric: true
+  special: true
+  arbitrary: false
+  symbol: B(kW)
+  scale:
+    function_from: pow(10.0,x)
+    function_to: log10(x)
+    value: 1
+    unit_code: kW
+- name: stere
+  property: volume
+  code: st
+  classification: misc
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: st
+  scale:
+    value: 1
+    unit_code: m3
+- name: Ångström
+  property: length
+  code: Ao
+  classification: misc
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: Å
+  scale:
+    value: 0.1
+    unit_code: nm
+- name: barn
+  property: action area
+  code: b
+  classification: misc
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: b
+  scale:
+    value: 100
+    unit_code: fm2
+- name: technical atmosphere
+  property: pressure
+  code: att
+  classification: misc
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: at
+  scale:
+    value: 1
+    unit_code: kgf/cm2
+- name: mho
+  property: electric conductance
+  code: mho
+  classification: misc
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: mho
+  scale:
+    value: 1
+    unit_code: S
+- name: pound per sqare inch
+  property: pressure
+  code: "[psi]"
+  classification: misc
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: psi
+  scale:
+    value: 1
+    unit_code: "[lbf_av]/[in_i]2"
+- name: circle
+  property: plane angle
+  code: circ
+  classification: misc
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: circ
+  scale:
+    value: 2
+    unit_code: "[pi].rad"
+- name: spere
+  property: solid angle
+  code: sph
+  classification: misc
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: sph
+  scale:
+    value: 4
+    unit_code: "[pi].sr"
+- name: metric carat
+  property: mass
+  code: "[car_m]"
+  classification: misc
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: ct<sub>m</sub>
+  scale:
+    value: 0.2
+    unit_code: g
+- name: carat of gold alloys
+  property: mass fraction
+  code: "[car_Au]"
+  classification: misc
+  metric: false
+  special: false
+  arbitrary: false
+  symbol: ct<sub><r>Au</r></sub>
+  scale:
+    value: 1
+    unit_code: "/24"
+- name: Smoot
+  property: length
+  code: "[smoot]"
+  classification: misc
+  metric: false
+  special: false
+  arbitrary: false
+  scale:
+    value: 67
+    unit_code: "[in_i]"
+- name: meter per square seconds per square root of hertz
+  property: amplitude spectral density
+  code: "[m/s2/Hz^(1/2)]"
+  classification: misc
+  metric: false
+  special: true
+  arbitrary: false
+  scale:
+    function_from: pow(x,2)
+    function_to: sqrt(x)
+    value: 1
+    unit_code: m2/s4/Hz
+- name: bit
+  property: amount of information
+  code: bit_s
+  classification: infotech
+  metric: false
+  special: true
+  arbitrary: false
+  symbol: bit<sub>s</sub>
+  scale:
+    function_from: pow(2.0,x)
+    function_to: log(x)/log(2.0)
+    value: 1
+    unit_code: '1'
+- name: bit
+  property: amount of information
+  code: bit
+  classification: infotech
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: bit
+  scale:
+    value: 1
+    unit_code: '1'
+- name: byte
+  property: amount of information
+  code: By
+  classification: infotech
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: B
+  scale:
+    value: 8
+    unit_code: bit
+- name: baud
+  property: signal transmission rate
+  code: Bd
+  classification: infotech
+  metric: true
+  special: false
+  arbitrary: false
+  symbol: Bd
+  scale:
+    value: 1
+    unit_code: "/s"

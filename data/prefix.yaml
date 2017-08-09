@@ -1,97 +1,97 @@
 ---
-- :names: yotta
-  :symbol: Y
-  :code: Y
-  :scalar: 1000000000000000000000000
-- :names: zetta
-  :symbol: Z
-  :code: Z
-  :scalar: 1000000000000000000000
-- :names: exa
-  :symbol: E
-  :code: E
-  :scalar: 1000000000000000000
-- :names: peta
-  :symbol: P
-  :code: P
-  :scalar: 1000000000000000
-- :names: tera
-  :symbol: T
-  :code: T
-  :scalar: 1000000000000
-- :names: giga
-  :symbol: G
-  :code: G
-  :scalar: 1000000000
-- :names: mega
-  :symbol: M
-  :code: M
-  :scalar: 1000000
-- :names: kilo
-  :symbol: k
-  :code: k
-  :scalar: 1000
-- :names: hecto
-  :symbol: h
-  :code: h
-  :scalar: 100
-- :names: deka
-  :symbol: da
-  :code: da
-  :scalar: 10
-- :names: deci
-  :symbol: d
-  :code: d
-  :scalar: !ruby/object:BigDecimal 18:0.1e0
-- :names: centi
-  :symbol: c
-  :code: c
-  :scalar: !ruby/object:BigDecimal 18:0.1e-1
-- :names: milli
-  :symbol: m
-  :code: m
-  :scalar: !ruby/object:BigDecimal 18:0.1e-2
-- :names: micro
-  :symbol: μ
-  :code: u
-  :scalar: !ruby/object:BigDecimal 18:0.1e-5
-- :names: nano
-  :symbol: n
-  :code: n
-  :scalar: !ruby/object:BigDecimal 18:0.1e-8
-- :names: pico
-  :symbol: p
-  :code: p
-  :scalar: !ruby/object:BigDecimal 18:0.1e-11
-- :names: femto
-  :symbol: f
-  :code: f
-  :scalar: !ruby/object:BigDecimal 18:0.1e-14
-- :names: atto
-  :symbol: a
-  :code: a
-  :scalar: !ruby/object:BigDecimal 18:0.1e-17
-- :names: zepto
-  :symbol: z
-  :code: z
-  :scalar: !ruby/object:BigDecimal 18:0.1e-20
-- :names: yocto
-  :symbol: y
-  :code: y
-  :scalar: !ruby/object:BigDecimal 18:0.1e-23
-- :names: kibi
-  :symbol: Ki
-  :code: Ki
-  :scalar: 1024
-- :names: mebi
-  :symbol: Mi
-  :code: Mi
-  :scalar: 1048576
-- :names: gibi
-  :symbol: Gi
-  :code: Gi
-  :scalar: 1073741824
-- :names: tebi
-  :symbol: Ti
-  :code: Ti
-  :scalar: 1099511627776
+- name: yotta
+  symbol: Y
+  code: Y
+  scalar: 1000000000000000000000000
+- name: zetta
+  symbol: Z
+  code: Z
+  scalar: 1000000000000000000000
+- name: exa
+  symbol: E
+  code: E
+  scalar: 1000000000000000000
+- name: peta
+  symbol: P
+  code: P
+  scalar: 1000000000000000
+- name: tera
+  symbol: T
+  code: T
+  scalar: 1000000000000
+- name: giga
+  symbol: G
+  code: G
+  scalar: 1000000000
+- name: mega
+  symbol: M
+  code: M
+  scalar: 1000000
+- name: kilo
+  symbol: k
+  code: k
+  scalar: 1000
+- name: hecto
+  symbol: h
+  code: h
+  scalar: 100
+- name: deka
+  symbol: da
+  code: da
+  scalar: 10
+- name: deci
+  symbol: d
+  code: d
+  scalar: !ruby/object:BigDecimal 18:0.1e0
+- name: centi
+  symbol: c
+  code: c
+  scalar: !ruby/object:BigDecimal 18:0.1e-1
+- name: milli
+  symbol: m
+  code: m
+  scalar: !ruby/object:BigDecimal 18:0.1e-2
+- name: micro
+  symbol: μ
+  code: u
+  scalar: !ruby/object:BigDecimal 18:0.1e-5
+- name: nano
+  symbol: n
+  code: n
+  scalar: !ruby/object:BigDecimal 18:0.1e-8
+- name: pico
+  symbol: p
+  code: p
+  scalar: !ruby/object:BigDecimal 18:0.1e-11
+- name: femto
+  symbol: f
+  code: f
+  scalar: !ruby/object:BigDecimal 18:0.1e-14
+- name: atto
+  symbol: a
+  code: a
+  scalar: !ruby/object:BigDecimal 18:0.1e-17
+- name: zepto
+  symbol: z
+  code: z
+  scalar: !ruby/object:BigDecimal 18:0.1e-20
+- name: yocto
+  symbol: y
+  code: y
+  scalar: !ruby/object:BigDecimal 18:0.1e-23
+- name: kibi
+  symbol: Ki
+  code: Ki
+  scalar: 1024
+- name: mebi
+  symbol: Mi
+  code: Mi
+  scalar: 1048576
+- name: gibi
+  symbol: Gi
+  code: Gi
+  scalar: 1073741824
+- name: tebi
+  symbol: Ti
+  code: Ti
+  scalar: 1099511627776

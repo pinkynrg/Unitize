@@ -1,0 +1,20 @@
+<%
+  parent_class = ActiveRecord::Migration
+  parent_class = parent_class[parent_class.current_version] if Rails::VERSION::MAJOR >= 5
+-%>
+class CreateMeasurementTypes < <%= parent_class.to_s %>
+  def self.up
+    create_table :measurement_types do |t|
+      t.string :name
+      <%- if Rails::VERSION::MAJOR >= 5 -%>
+      t.timestamps
+      <%- else -%>
+      t.timestamps null: false
+      <%- end -%>
+    end
+  end
+
+  def self.down
+    drop_table :measurement_types
+  end
+end

@@ -20,6 +20,10 @@ require 'unitize/unit'
 require 'unitize/search'
 require 'unitize/errors'
 
+require "models/measurement_type"
+require "models/measurement_unit"
+require "models/measurement_prefix"
+
 # Unitize is a library for performing mathematical operations and conversions
 # on all units defined by the [Unified Code for Units of Measure(UCUM).
 module Unitize

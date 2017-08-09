@@ -5,7 +5,7 @@ module Unitize
     # of a string, as well as caching the results.
     class Decomposer
 
-      MODES = [:names, :code, :symbol].freeze
+      MODES = [:name, :code, :symbol].freeze
 
       class << self
 

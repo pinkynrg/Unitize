@@ -57,7 +57,7 @@ module Unitize::Standard
     end
 
     def to_hash
-      [:names, :symbol, :code].inject({}) do |h,a|
+      [:name, :symbol, :code].inject({}) do |h,a|
         if v = self.send(a)
           h[a] = v
         end

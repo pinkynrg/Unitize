@@ -2,7 +2,7 @@ module Unitize
   # The base class that Atom and Prefix are extended from. This class provides
   # shared functionality for said classes.
   class Base
-    liner :names, :code, :symbol, :scale
+    liner :name, :code, :symbol, :scale
     include Memoizable
 
     # The list of tracked items.

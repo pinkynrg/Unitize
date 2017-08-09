@@ -1,0 +1,32 @@
+<%
+  parent_class = ActiveRecord::Migration
+  parent_class = parent_class[parent_class.current_version] if Rails::VERSION::MAJOR >= 5
+-%>
+class CreateMeasurementUnits < <%= parent_class.to_s %>
+  def self.up
+    create_table :measurement_units do |t|
+      t.string :name
+      t.references :measurement_type, foreign_key: true
+      t.string :code
+      t.float :scale_value
+      t.string :scale_unit_code
+      t.string :classification
+      t.boolean :metric, default: false
+      t.boolean :special, default: false
+      t.boolean :arbitrary, default: false
+      t.string :symbol
+      t.string :scale_function_from
+      t.string :scale_function_to
+      t.string :dim
+      <%- if Rails::VERSION::MAJOR >= 5 -%>
+      t.timestamps
+      <%- else -%>
+      t.timestamps null: false
+      <%- end -%>
+    end
+  end
+
+  def self.down
+    drop_table :measurement_units
+  end
+end
