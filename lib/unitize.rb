@@ -28,15 +28,6 @@ require "models/measurement_prefix"
 # on all units defined by the [Unified Code for Units of Measure(UCUM).
 module Unitize
 
-  # Search for available compounds. This is just a helper method for
-  # convenience
-  # @param term [String, Regexp]
-  # @return [Array]
-  # @api public
-  def self.search(term)
-    Search.search(term)
-  end
-
   # Determine if a given string is a valid unit expression
   # @param expression [String]
   # @return [true, false]
@@ -47,18 +38,6 @@ module Unitize
     rescue ExpressionError
       false
     end
-  end
-
-  # Add additional atoms. Useful for registering uncommon or custom units.
-  # @param properties [Hash] Properties of the atom
-  # @return [Unitize::Atom] The newly created atom
-  # @raise [Unitize::DefinitionError]
-  def self.register(atom_hash)
-    atom = Unitize::Atom.new(atom_hash)
-    atom.validate!
-    Unitize::Atom.all.push(atom)
-    Unitize::Expression::Decomposer.send(:reset)
-    atom
   end
 
   # The system path for the installed gem
