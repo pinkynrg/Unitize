@@ -20,6 +20,11 @@ module Unitize
       def data_file
         Unitize.data_file 'atom'
       end
+
+      def children(code) 
+        Unitize::Atom.all.select { |e| e.has_parent(code) }
+      end
+
     end
 
     # Determine if an atom is base level. All atoms that are not base are
@@ -110,6 +115,14 @@ module Unitize
 
     def magnitude(scalar = scalar())
       special? ? scale.magnitude(scalar) : 1
+    end
+
+    def parents
+      scale && scale.unit.terms.map { |e| e.atom }.compact || []
+    end
+
+    def has_parent(code)
+      parents.select { |e| e.code == code }.count > 0
     end
 
     # An atom may have a complex scale with several base atoms at various
