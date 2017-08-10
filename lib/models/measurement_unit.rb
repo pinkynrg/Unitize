@@ -19,28 +19,32 @@ module Unitize
 		attr_readonly :code
 
 		def code_validation
-			if (self.code && self.scale_unit_code && !self.dim)
-				if (self.scale_unit_code.include? self.code)
-					errors.add(:code, "can't be contained inside scale_unit_code")
+			if (!self.dim)
+				# if the id exists, is an update and if the code has changed 
+				if (self.id && self.code_changed?)
+					errors.add(:code, "can't be changed")
+				# if code can resolve it shound't be used to create a basic code for another unit
+				elsif (Unitize.valid?(self.code))
+					errors.add(:code, "not available. Pick another one")
 				end
 			end
 		end
 
 		def scale_unit_code_presence
 			if (self.dim.nil?)
-	  		errors.add(:scale_unit_code, "is missing") unless self.scale_unit_code
+	  		errors.add(:scale_unit_code, "is mandatory if dim is nil") unless self.scale_unit_code
 			end
 		end
 
 		def scale_unit_code_validation
 			if (self.scale_unit_code)
-	  		errors.add(:scale_unit, "is not valid") unless Unitize.valid?(self.scale_unit_code)
+	  		errors.add(:scale_unit_code, "is not valid") unless Unitize.valid?(self.scale_unit_code)
 	  	end
 		end
 
 		def scale_value_presence
 			if (self.dim.nil?)
-	  		errors.add(:scale_value, "is missing") unless self.scale_value
+	  		errors.add(:scale_value, "is mandatory if dim is nil") unless self.scale_value
 			end
 		end
 
@@ -49,31 +53,9 @@ module Unitize
 	  		begin
 					self.scale_value.to_f  			
 	  		rescue Exception => e
-		  		errors.add(:scale_value, "is not valid")
+		  		errors.add(:scale_value, "it has to be a number (Integer, Float, Rational, ...)")
 	  		end
 			end
-		end
-
-		def update_atom_unitize
-			new_measurement_unit = MeasurementUnit.find(self.id)
-			atom = Unitize::Atom.new(new_measurement_unit.to_unitize)
-	  	atom.validate! unless new_measurement_unit.dim
-			result = Unitize::Atom.find(new_measurement_unit.code)
-			if (result)
-				Unitize::Atom.all.delete_if do |obj| 
-					obj[:code] == new_measurement_unit.code
-				end
-			end
-	    Unitize::Atom.all.push(atom)
-	    Unitize::Expression::Decomposer.send(:reset)
-	    atom
-		end
-
-		def destroy
-			atoms = MeasurementUnit.where("scale_unit_code LIKE :code", {code: "%#{self.code}%"})
-			raise "Cannot delete atoms with exisiting childs" unless atoms.count == 0
-    	# ... ok, go ahead and destroy
-    	super
 		end
 
 		def scale_function_from_validation
@@ -88,6 +70,25 @@ module Unitize
 				result = Dentaku(self.scale_function_to, x: 1)
 				errors.add(:scale_function_to, "is not valid") unless !result.nil?
 			end
+		end
+
+		def update_atom_unitize
+			atom = Unitize::Atom.new(self.to_unitize)
+			if (Unitize::Atom.find(self.code))
+				Unitize::Atom.all.delete_if do |obj| 
+					obj[:code] == self.code
+				end
+			end
+	    Unitize::Atom.all.push(atom)
+	    Unitize::Expression::Decomposer.send(:reset)
+		end
+
+		def destroy
+			raise "Cannot delete atoms with exisiting childs" unless Unitize::Atom.children(self.code).count == 0
+    	Unitize::Atom.all.delete_if do |obj| 
+				obj[:code] == self.code
+			end
+    	super
 		end
 
 		def to_unitize
