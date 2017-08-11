@@ -54,13 +54,14 @@ to_centimeter = meter.to("cm")
 to_inch = meter.to("in")
 to_weird_unit = meter.to("wl")
 
-puts meter.to_s(:name)						# => 12 meter
-puts to_centimeter.to_s(:name)		# => 1200 centimeter
-puts inch.to_s(:name)							# => 39.37 inch
-puts to_weird_unit.to_s(:name)		# => =3.464 weird length from meter
+puts meter.to_s(:name)            # => 12 meter
+puts to_centimeter.to_s(:name)    # => 1200 centimeter
+puts inch.to_s(:name)             # => 39.37 inch
+puts to_weird_unit.to_s(:name)    # => =3.464 weird length from meter
+
+```
 
 All other function have been copied from Unitwise gem. Check it out: https://github.com/joshwlewis/unitwise
-```
 
 ## Installation
 Add this line to your application's Gemfile:
