@@ -43,8 +43,8 @@ my_weird_unit = Unitize::MeasurementUnit.create({
 	symbol: "wl", 
 	scale_value: "1", 
 	scale_unit_code: "m", 
-	scale_function_from: "pow(x,2)", 
-	scale_function_to: "sqrt(x)", 
+	scale_function_from: "100+x/2", 		# this should be the inverse function of scale_function_to
+	scale_function_to: "2*x-200", 			# this should be the inverse function of scale_function_from
 	special: true
 })
 
@@ -54,11 +54,11 @@ to_centimeter = meter.to("cm")
 to_inch = meter.to("in")
 to_weird_unit = meter.to("wl")
 
-puts meter.to_s(:name)            # => 12 meter
-puts to_centimeter.to_s(:name)    # => 1200 centimeter
-puts inch.to_s(:name)             # => 39.37 inch
-puts to_weird_unit.to_s(:name)    # => 3.46 weird length from meter
-
+puts meter.to_s(:name)                   # => 12 meter
+puts to_centimeter.to_s(:name)           # => 1200 centimeter
+puts inch.to_s(:name)                    # => 39.37 inch
+puts to_weird_unit.to_s(:name)           # => -176 weird length from meter
+puts to_weird_unit.to("m").to_s(:name)   # => 12 meter
 ```
 
 All other functionalities have been copied from Unitwise gem. Check it out: https://github.com/joshwlewis/unitwise
