@@ -5,3 +5,5 @@ module Unitize
 	  validates :name, presence: true, uniqueness: true
 	end
 end
+
+Unitize::DBType = Unitize::MeasurementType
