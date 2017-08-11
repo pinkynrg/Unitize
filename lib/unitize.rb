@@ -51,6 +51,12 @@ module Unitize
   def self.data_file(key)
     File.join path, 'data', "#{key}.yaml"
   end
+
+  def self.preload
+    Unitize::Prefix.all
+    Unitize::Atom.all
+  end
+
 end
 
 # Measurement initializer shorthand. Use this to instantiate new measurements.

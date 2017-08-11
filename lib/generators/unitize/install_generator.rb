@@ -21,7 +21,7 @@ module Unitize
       end
 
       def create_initializers
-        copy_file 'initializers/dentaku.rb', 'config/initializers/dentaku.rb'
+        copy_file 'initializers/unitize.rb', 'config/initializers/unitize.rb'
       end
 
 			def create_migrations
