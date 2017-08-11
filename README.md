@@ -9,16 +9,44 @@ Do you have a weird non-linear measurement unit conversion that you want to add 
 m_type = Unitize::MeasurementType.create({name: "length"})
 
 Create a foundamental measurement unit (note that the dim parameter is only for foundamental measurement units): 
-f_unit = Unitize::MeasurementUnit.create({name: "meter", measurement_type: m_type, code: "m", symbol: "m", dim: "M"})
+f_unit = Unitize::MeasurementUnit.create({
+	name: "meter", 
+	measurement_type: m_type, 
+	code: "m", 
+	symbol: "m", 
+	dim: "M"
+})
 
 Create a mreasurement prefix:
-prefix = Unitize::MeasurementPrefix.create({name: "centi", symbol: "c", code: "c", scalar: "0.01"})
+prefix = Unitize::MeasurementPrefix.create({
+	name: "centi", 
+	symbol: "c", 
+	code: "c", 
+	scalar: "0.01"
+})
 
 Create a derived measurement unit (note that is not derived from the meter, m, but from the centimeter, cm):
-d_unit = Unitize::MeasurementUnit.create({name: "inch", measurement_type: m_type, code: "in", symbol: "inch", scale_value: "2.539998", scale_unit_code: "cm"})
+d_unit = Unitize::MeasurementUnit.create({
+	name: "inch", 
+	measurement_type: m_type, 
+	code: "in", 
+	symbol: "inch", 
+	scale_value: "2.539998", 
+	scale_unit_code: "cm"
+})
 
 Create a weird special measurement unit:
-my_weird_unit = Unitize::MeasurementUnit.create({name: "weird length from meter", measurement_type: m_type, code: "wl", symbol: "wl", scale_value: "1", scale_unit_code: "m", scale_function_from: "pow(x,2)", scale_function_to: "sqrt(x)", special: true})
+my_weird_unit = Unitize::MeasurementUnit.create({
+	name: "weird length from meter", 
+	measurement_type: m_type, 
+	code: "wl", 
+	symbol: "wl", 
+	scale_value: "1", 
+	scale_unit_code: "m", 
+	scale_function_from: "pow(x,2)", 
+	scale_function_to: "sqrt(x)", 
+	special: true
+})
 
 It's time to use it:
 meter = Unitize(12, "m")
@@ -26,10 +54,10 @@ to_centimeter = meter.to("cm")
 to_inch = meter.to("in")
 to_weird_unit = meter.to("wl")
 
-puts meter.to_s(:name) 									# => 12 meter
-puts to_centimeter.to_s(:name) 					# => 1200 centimeter
-puts inch.to_s(:name) 									# => 39.37 inch
-puts to_weird_unit.to_s(:name) 					# => =3.464 weird length from meter
+puts meter.to_s(:name)						# => 12 meter
+puts to_centimeter.to_s(:name)		# => 1200 centimeter
+puts inch.to_s(:name)							# => 39.37 inch
+puts to_weird_unit.to_s(:name)		# => =3.464 weird length from meter
 
 All other function have been copied from Unitwise gem. Check it out: https://github.com/joshwlewis/unitwise
 ```
