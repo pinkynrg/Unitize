@@ -5,10 +5,10 @@ Do you have a weird non-linear measurement unit conversion that you want to add 
 ## Usage
 
 ```ruby
-#Create a measurement type:
+# Create a measurement type:
 m_type = Unitize::MeasurementType.create({name: "length"})
 
-Create a foundamental measurement unit (note that the dim parameter is only for foundamental measurement units): 
+# Create a foundamental measurement unit (note that the dim parameter is only for foundamental measurement units): 
 f_unit = Unitize::MeasurementUnit.create({
 	name: "meter", 
 	measurement_type: m_type, 
@@ -17,7 +17,7 @@ f_unit = Unitize::MeasurementUnit.create({
 	dim: "M"
 })
 
-Create a mreasurement prefix:
+# Create a measurement prefix:
 prefix = Unitize::MeasurementPrefix.create({
 	name: "centi", 
 	symbol: "c", 
@@ -25,7 +25,7 @@ prefix = Unitize::MeasurementPrefix.create({
 	scalar: "0.01"
 })
 
-Create a derived measurement unit (note that is not derived from the meter, m, but from the centimeter, cm):
+# Create a derived measurement unit (note that is not derived from the meter, m, but from the centimeter, cm):
 d_unit = Unitize::MeasurementUnit.create({
 	name: "inch", 
 	measurement_type: m_type, 
@@ -35,7 +35,7 @@ d_unit = Unitize::MeasurementUnit.create({
 	scale_unit_code: "cm"
 })
 
-Create a weird special measurement unit:
+# Create a weird special measurement unit:
 my_weird_unit = Unitize::MeasurementUnit.create({
 	name: "weird length from meter", 
 	measurement_type: m_type, 
@@ -48,7 +48,7 @@ my_weird_unit = Unitize::MeasurementUnit.create({
 	special: true
 })
 
-It's time to use it:
+# It's time to use it:
 meter = Unitize(12, "m")
 to_centimeter = meter.to("cm")
 to_inch = meter.to("in")
