@@ -16,15 +16,10 @@ module Unitize
 		validate :scale_function_from_validation
 		validate :scale_function_to_validation
 
-		attr_readonly :code
-
 		def code_validation
 			if (!self.dim)
-				# if the id exists, is an update and if the code has changed 
-				if (self.id && self.code_changed?)
-					errors.add(:code, "can't be changed")
 				# if code can resolve it shound't be used to create a basic code for another unit
-				elsif (Unitize.valid?(self.code))
+				if (self.code_changed? && Unitize.valid?(self.code))
 					errors.add(:code, "not available. Pick another one")
 				end
 			end
@@ -37,6 +32,7 @@ module Unitize
 		end
 
 		def scale_unit_code_validation
+			# TODO: on update check if the atom scale_unit_code is referencing itself to avoid recursion
 			if (self.scale_unit_code)
 	  		errors.add(:scale_unit_code, "is not valid") unless Unitize.valid?(self.scale_unit_code)
 	  	end
@@ -73,14 +69,36 @@ module Unitize
 		end
 
 		def update_atom_unitize
+			# update children scale code
+			if (self.id && self.code_changed?)
+				self.update_children(self.code_was, self.code)
+			end
+
+			# update atom in memory
 			atom = Unitize::Atom.new(self.to_unitize)
-			if (Unitize::Atom.find(self.code))
+			if (Unitize::Atom.find(self.code_was))
 				Unitize::Atom.all.delete_if do |obj| 
-					obj[:code] == self.code
+					obj[:code] == self.code_was
 				end
 			end
 	    Unitize::Atom.all.push(atom)
 	    Unitize::Expression::Decomposer.send(:reset)
+		end
+
+		def update_children(old_code, new_code)
+			Unitize::Atom.children(old_code).each do |e|
+				
+				# process regex
+				prefixes = Unitize::Prefix.all.map { |e| e.code }.join("|")
+				old_code_escaped = old_code.gsub("[","\\[").gsub("]","\\]").gsub("*","\\*")
+				scale_unit_code = e.scale.unit.to_s.gsub(/(?:^|(?<=\.|\/|[0-9]|#{prefixes}))(#{old_code_escaped})(?:(?=-|\.|\/|[0-9])|$)/, new_code)
+
+				# update on db
+				mu = MeasurementUnit.find_by(code: e.code)
+				mu.scale_unit_code = scale_unit_code
+				mu.save(validate: false)
+
+			end
 		end
 
 		def destroy
@@ -112,3 +130,5 @@ module Unitize
 
 	end
 end
+
+Unitize::DBAtom = Unitize::MeasurementUnit
