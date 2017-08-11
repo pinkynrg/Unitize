@@ -22,7 +22,11 @@ module Unitize
       rule (:prefix) { prefix_matcher.as(:prefix_code) }
 
       rule (:simpleton) do
-        (prefix.as(:prefix) >> metric_atom.as(:atom) | atom.as(:atom))
+        prefix.as(:prefix) >> metric_atom.as(:atom) >> simpleton_stop | atom.as(:atom) >> simpleton_stop
+      end
+
+      rule (:simpleton_stop) do
+        match['(\.|\/|\-|\d)'].present? | any.absent?
       end
 
       rule (:annotation) do
