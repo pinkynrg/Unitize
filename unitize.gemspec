@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = Unitize::VERSION
   s.authors     = ["pinkynrg"]
   s.email       = ["biggyapple@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of Unitize."
-  s.description = "TODO: Description of Unitize."
+  s.homepage    = "http://www.francescomeli.com"
+  s.summary     = "A db based gem for all measurement units"
+  s.description = "Unitize is gem for Rails inspired by the marvelous Unitwise gem, with the only expection that all measurement units are saved on your database. Do you have a weird non-linear measurement unit conversion that you want to add to your collection at runtime? With Unitize you can!"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
@@ -28,5 +28,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency   'rake',            '~> 10.0'
   s.add_development_dependency   'nori',            '~> 2.3'
 
-  s.add_development_dependency "sqlite3"
+  s.add_development_dependency   'sqlite3'
 end
