@@ -10,11 +10,11 @@ RSpec.describe Unitize::MeasurementUnit, type: :model do
     expect(FactoryGirl.build(:measurement_unit, name: nil)).not_to be_valid
   end  
 
-  # it "is not valid with an already taken name" do
-  #   measurement_unit_1 = FactoryGirl.create(:measurement_unit, name: "mu1")
-  #   measurement_unit_2 = FactoryGirl.build(:measurement_unit, name: "mu1")
-  #   expect(measurement_unit_2).not_to be_valid
-  # end
+  pending "is not valid with an already taken name" do
+    measurement_unit_1 = FactoryGirl.create(:measurement_unit, name: "mu1")
+    measurement_unit_2 = FactoryGirl.build(:measurement_unit, name: "mu1")
+    expect(measurement_unit_2).not_to be_valid
+  end
 
   it "is not valid without a code" do
     expect(FactoryGirl.build(:measurement_unit, code: nil)).not_to be_valid

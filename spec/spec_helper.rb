@@ -14,3 +14,4 @@ require "generators/unitize/templates/initializers/unitize"
 ActiveRecord::Base.establish_connection adapter: "sqlite3", database: ":memory:"
 
 require "support/schema"
+require "support/preload_data"
