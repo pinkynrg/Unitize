@@ -182,6 +182,28 @@ RSpec.describe Unitize::MeasurementUnit, type: :model do
 
   end
 
+  it "is valid if chhildren units are updated when parent is update" do
+
+    some_base_1 = FactoryGirl.create(:measurement_unit, name: "base_1_name", code: "base_1!", dim: "dim_1_code")
+    some_base_2 = FactoryGirl.create(:measurement_unit, name: "base_2_name", code: "base_2!", dim: "dim_2_code")
+    some_der_1 = FactoryGirl.create(:measurement_unit, name: "der_1", code: "der_1!", scale_value: 1, scale_unit_code: "base_1!")
+    some_der_2 = FactoryGirl.create(:measurement_unit, name: "der_2", code: "der_2!", scale_value: 1, scale_unit_code: "2base_1!/base_2!2")
+    
+    expect(Unitize::Atom.find("base_1!").code).to be  == "base_1!"
+    expect(Unitize::Atom.find("base_2!").code).to be  == "base_2!"
+    expect(Unitize::Atom.find("der_1!").scale.unit.expression).to be  == "base_1!"
+    expect(Unitize::Atom.find("der_2!").scale.unit.expression).to be  == "2base_1!/base_2!2"
+
+    Unitize::MeasurementUnit.find_by(code: "base_1!").update({code: "changed_base_1!"})
+    Unitize::MeasurementUnit.find_by(code: "base_2!").update({code: "changed_base_2!"})
+
+    expect(Unitize::Atom.find("changed_base_1!").code).to be  == "changed_base_1!"
+    expect(Unitize::Atom.find("changed_base_2!").code).to be  == "changed_base_2!"
+    expect(Unitize::Atom.find("der_1!").scale.unit.expression).to be  == "changed_base_1!"
+    expect(Unitize::Atom.find("der_2!").scale.unit.expression).to be  == "2changed_base_1!/changed_base_2!2"
+
+  end
+
   it "is valid if I hard delete new unit it is correctly deleted from memory" do
 
     another_base_code = FactoryGirl.create(:measurement_unit, name: "base_1", code: "another_base_code", dim: "dim_1_code")
