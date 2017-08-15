@@ -100,7 +100,6 @@ module Unitize
 		end
 
 		def destroy
-			byebug
 			raise "Cannot delete atoms with exisiting childs" unless Unitize::Atom.children(self.code).count == 0
     	Unitize::Atom.all.delete_if do |obj| 
 				obj[:code] == self.code
