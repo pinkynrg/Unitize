@@ -4,6 +4,7 @@ require 'parslet'
 require 'signed_multiset'
 require 'yaml'
 require 'bigdecimal'
+require 'dentaku'
 
 require 'unitize/version'
 require 'unitize/base'

@@ -8,7 +8,7 @@ module Unitize
 	  validates :name, presence: true, uniqueness: true
 	  validates :symbol, presence: true, uniqueness: true
 	  validates :code, presence: true, uniqueness: true
-	  validates :scalar, presence: true, uniqueness: true
+	  validates :scalar, presence: true, uniqueness: true, numericality: { greater_than: 0 }
 
 	  def to_unitize
 			element = {}

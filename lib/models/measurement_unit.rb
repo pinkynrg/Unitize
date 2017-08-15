@@ -9,6 +9,8 @@ module Unitize
 
 		validates :name, presence: true
 		validates :code, presence: true, uniqueness: true
+		validates :measurement_type, presence: true
+		validates :scale_value, numericality: { allow_nil: true, greater_than: 0 }
 		validate :code_validation
 		validate :scale_unit_code_validation
 		validate :scale_unit_code_presence
@@ -17,11 +19,9 @@ module Unitize
 		validate :scale_function_to_validation
 
 		def code_validation
-			if (!self.dim)
-				# if code can resolve it shound't be used to create a basic code for another unit
-				if (self.code_changed? && Unitize.valid?(self.code))
-					errors.add(:code, "not available. Pick another one")
-				end
+			# if code can resolve it shound't be used to create a basic code for another unit (ex m2 should instead be m_square)
+			if (self.code_changed? && Unitize.valid?(self.code))
+				errors.add(:code, "not available. Pick another one")
 			end
 		end
 
@@ -44,27 +44,25 @@ module Unitize
 			end
 		end
 
-		def scale_value_validation
-			if (self.scale_value)
-	  		begin
-					self.scale_value.to_f  			
-	  		rescue Exception => e
-		  		errors.add(:scale_value, "it has to be a number (Integer, Float, Rational, ...)")
-	  		end
-			end
-		end
-
 		def scale_function_from_validation
 			if (self.scale_function_from)
-				result = Dentaku(self.scale_function_from, x: 1)
-				errors.add(:scale_function_from, "is not valid") unless !result.nil?
+				begin
+					result = Dentaku(self.scale_function_from, x: 1)
+					errors.add(:scale_function_from, "is not valid") unless !result.nil?
+				rescue Exception => e
+					errors.add(:scale_function_from, "is not valid")
+				end
 			end
 		end
 
 		def scale_function_to_validation
 			if (self.scale_function_to)
-				result = Dentaku(self.scale_function_to, x: 1)
-				errors.add(:scale_function_to, "is not valid") unless !result.nil?
+				begin
+					result = Dentaku(self.scale_function_to, x: 1)
+					errors.add(:scale_function_to, "is not valid") unless !result.nil?
+				rescue Exception => e
+					errors.add(:scale_function_to, "is not valid")
+				end
 			end
 		end
 
@@ -102,10 +100,12 @@ module Unitize
 		end
 
 		def destroy
+			byebug
 			raise "Cannot delete atoms with exisiting childs" unless Unitize::Atom.children(self.code).count == 0
     	Unitize::Atom.all.delete_if do |obj| 
 				obj[:code] == self.code
 			end
+	    Unitize::Expression::Decomposer.send(:reset)
     	super
 		end
 
