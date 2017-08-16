@@ -23,7 +23,6 @@ ActiveRecord::Schema.define do
     t.string :classification
     t.boolean :metric, default: false
     t.boolean :base, default: false
-    t.boolean :arbitrary, default: false
     t.string :symbol
     t.string :scale_function_from
     t.string :scale_function_to

@@ -116,7 +116,7 @@ module Unitize
 			element[:classification] = self.classification unless self.classification.nil?
 			element[:metric] = self.metric unless self.metric.nil?
 			element[:special] = self.scale_function_from && self.scale_function_to
-			element[:arbitrary] = self.arbitrary unless self.arbitrary.nil?
+			element[:arbitrary] = self.scale_unit_code == "1" ? true : false
 			element[:symbol] = self.symbol unless self.symbol.nil?
 			element[:dim] = self.code unless self.base == false
 			element[:scale] = {} unless self.scale_function_from.nil? && self.scale_function_to.nil? && self.scale_unit_code.nil? && self.scale_value.nil?
