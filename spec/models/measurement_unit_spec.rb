@@ -54,7 +54,6 @@ RSpec.describe Unitize::MeasurementUnit, type: :model do
   end
 
   it "is not valid if derived unit and scale_value is not present" do
-    expect(FactoryGirl.build(:measurement_unit, dim: "test", scale_value: nil)).to be_valid
     expect(FactoryGirl.build(:measurement_unit, :derived, scale_value: nil)).not_to be_valid
   end
 
@@ -67,49 +66,49 @@ RSpec.describe Unitize::MeasurementUnit, type: :model do
   end
 
   it "is not valid if scale function from validation cannot be evaluated by Dentaku" do
-    expect(FactoryGirl.build(:measurement_unit, scale_function_from: "y + 1", scale_function_to: "x")).not_to be_valid
-    expect(FactoryGirl.build(:measurement_unit, scale_function_from: "2x", scale_function_to: "x")).not_to be_valid
-    expect(FactoryGirl.build(:measurement_unit, scale_function_from: "x2", scale_function_to: "x")).not_to be_valid
-    expect(FactoryGirl.build(:measurement_unit, scale_function_from: "x.2", scale_function_to: "x")).not_to be_valid
-    expect(FactoryGirl.build(:measurement_unit, scale_function_from: "x**2", scale_function_to: "x")).not_to be_valid
-    expect(FactoryGirl.build(:measurement_unit, scale_function_from: "x + 1", scale_function_to: "x - 1")).to be_valid
-    expect(FactoryGirl.build(:measurement_unit, scale_function_from: "2*x", scale_function_to: "x/2")).to be_valid
-    expect(FactoryGirl.build(:measurement_unit, scale_function_from: "pow(x,2)", scale_function_to: "sqrt(x)")).to be_valid
+    expect(FactoryGirl.build(:measurement_unit, :special, scale_function_from: "y + 1")).not_to be_valid
+    expect(FactoryGirl.build(:measurement_unit, :special, scale_function_from: "2x")).not_to be_valid
+    expect(FactoryGirl.build(:measurement_unit, :special, scale_function_from: "x2")).not_to be_valid
+    expect(FactoryGirl.build(:measurement_unit, :special, scale_function_from: "x.2")).not_to be_valid
+    expect(FactoryGirl.build(:measurement_unit, :special, scale_function_from: "x**2")).not_to be_valid
+    expect(FactoryGirl.build(:measurement_unit, :special, scale_function_from: "x + 1")).to be_valid
+    expect(FactoryGirl.build(:measurement_unit, :special, scale_function_from: "2*x")).to be_valid
+    expect(FactoryGirl.build(:measurement_unit, :special, scale_function_from: "pow(x,2)")).to be_valid
   end
 
-  it "is not valid if scale function from validation cannot be evaluated by Dentaku" do
-    expect(FactoryGirl.build(:measurement_unit, scale_function_from: "x", scale_function_to: "y - 1")).not_to be_valid
-    expect(FactoryGirl.build(:measurement_unit, scale_function_from: "x", scale_function_to: "2x")).not_to be_valid
-    expect(FactoryGirl.build(:measurement_unit, scale_function_from: "x", scale_function_to: "x2")).not_to be_valid
-    expect(FactoryGirl.build(:measurement_unit, scale_function_from: "x", scale_function_to: "x.2")).not_to be_valid
-    expect(FactoryGirl.build(:measurement_unit, scale_function_from: "x", scale_function_to: "x**2")).not_to be_valid
-    expect(FactoryGirl.build(:measurement_unit, scale_function_from: "x + 1", scale_function_to: "x - 1")).to be_valid
-    expect(FactoryGirl.build(:measurement_unit, scale_function_from: "2*x", scale_function_to: "x/2")).to be_valid
-    expect(FactoryGirl.build(:measurement_unit, scale_function_from: "pow(x,2)", scale_function_to: "sqrt(x)")).to be_valid
+  it "is not valid if scale function to validation cannot be evaluated by Dentaku" do
+    expect(FactoryGirl.build(:measurement_unit, :special, scale_function_to: "y - 1")).not_to be_valid
+    expect(FactoryGirl.build(:measurement_unit, :special, scale_function_to: "2x")).not_to be_valid
+    expect(FactoryGirl.build(:measurement_unit, :special, scale_function_to: "x2")).not_to be_valid
+    expect(FactoryGirl.build(:measurement_unit, :special, scale_function_to: "x.2")).not_to be_valid
+    expect(FactoryGirl.build(:measurement_unit, :special, scale_function_to: "x**2")).not_to be_valid
+    expect(FactoryGirl.build(:measurement_unit, :special, scale_function_to: "x - 1")).to be_valid
+    expect(FactoryGirl.build(:measurement_unit, :special, scale_function_to: "x/2")).to be_valid
+    expect(FactoryGirl.build(:measurement_unit, :special, scale_function_to: "sqrt(x)")).to be_valid
   end
 
   it "is valid if I create new unit it is correctly added to memory and it works as expected" do
     # create base unit
-    FactoryGirl.create(:measurement_unit, code: "m", dim: "M")
-    expect(Unitize(1, "m").class).to be == Unitize::Measurement
-    expect(Unitize(1, "m") + Unitize(1,"m")).to be == Unitize(2,"m")
-    expect(Unitize(1, "m") - Unitize(1,"m")).to be == Unitize(0,"m")
-    expect(Unitize(1, "m") * Unitize(1,"m")).to be == Unitize(1,"m2")
-    expect(Unitize(1, "m") / Unitize(1,"m")).to be == Unitize(1,"1")
+    FactoryGirl.create(:measurement_unit, code: "meter", dim: "M")
+    expect(Unitize(1, "meter").class).to be == Unitize::Measurement
+    expect(Unitize(1, "meter") + Unitize(1,"meter")).to be == Unitize(2,"meter")
+    expect(Unitize(1, "meter") - Unitize(1,"meter")).to be == Unitize(0,"meter")
+    expect(Unitize(1, "meter") * Unitize(1,"meter")).to be == Unitize(1,"meter2")
+    expect(Unitize(1, "meter") / Unitize(1,"meter")).to be == Unitize(1,"1")
 
     # create derived unit
-    FactoryGirl.create(:measurement_unit, code: "squared_m", scale_value: 1, scale_unit_code: "m2")
+    FactoryGirl.create(:measurement_unit, code: "squared_m", scale_value: 1, scale_unit_code: "meter2")
     expect(Unitize(1, "squared_m").class).to be == Unitize::Measurement
-    expect(Unitize(1, "squared_m") + Unitize(1,"squared_m")).to be == Unitize(2,"m.m")
-    expect(Unitize(1, "squared_m") - Unitize(1,"squared_m")).to be == Unitize(0,"m2")
+    expect(Unitize(1, "squared_m") + Unitize(1,"squared_m")).to be == Unitize(2,"meter.meter")
+    expect(Unitize(1, "squared_m") - Unitize(1,"squared_m")).to be == Unitize(0,"meter2")
     expect(Unitize(1, "squared_m") * Unitize(1,"squared_m")).to be == Unitize(1,"squared_m2")
     expect(Unitize(1, "squared_m") / Unitize(1,"squared_m")).to be == Unitize(1,"1")
 
     # create special unit
     FactoryGirl.create(:measurement_unit, code: "special_squared_m", scale_value: 1, scale_unit_code: "squared_m", special: true, scale_function_from: "pow(x,3)", scale_function_to: "pow(x,1/3)")
     expect(Unitize(1, "special_squared_m").class).to be == Unitize::Measurement
-    expect(Unitize(1, "special_squared_m") + Unitize(1,"special_squared_m")).to be == Unitize(2**3,"m.m")
-    expect(Unitize(1, "special_squared_m") - Unitize(3,"special_squared_m")).to be == Unitize(-2**3,"m.m")
+    expect(Unitize(1, "special_squared_m") + Unitize(1,"special_squared_m")).to be == Unitize(2**3,"meter.meter")
+    expect(Unitize(1, "special_squared_m") - Unitize(3,"special_squared_m")).to be == Unitize(-2**3,"meter.meter")
     # expect(Unitize(1, "special_squared_m") * Unitize(3,"special_squared_m")).to be == Unitize(1**3,"squared_m") * Unitize(3**3,"squared_m")
     expect(Unitize(1, "special_squared_m") / Unitize(1,"special_squared_m")).to be == Unitize(1,"1")
   end

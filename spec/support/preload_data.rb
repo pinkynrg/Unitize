@@ -47,8 +47,9 @@ require "spec_helper"
 			[	"K","m","s","g","[g]","[in_i]","[lbf_av]","[lb_av]","[gr]","[psi]","[pi]",
 				"rad","deg","10*", "%","s","min","h","Cel","J","N","V","C","[yd_i]","[ft_i]",
 				"[PFU]","[c]","[degRe]","[degF]","[p'diop]","%[slope]","bit_s","Np","[hp'_X]",
-
-				"[pH]","mol","l","B","W","B[W]","B[kW]","B[SPL]","Pa","B[V]","B[10.nV]","[hp'_C]","[m/s2/Hz^(1/2)]","Hz"].include? e["code"] 
+				"[pH]","mol","l","B","W","B[W]","B[kW]","B[SPL]","Pa","B[V]","B[10.nV]",
+				"[hp'_C]","[m/s2/Hz^(1/2)]","Hz","[mi_i]","circ","[degR]","[tsp_us]",
+				"[tbs_us]","[foz_us]","[gil_us]","[pt_us]","[qt_us]","[gal_us]"].include? e["code"] 
 		}.each { |e| 
 
 			mt = nil

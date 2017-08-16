@@ -26,7 +26,7 @@ module Unitize
       end
 
       rule (:simpleton_stop) do
-        match['(\.|\/|\-|\d)'].present? | any.absent?
+        match['(\.|\/|\-|\d|\{|\})'].present? | any.absent?
       end
 
       rule (:annotation) do
