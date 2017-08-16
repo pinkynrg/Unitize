@@ -45,17 +45,6 @@
   scale:
     value: 10
     unit_code: '1'
-- name: the number ten for arbitrary powers
-  property: number
-  code: 10^
-  classification: dimless
-  metric: false
-  special: false
-  arbitrary: false
-  symbol: '10'
-  scale:
-    value: 10
-    unit_code: '1'
 - name: the number pi
   property: number
   code: "[pi]"
@@ -378,7 +367,7 @@
     value: 0.9
     unit_code: deg
 
-- name: minute
+- name: minute (angle)
   property: plane angle
   code: "'"
   classification: iso1000
@@ -389,7 +378,7 @@
   scale:
     value: 1
     unit_code: deg/60
-- name: second
+- name: second (angle)
   property: plane angle
   code: "''"
   classification: iso1000
@@ -400,7 +389,7 @@
   scale:
     value: 1
     unit_code: "'/60"
-- name: liter
+- name: liter (volume)
   property: volume
   code: l
   classification: iso1000
@@ -411,17 +400,6 @@
   scale:
     value: 1
     unit_code: dm3
-- name: liter
-  property: volume
-  code: L
-  classification: iso1000
-  metric: true
-  special: false
-  arbitrary: false
-  symbol: L
-  scale:
-    value: 1
-    unit_code: l
 - name: are
   property: area
   code: ar
@@ -950,7 +928,7 @@
   scale:
     value: 1
     unit_code: RAD
-- name: inch
+- name: inch (intcust)
   property: length
   code: "[in_i]"
   classification: intcust
@@ -961,7 +939,7 @@
   scale:
     value: 2.54
     unit_code: cm
-- name: foot
+- name: foot (intcust)
   property: length
   code: "[ft_i]"
   classification: intcust
@@ -972,7 +950,7 @@
   scale:
     value: 12
     unit_code: "[in_i]"
-- name: yard
+- name: yard (intcust)
   property: length
   code: "[yd_i]"
   classification: intcust
@@ -983,7 +961,7 @@
   scale:
     value: 3
     unit_code: "[ft_i]"
-- name: mile
+- name: mile (intcust)
   property: length
   code: "[mi_i]"
   classification: intcust
@@ -994,7 +972,7 @@
   scale:
     value: 5280
     unit_code: "[ft_i]"
-- name: fathom
+- name: fathom (intcust)
   property: depth of water
   code: "[fth_i]"
   classification: intcust
@@ -1005,7 +983,7 @@
   scale:
     value: 6
     unit_code: "[ft_i]"
-- name: nautical mile
+- name: nautical mile (intcust)
   property: length
   code: "[nmi_i]"
   classification: intcust
@@ -1016,7 +994,7 @@
   scale:
     value: 1852
     unit_code: m
-- name: knot
+- name: knot (intust)
   property: velocity
   code: "[kn_i]"
   classification: intcust
@@ -1098,7 +1076,7 @@
   scale:
     value: 144
     unit_code: "[in_i]3"
-- name: cord
+- name: cord (intcust)
   property: volume
   code: "[cr_i]"
   classification: intcust
@@ -1108,7 +1086,7 @@
   scale:
     value: 128
     unit_code: "[ft_i]3"
-- name: mil
+- name: mil (intcust)
   property: length
   code: "[mil_i]"
   classification: intcust
@@ -1141,7 +1119,7 @@
   scale:
     value: 4
     unit_code: "[in_i]"
-- name: foot
+- name: foot (us)
   property: length
   code: "[ft_us]"
   classification: us-lengths
@@ -1152,7 +1130,7 @@
   scale:
     value: 1200
     unit_code: m/3937
-- name: yard
+- name: yard (us)
   property: length
   code: "[yd_us]"
   classification: us-lengths
@@ -1162,7 +1140,7 @@
   scale:
     value: 3
     unit_code: "[ft_us]"
-- name: inch
+- name: inch (us)
   property: length
   code: "[in_us]"
   classification: us-lengths
@@ -1172,7 +1150,7 @@
   scale:
     value: 1
     unit_code: "[ft_us]/12"
-- name: rod
+- name: rod (us)
   property: length
   code: "[rd_us]"
   classification: us-lengths
@@ -1182,7 +1160,7 @@
   scale:
     value: 16.5
     unit_code: "[ft_us]"
-- name: Gunter's chain
+- name: Gunter's chain (us)
   property: length
   code: "[ch_us]"
   classification: us-lengths
@@ -1192,7 +1170,7 @@
   scale:
     value: 4
     unit_code: "[rd_us]"
-- name: link for Gunter's chain
+- name: link for Gunter's chain (us)
   property: length
   code: "[lk_us]"
   classification: us-lengths
@@ -1222,7 +1200,7 @@
   scale:
     value: 1
     unit_code: "[rch_us]/100"
-- name: fathom
+- name: americal fathom
   property: length
   code: "[fth_us]"
   classification: us-lengths
@@ -1242,7 +1220,7 @@
   scale:
     value: 40
     unit_code: "[rd_us]"
-- name: mile
+- name: mile (us)
   property: length
   code: "[mi_us]"
   classification: us-lengths
@@ -1252,7 +1230,7 @@
   scale:
     value: 8
     unit_code: "[fur_us]"
-- name: acre
+- name: acre (us)
   property: area
   code: "[acr_us]"
   classification: us-lengths
@@ -1302,7 +1280,7 @@
   scale:
     value: 36
     unit_code: "[sct]"
-- name: mil
+- name: mil (us)
   property: length
   code: "[mil_us]"
   classification: us-lengths
@@ -1312,7 +1290,7 @@
   scale:
     value: 0.001
     unit_code: "[in_us]"
-- name: inch
+- name: inch (uk)
   property: length
   code: "[in_br]"
   classification: brit-length
@@ -1322,7 +1300,7 @@
   scale:
     value: 2.539998
     unit_code: cm
-- name: foot
+- name: foot (uk)
   property: length
   code: "[ft_br]"
   classification: brit-length
@@ -1332,7 +1310,7 @@
   scale:
     value: 12
     unit_code: "[in_br]"
-- name: rod
+- name: rod (uk)
   property: length
   code: "[rd_br]"
   classification: brit-length
@@ -1342,7 +1320,7 @@
   scale:
     value: 16.5
     unit_code: "[ft_br]"
-- name: Gunter's chain
+- name: Gunter's chain (uk)
   property: length
   code: "[ch_br]"
   classification: brit-length
@@ -1352,7 +1330,7 @@
   scale:
     value: 4
     unit_code: "[rd_br]"
-- name: link for Gunter's chain
+- name: link for Gunter's chain (uk)
   property: length
   code: "[lk_br]"
   classification: brit-length
@@ -1362,7 +1340,7 @@
   scale:
     value: 1
     unit_code: "[ch_br]/100"
-- name: fathom
+- name: fathom (uk)
   property: length
   code: "[fth_br]"
   classification: brit-length
@@ -1382,7 +1360,7 @@
   scale:
     value: 2.5
     unit_code: "[ft_br]"
-- name: yard
+- name: yard (uk)
   property: length
   code: "[yd_br]"
   classification: brit-length
@@ -1392,7 +1370,7 @@
   scale:
     value: 3
     unit_code: "[ft_br]"
-- name: mile
+- name: mile (uk)
   property: length
   code: "[mi_br]"
   classification: brit-length
@@ -1402,7 +1380,7 @@
   scale:
     value: 5280
     unit_code: "[ft_br]"
-- name: nautical mile
+- name: nautical mile (uk)
   property: length
   code: "[nmi_br]"
   classification: brit-length
@@ -1412,7 +1390,7 @@
   scale:
     value: 6080
     unit_code: "[ft_br]"
-- name: knot
+- name: knot (uk)
   property: velocity
   code: "[kn_br]"
   classification: brit-length
@@ -1422,7 +1400,7 @@
   scale:
     value: 1
     unit_code: "[nmi_br]/h"
-- name: acre
+- name: acre (uk)
   property: area
   code: "[acr_br]"
   classification: brit-length
@@ -1452,7 +1430,7 @@
   scale:
     value: 42
     unit_code: "[gal_us]"
-- name: quart
+- name: quart (us)
   property: fluid volume
   code: "[qt_us]"
   classification: us-volumes
@@ -1462,7 +1440,7 @@
   scale:
     value: 1
     unit_code: "[gal_us]/4"
-- name: pint
+- name: pint (us)
   property: fluid volume
   code: "[pt_us]"
   classification: us-volumes
@@ -1472,7 +1450,7 @@
   scale:
     value: 1
     unit_code: "[qt_us]/2"
-- name: gill
+- name: gill (us)
   property: fluid volume
   code: "[gil_us]"
   classification: us-volumes
@@ -1482,7 +1460,7 @@
   scale:
     value: 1
     unit_code: "[pt_us]/4"
-- name: fluid ounce
+- name: fluid ounce (us)
   property: fluid volume
   code: "[foz_us]"
   classification: us-volumes
@@ -1493,7 +1471,7 @@
   scale:
     value: 1
     unit_code: "[gil_us]/4"
-- name: fluid dram
+- name: fluid dram (us)
   property: fluid volume
   code: "[fdr_us]"
   classification: us-volumes
@@ -1503,7 +1481,7 @@
   scale:
     value: 1
     unit_code: "[foz_us]/8"
-- name: minim
+- name: minim (us)
   property: fluid volume
   code: "[min_us]"
   classification: us-volumes
@@ -1513,7 +1491,7 @@
   scale:
     value: 1
     unit_code: "[fdr_us]/60"
-- name: cord
+- name: cord (us)
   property: fluid volume
   code: "[crd_us]"
   classification: us-volumes
@@ -1523,7 +1501,7 @@
   scale:
     value: 128
     unit_code: "[ft_i]3"
-- name: bushel
+- name: bushel (us)
   property: dry volume
   code: "[bu_us]"
   classification: us-volumes
@@ -1543,7 +1521,7 @@
   scale:
     value: 1
     unit_code: "[bu_us]/8"
-- name: peck
+- name: peck (us)
   property: dry volume
   code: "[pk_us]"
   classification: us-volumes
@@ -1613,7 +1591,7 @@
   symbol: oz fl
   scale:
     value: 30
-    unit_code: mL
+    unit_code: ml
 - name: metric cup
   property: volume
   code: "[cup_m]"
@@ -1623,7 +1601,7 @@
   arbitrary: false
   scale:
     value: 240
-    unit_code: mL
+    unit_code: ml
 - name: metric teaspoon
   property: volume
   code: "[tsp_m]"
@@ -1633,7 +1611,7 @@
   arbitrary: false
   scale:
     value: 5
-    unit_code: mL
+    unit_code: ml
 - name: metric tablespoon
   property: volume
   code: "[tbs_m]"
@@ -1643,7 +1621,7 @@
   arbitrary: false
   scale:
     value: 15
-    unit_code: mL
+    unit_code: ml
 - name: gallon
   property: volume
   code: "[gal_br]"
@@ -1654,7 +1632,7 @@
   scale:
     value: 4.54609
     unit_code: l
-- name: peck
+- name: peck (uk)
   property: volume
   code: "[pk_br]"
   classification: brit-volumes
@@ -1664,7 +1642,7 @@
   scale:
     value: 2
     unit_code: "[gal_br]"
-- name: bushel
+- name: bushel (uk)
   property: volume
   code: "[bu_br]"
   classification: brit-volumes
@@ -1674,7 +1652,7 @@
   scale:
     value: 4
     unit_code: "[pk_br]"
-- name: quart
+- name: quart (uk)
   property: volume
   code: "[qt_br]"
   classification: brit-volumes
@@ -1684,7 +1662,7 @@
   scale:
     value: 1
     unit_code: "[gal_br]/4"
-- name: pint
+- name: pint (uk)
   property: volume
   code: "[pt_br]"
   classification: brit-volumes
@@ -1694,7 +1672,7 @@
   scale:
     value: 1
     unit_code: "[qt_br]/2"
-- name: gill
+- name: gill (uk)
   property: volume
   code: "[gil_br]"
   classification: brit-volumes
@@ -1704,7 +1682,7 @@
   scale:
     value: 1
     unit_code: "[pt_br]/4"
-- name: fluid ounce
+- name: fluid ounce (uk)
   property: volume
   code: "[foz_br]"
   classification: brit-volumes
@@ -1714,7 +1692,7 @@
   scale:
     value: 1
     unit_code: "[gil_br]/5"
-- name: fluid dram
+- name: fluid dram (uk)
   property: volume
   code: "[fdr_br]"
   classification: brit-volumes
@@ -1724,7 +1702,7 @@
   scale:
     value: 1
     unit_code: "[foz_br]/8"
-- name: minim
+- name: minim (uk)
   property: volume
   code: "[min_br]"
   classification: brit-volumes
@@ -1744,7 +1722,7 @@
   scale:
     value: 64.79891
     unit_code: mg
-- name: pound
+- name: pound (avoirdupois)
   property: mass
   code: "[lb_av]"
   classification: avoirdupois
@@ -1777,7 +1755,7 @@
   scale:
     value: 1
     unit_code: "[lb_av]/16"
-- name: dram
+- name: dram (avoirdupois)
   property: mass
   code: "[dr_av]"
   classification: avoirdupois
@@ -1847,7 +1825,7 @@
   scale:
     value: 24
     unit_code: "[gr]"
-- name: ounce
+- name: ounce (troy)
   property: mass
   code: "[oz_tr]"
   classification: troy
@@ -1857,7 +1835,7 @@
   scale:
     value: 20
     unit_code: "[pwt_tr]"
-- name: pound
+- name: pound (troy)
   property: mass
   code: "[lb_tr]"
   classification: troy
@@ -1877,7 +1855,7 @@
   scale:
     value: 20
     unit_code: "[gr]"
-- name: dram
+- name: dram (apoth)
   property: mass
   code: "[dr_ap]"
   classification: apoth
@@ -1887,7 +1865,7 @@
   scale:
     value: 3
     unit_code: "[sc_ap]"
-- name: ounce
+- name: ounce (apoth)
   property: mass
   code: "[oz_ap]"
   classification: apoth
@@ -1897,7 +1875,7 @@
   scale:
     value: 8
     unit_code: "[dr_ap]"
-- name: pound
+- name: pound (apoth)
   property: mass
   code: "[lb_ap]"
   classification: apoth
@@ -2294,7 +2272,7 @@
   symbol: Wood U.
   scale:
     value: 1
-    unit_code: mm[Hg].min/L
+    unit_code: mm[Hg].min/l
 - name: diopter
   property: refraction of a lens
   code: "[diop]"
@@ -2385,7 +2363,7 @@
   symbol: MET
   scale:
     value: 3.5
-    unit_code: mL/min/kg
+    unit_code: ml/min/kg
 - name: homeopathic potency of decimal series (retired)
   property: homeopathic potency (retired)
   code: "[hp'_X]"
@@ -2612,17 +2590,6 @@
   scale:
     value: 1
     unit_code: '1'
-- name: international unit
-  property: arbitrary
-  code: "[IU]"
-  classification: chemical
-  metric: true
-  special: false
-  arbitrary: true
-  symbol: i.U.
-  scale:
-    value: 1
-    unit_code: "[iU]"
 - name: arbitary unit
   property: arbitrary
   code: "[arb'U]"
