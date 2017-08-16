@@ -20,22 +20,12 @@ describe Unitize::Expression::Matcher do
     end
   end
 
-  describe "::atom(:slugs)" do
-    subject { Unitize::Expression::Matcher.atom(:slugs)}
-    pending "must be an Alternative list of slugs" do
-      expect(subject).to be_instance_of Parslet::Atoms::Alternative
-    end
-    pending "must match 'georgian_year'" do
-      expect(subject.parse("mean_gregorian_year")).to be_equal == "mean_gregorian_year"
-    end
-  end
-
   describe "::prefix(:symbol)" do
     subject { Unitize::Expression::Matcher.prefix(:symbol)}
     it "must be an Alternative list of symbols" do
       expect(subject).to be_instance_of Parslet::Atoms::Alternative
     end
-    pending "must parse 'h'" do
+    it "must parse 'h'" do
       expect(subject.parse('h')).to be == 'h'
     end
   end

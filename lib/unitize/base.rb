@@ -36,16 +36,6 @@ module Unitize
       @names = Array(names)
     end
 
-    # A set of method friendly names.
-    # @return [Array] An array of strings
-    # @api semipublic
-    def slugs
-      names.map do |n|
-        n.downcase.strip.gsub(/\s/, '_').gsub(/\W/, '')
-      end
-    end
-    memoize :slugs
-
     # String representation for the instance.
     # @param mode [symbol] The attribute to for stringification
     # @return [String]

@@ -118,12 +118,6 @@ RSpec.describe Unitize::Atom do
     end
   end
 
-  describe "#measurement=" do
-    it "must create a new measurement object and set attributes" do
-      skip("need to figure out mocking and stubbing with minitest")
-    end
-  end
-
   describe "#frozen?" do
     it "should be frozen" do
       expect(second.frozen?).to be_equal true

@@ -10,7 +10,7 @@ RSpec.describe Unitize::MeasurementUnit, type: :model do
     expect(FactoryGirl.build(:measurement_unit, name: nil)).not_to be_valid
   end  
 
-  pending "is not valid with an already taken name" do
+  it "is not valid with an already taken name" do
     measurement_unit_1 = FactoryGirl.create(:measurement_unit, name: "mu1")
     measurement_unit_2 = FactoryGirl.build(:measurement_unit, name: "mu1")
     expect(measurement_unit_2).not_to be_valid
@@ -205,7 +205,7 @@ RSpec.describe Unitize::MeasurementUnit, type: :model do
 
   it "is valid if I hard delete new unit it is correctly deleted from memory" do
 
-    another_base_code = FactoryGirl.create(:measurement_unit, name: "base_1", code: "another_base_code", dim: "dim_1_code")
+    another_base_code = FactoryGirl.create(:measurement_unit, name: "another_base_1", code: "another_base_code", dim: "dim_1_code")
     some_special_unit = FactoryGirl.create(:measurement_unit, code: "another_special_unit", scale_value: 1, scale_unit_code: another_base_code.code, special: true, scale_function_from: "pow(x,3)", scale_function_to: "pow(x,1/3)")
     expect(Unitize(1, "another_special_unit").class).to be == Unitize::Measurement
     Unitize::MeasurementUnit.find_by(code: "another_special_unit").destroy

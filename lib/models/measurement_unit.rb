@@ -7,7 +7,7 @@ module Unitize
 
 		belongs_to :measurement_type
 
-		validates :name, presence: true
+		validates :name, presence: true, uniqueness: true
 		validates :code, presence: true, uniqueness: true
 		validates :measurement_type, presence: true
 		validates :scale_value, numericality: { allow_nil: true, greater_than: 0 }

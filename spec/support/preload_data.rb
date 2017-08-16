@@ -21,7 +21,7 @@ require "spec_helper"
 		end
 
 		final.select { |e| 
-			["c","k","m","d","n"].include? e["code"]
+			["c","k","m","d","n","h"].include? e["code"]
 		}.each { |e| 
 			el = Unitize::MeasurementPrefix.create({
 				name: e['name'], 
