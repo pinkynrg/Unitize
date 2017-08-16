@@ -41,8 +41,8 @@ RSpec.describe Unitize::Unit do
 
   describe "#dim" do
     it "must be a string representing it's dimensional makeup" do
-      expect(ms2.dim).to be == 'L.T-2'
-      expect(psi.dim).to be == 'L-1.M.T-2'
+      expect(ms2.dim).to be == 'm.s-2'
+      expect(psi.dim).to be == 'g.m-1.s-2'
     end
   end
 

@@ -26,7 +26,7 @@ module Unitize
 		end
 
 		def scale_unit_code_presence
-			if (self.dim.nil?)
+			if (!self.base)
 	  		errors.add(:scale_unit_code, "is mandatory if dim is nil") unless self.scale_unit_code
 			end
 		end
@@ -39,7 +39,7 @@ module Unitize
 		end
 
 		def scale_value_presence
-			if (self.dim.nil?)
+			if (!self.base)
 	  		errors.add(:scale_value, "is mandatory if dim is nil") unless self.scale_value
 			end
 		end
@@ -115,10 +115,10 @@ module Unitize
 			element[:code] = self.code unless self.code.nil?
 			element[:classification] = self.classification unless self.classification.nil?
 			element[:metric] = self.metric unless self.metric.nil?
-			element[:special] = self.special unless self.special.nil?
+			element[:special] = self.scale_function_from && self.scale_function_to
 			element[:arbitrary] = self.arbitrary unless self.arbitrary.nil?
 			element[:symbol] = self.symbol unless self.symbol.nil?
-			element[:dim] = self.dim unless self.dim.nil?
+			element[:dim] = self.code unless self.base == false
 			element[:scale] = {} unless self.scale_function_from.nil? && self.scale_function_to.nil? && self.scale_unit_code.nil? && self.scale_value.nil?
 			element[:scale][:function_from] = self.scale_function_from unless self.scale_function_from.nil?
 			element[:scale][:function_to] = self.scale_function_to unless self.scale_function_to.nil?

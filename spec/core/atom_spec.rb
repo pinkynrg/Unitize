@@ -112,9 +112,9 @@ RSpec.describe Unitize::Atom do
 
   describe "#dim" do
     it "must return the dim" do
-      expect(second.dim).to be == 'T'
-      expect(yard.dim).to be  == 'L'
-      expect(joule.dim).to be == 'L2.M.T-2'
+      expect(second.dim).to be == 's'
+      expect(yard.dim).to be  == 'm'
+      expect(joule.dim).to be == 'g.m2.s-2'
     end
   end
 

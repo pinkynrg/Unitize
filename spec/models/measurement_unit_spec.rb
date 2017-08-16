@@ -44,11 +44,11 @@ RSpec.describe Unitize::MeasurementUnit, type: :model do
   end
 
   it "is not valid without a scale unit code if derived unit" do
-    expect(FactoryGirl.build(:measurement_unit, dim: nil, scale_unit_code: nil)).not_to be_valid
+    expect(FactoryGirl.build(:measurement_unit, :derived, scale_unit_code: nil)).not_to be_valid
   end
 
   it "is not valid if unitize engine cannot resolve the scale unit code" do
-    FactoryGirl.create(:measurement_unit, dim: "test", code: "test")
+    FactoryGirl.create(:measurement_unit, code: "test")
     expect(FactoryGirl.build(:measurement_unit, :derived, scale_unit_code: "not_valid_code")).not_to be_valid
     expect(FactoryGirl.build(:measurement_unit, :derived, scale_unit_code: "test3")).to be_valid
   end
@@ -89,7 +89,7 @@ RSpec.describe Unitize::MeasurementUnit, type: :model do
 
   it "is valid if I create new unit it is correctly added to memory and it works as expected" do
     # create base unit
-    FactoryGirl.create(:measurement_unit, code: "meter", dim: "M")
+    FactoryGirl.create(:measurement_unit, code: "meter")
     expect(Unitize(1, "meter").class).to be == Unitize::Measurement
     expect(Unitize(1, "meter") + Unitize(1,"meter")).to be == Unitize(2,"meter")
     expect(Unitize(1, "meter") - Unitize(1,"meter")).to be == Unitize(0,"meter")
@@ -105,7 +105,7 @@ RSpec.describe Unitize::MeasurementUnit, type: :model do
     expect(Unitize(1, "squared_m") / Unitize(1,"squared_m")).to be == Unitize(1,"1")
 
     # create special unit
-    FactoryGirl.create(:measurement_unit, code: "special_squared_m", scale_value: 1, scale_unit_code: "squared_m", special: true, scale_function_from: "pow(x,3)", scale_function_to: "pow(x,1/3)")
+    FactoryGirl.create(:measurement_unit, code: "special_squared_m", scale_value: 1, scale_unit_code: "squared_m", scale_function_from: "pow(x,3)", scale_function_to: "pow(x,1/3)")
     expect(Unitize(1, "special_squared_m").class).to be == Unitize::Measurement
     expect(Unitize(1, "special_squared_m") + Unitize(1,"special_squared_m")).to be == Unitize(2**3,"meter.meter")
     expect(Unitize(1, "special_squared_m") - Unitize(3,"special_squared_m")).to be == Unitize(-2**3,"meter.meter")
@@ -114,8 +114,8 @@ RSpec.describe Unitize::MeasurementUnit, type: :model do
   end
 
   it "is valid if I edit new unit it is correctly edited to memory" do
-    some_base_1 = FactoryGirl.create(:measurement_unit, name: "base_1", code: "base_1_code", dim: "dim_1_code")
-    some_base_2 = FactoryGirl.create(:measurement_unit, name: "base_2", code: "base_2_code", dim: "dim_2_code")
+    some_base_1 = FactoryGirl.create(:measurement_unit, name: "base_1", code: "base_1_code")
+    some_base_2 = FactoryGirl.create(:measurement_unit, name: "base_2", code: "base_2_code")
     some_type_1 = FactoryGirl.create(:measurement_type)
     some_type_2 = FactoryGirl.create(:measurement_type)
 
@@ -159,7 +159,6 @@ RSpec.describe Unitize::MeasurementUnit, type: :model do
       name: "name_v3", 
       scale_value: 1,
       metric: false,
-      special: true,
       scale_function_from: "pow(x,2)",
       scale_function_to: "sqrt(x)",
       symbol: "v3!"
@@ -183,8 +182,8 @@ RSpec.describe Unitize::MeasurementUnit, type: :model do
 
   it "is valid if chhildren units are updated when parent is update" do
 
-    some_base_1 = FactoryGirl.create(:measurement_unit, name: "base_1_name", code: "base_1!", dim: "dim_1_code")
-    some_base_2 = FactoryGirl.create(:measurement_unit, name: "base_2_name", code: "base_2!", dim: "dim_2_code")
+    some_base_1 = FactoryGirl.create(:measurement_unit, name: "base_1_name", code: "base_1!")
+    some_base_2 = FactoryGirl.create(:measurement_unit, name: "base_2_name", code: "base_2!")
     some_der_1 = FactoryGirl.create(:measurement_unit, name: "der_1", code: "der_1!", scale_value: 1, scale_unit_code: "base_1!")
     some_der_2 = FactoryGirl.create(:measurement_unit, name: "der_2", code: "der_2!", scale_value: 1, scale_unit_code: "2base_1!/base_2!2")
     
@@ -205,8 +204,8 @@ RSpec.describe Unitize::MeasurementUnit, type: :model do
 
   it "is valid if I hard delete new unit it is correctly deleted from memory" do
 
-    another_base_code = FactoryGirl.create(:measurement_unit, name: "another_base_1", code: "another_base_code", dim: "dim_1_code")
-    some_special_unit = FactoryGirl.create(:measurement_unit, code: "another_special_unit", scale_value: 1, scale_unit_code: another_base_code.code, special: true, scale_function_from: "pow(x,3)", scale_function_to: "pow(x,1/3)")
+    another_base_code = FactoryGirl.create(:measurement_unit, name: "another_base_1", code: "another_base_code")
+    some_special_unit = FactoryGirl.create(:measurement_unit, code: "another_special_unit", scale_value: 1, scale_unit_code: another_base_code.code, scale_function_from: "pow(x,3)", scale_function_to: "pow(x,1/3)")
     expect(Unitize(1, "another_special_unit").class).to be == Unitize::Measurement
     Unitize::MeasurementUnit.find_by(code: "another_special_unit").destroy
     expect { Unitize(1, "another_special_unit") }.to raise_error(Unitize::ExpressionError)

@@ -47,12 +47,11 @@ namespace :unitize do
 				scale_unit_code: e[:'scale.unit_code'],
 				classification: e['classification'],
 				metric: !!e['metric'],
-				special: !!e['special'],
+				base: !!e['dim'],
 				arbitrary: !!e['arbitrary'],
 				symbol: e['symbol'],
 				scale_function_from: e[:'scale.function_from'],
 				scale_function_to: e[:'scale.function_to'],
-				dim: e['dim'],
 			}) 
 			
 			if (el.errors.count > 0)
