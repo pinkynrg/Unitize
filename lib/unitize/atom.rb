@@ -12,7 +12,7 @@ module Unitize
       def data
         @data ||= MeasurementUnit.table_exists? && MeasurementUnit.includes(:measurement_type).order(:id).all.map do |e|
           e.to_unitize
-        end
+        end || []
       end
 
       # Data file containing default atom data

@@ -8,7 +8,7 @@ module Unitize
     def self.data
       @data ||= MeasurementPrefix.table_exists? && MeasurementPrefix.order(:id).all.map do |e|
         e.to_unitize
-      end
+      end || []
     end
 
     # The location of the UCUM spec prefix data file
