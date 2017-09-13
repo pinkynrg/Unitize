@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
   s.add_dependency               'signed_multiset',   '~> 0.2'
   s.add_dependency               'memoizable',        '~> 0.4'
   s.add_dependency               'parslet',           '~> 1.5'
+  s.add_dependency               'dentaku',           '~> 2.0.11'
 
   s.add_development_dependency   'factory_girl'
   s.add_development_dependency   'byebug'
