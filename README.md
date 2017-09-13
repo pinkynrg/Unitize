@@ -68,13 +68,16 @@ Add this line to your application's Gemfile:
 
 ```ruby
 # add the gem to your Gemfile
-gem 'unitize'
+gem 'unitize', git: 'https://github.com/pinkynrg/Unitize.git'
 
 # bundle it
 bundle install
 
 # install the gem
 rails g unitize:install
+
+# migrate new tables
+rails db:migrate
 
 # if you want import 300+ measurement units from UCUM list execute this command too:
 rake unitize:import
