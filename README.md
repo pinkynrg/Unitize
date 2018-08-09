@@ -2,6 +2,10 @@
 Unitize is gem for Rails inspired by the marvelous Unitwise gem, with the only expection that all measurement units are saved on your database. 
 Do you have a weird non-linear measurement unit conversion that you want to add to your collection at runtime? With Unitize you can!
 
+## Compatibility
+This gem has been tested only on postgresql. 
+sqlite won't work for now as remarked in issue #1. 
+
 ## Usage
 
 ```ruby
