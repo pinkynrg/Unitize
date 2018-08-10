@@ -12,13 +12,12 @@ sqlite won't work for now as remarked in issue #1.
 # Create a measurement type:
 m_type = Unitize::MeasurementType.create({name: "length"})
 
-# Create a foundamental measurement unit (note that the dim parameter is only for foundamental measurement units): 
+# Create a foundamental measurement unit: 
 f_unit = Unitize::MeasurementUnit.create({
 	name: "meter", 
 	measurement_type: m_type, 
 	code: "m", 
-	symbol: "m", 
-	dim: "M"
+	symbol: "m"
 })
 
 # Create a measurement prefix:
