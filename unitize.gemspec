@@ -25,7 +25,7 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency   'factory_girl'
   s.add_development_dependency   'byebug'
-  s.add_development_dependency   'nokogiri',          '~> 1.5'
+  s.add_development_dependency   'nokogiri',          '~> 1.8.2'
   s.add_development_dependency   'pry',               '~> 0.9'
   s.add_development_dependency   'minitest',          '~> 5.0'
   s.add_development_dependency   'rake',              '~> 10.0'
