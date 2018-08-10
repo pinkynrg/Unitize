@@ -17,7 +17,7 @@ module Unitize
       end
 
       def create_tasks
-        copy_file 'tasks/import.rake', 'lib/tasks/import.rake'
+        copy_file 'tasks/import_unitize.rake', 'lib/tasks/import_unitize.rake'
       end
 
       def create_initializers
